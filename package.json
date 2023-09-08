@@ -1,11 +1,11 @@
 {
-  "name": "comps",
+  "name": "educational-site",
   "version": "0.1.0",
   "homepage": "https://rockstarsolider.github.io/Educational-Site/",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "classnames": "^2.3.1",
     "prop-types": "^15.8.1",
@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.14",
+    "gh-pages": "^6.0.0"
     "tailwindcss": "^3.1.7"
   }
 }
