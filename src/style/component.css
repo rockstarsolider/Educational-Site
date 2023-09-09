@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'lalezar';
+    src: url(Lalezar-Regular.otf);
+}
+
+body{
+    margin: 0;
+    font-family: 'lalezar';
+    text-align: right;
+}
+
 .primary{
     border-radius: 7px;
     background-color: #3646D3;
@@ -54,7 +65,7 @@
 .row2{
     display: flex;
     padding: 1rem 7rem;
-    margin-left: 54.2rem;
+    margin-left: 54.8rem;
     text-align: right;
     gap: 10rem;
 }
@@ -64,4 +75,42 @@
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
+}
+
+.intro{
+    margin: 0rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0;
+    align-items: center;
+}
+.intro p{
+    color: #525252;
+    font-size: 1.1rem;
+}
+.width{width: 35%;}
+
+.index img{
+    order: 1;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 7rem;
+}
+
+.card{
+    background-color: #D9D9D9;
+    width: 8rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.icon{
+    font-size: 2rem;
 }
