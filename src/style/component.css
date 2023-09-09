@@ -10,6 +10,7 @@ body{
 }
 
 .primary{
+    font-family: 'lalezar';
     border-radius: 7px;
     background-color: #3646D3;
     padding: 12px 50px;
@@ -18,6 +19,7 @@ body{
 }
 
 .secondary{
+    font-family: 'lalezar';
     color: white;
     border: none;
     border-radius: 7px;
@@ -113,4 +115,11 @@ body{
 
 .icon{
     font-size: 2rem;
+}
+
+.link{
+    text-decoration: none;
+    color: #DADADA;
+    position: relative;
+    top: 1rem;
 }

@@ -1,7 +1,16 @@
+import {Route, Routes} from 'react-router-dom'
 import MainPage from "./pages/MainPage";
+import AboutPage from './pages/AboutPage';
 
 function App() {
-  return <MainPage></MainPage>
+    return(
+        <>
+            <Routes>
+                <Route path="/" element={<MainPage/>}/>
+                <Route path="/about" element={<AboutPage/>}/>
+            </Routes>
+        </>
+    )
 }
 
 export default App;
