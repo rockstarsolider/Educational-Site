@@ -2,7 +2,7 @@ import Header from '../component/Header'
 import Footer from '../component/Footer'
 import pic1 from '../style/971 1.png'
 import pic2 from '../style/learning-education-word-letters 1.png'
-import pic3 from '../style/3099878-book_book-pages_books_favorite-book_font_learn_light_light-shadow_literature_mood_read_study 1.png'
+import pic3 from '../style/pic5.png'
 import pic4 from '../style/the-reward-4k-9x 2.png'
 import Button from '../component/Button'
 import { TbCalculator, TbSchool, TbEngine, TbBrandGit, TbDatabase} from 'react-icons/tb';
