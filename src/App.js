@@ -6,8 +6,9 @@ function App() {
     return(
         <>
             <Routes>
-                <Route path="https://rockstarsolider.github.io/Educational-Site/" element={<MainPage/>}/>
-                <Route path='https://rockstarsolider.github.io/Educational-Site/about' element={<AboutPage/>}/>
+                <Route path="/" element={<MainPage/>}/>
+                <Route path='/about' element={<AboutPage/>}/>
+                <Route path='*' element={<MainPage/>}/>
             </Routes>
         </>
     )
