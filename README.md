@@ -1,9 +1,10 @@
 #### Page Address: https://rockstarsolider.github.io/Educational-Site/
 
 #### Figma links:
-Danialbarzegar1: https://www.figma.com/file/ZBc6q0QdGFTGJUjMaBeA0p/Untitled?type=design&node-id=0-1&mode=design&t=5CaXfSQdRSslljtM-0
-Alireza: https://www.figma.com/file/zgwkLr44oKcDL2t4VZCdNG/Untitled?type=design&node-id=0%3A1&mode=design&t=AbffRYCEMDIKRlB7-1
-Pouria: https://www.figma.com/file/355m0geDAxryi4ZxJeQeig/Untitled?type=design&node-id=0-1&mode=design&t=gH8TEhiqCbv4mBwN-0
+
+Danialbarzegar1: https://www.figma.com/file/ZBc6q0QdGFTGJUjMaBeA0p/Untitled?type=design&node-id=0-1&mode=design&t=5CaXfSQdRSslljtM-0 <br/>
+Alireza: https://www.figma.com/file/zgwkLr44oKcDL2t4VZCdNG/Untitled?type=design&node-id=0%3A1&mode=design&t=AbffRYCEMDIKRlB7-1 <br/>
+Pouria: https://www.figma.com/file/355m0geDAxryi4ZxJeQeig/Untitled?type=design&node-id=0-1&mode=design&t=gH8TEhiqCbv4mBwN-0 <br/>
 
 ### Commits:
 
