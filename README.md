@@ -1,6 +1,7 @@
 #### Page Address: https://rockstarsolider.github.io/Educational-Site/
 
 ### Commits:
+Danialbarzegar1: About us page design : https://www.figma.com/file/ZBc6q0QdGFTGJUjMaBeA0p/Untitled?type=design&node-id=0-1&mode=design&t=5CaXfSQdRSslljtM-0
 Alireza: About us page design : https://www.figma.com/file/zgwkLr44oKcDL2t4VZCdNG/Untitled?type=design&node-id=0%3A1&mode=design&t=AbffRYCEMDIKRlB7-1
 Pouria: Educational Site initialized | date: 6/15 | hour: 23 <br/>
 Pouria: page was deployed | date: 6/15 | hour: 23 <br/>
