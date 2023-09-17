@@ -1,7 +1,7 @@
 #### Page Address: https://rockstarsolider.github.io/Educational-Site/
 
 #### Figma links:
-
+Danialbarzegar1: https://www.figma.com/file/Ku0BcAYBWzjXJHWxNbXwm4/Untitled?type=design&node-id=0-1&mode=design&t=3TgbZGixbrE9xKrg-0 <br/>
 Danialbarzegar1: https://www.figma.com/file/ZBc6q0QdGFTGJUjMaBeA0p/Untitled?type=design&node-id=0-1&mode=design&t=5CaXfSQdRSslljtM-0 <br/>
 Alireza (About Us): https://www.figma.com/file/zgwkLr44oKcDL2t4VZCdNG/Untitled?type=design&node-id=0%3A1&mode=design&t=AbffRYCEMDIKRlB7-1 <br/>
 Alireza (Courses): https://www.figma.com/file/93hLRhLBJmrbPKlblkdo7p/Courses?type=design&mode=design&t=11WTkJzIBIePeUTy-1 <br/>
