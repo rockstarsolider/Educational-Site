@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/Educational-Site/static/css/main.6e70f584.css",
-    "main.js": "/Educational-Site/static/js/main.0f4db1dd.js",
+    "main.css": "/Educational-Site/static/css/main.173f3a6c.css",
+    "main.js": "/Educational-Site/static/js/main.f50e6ace.js",
     "static/media/the-reward-4k-9x 2.png": "/Educational-Site/static/media/the-reward-4k-9x 2.29ad3697924366103aca.png",
     "static/media/pic5.png": "/Educational-Site/static/media/pic5.a2f35af10a925a35c7d0.png",
     "static/media/Lalezar-Regular.otf": "/Educational-Site/static/media/Lalezar-Regular.0bda14fc42cc290376a2.otf",
     "static/media/learning-education-word-letters 1.png": "/Educational-Site/static/media/learning-education-word-letters 1.e283800e8ba164c1b720.png",
     "static/media/971 1.png": "/Educational-Site/static/media/971 1.d3f35640715c8a3a94a3.png",
+    "static/media/image 2.png": "/Educational-Site/static/media/image 2.a8fd2ba141b636c40451.png",
+    "static/media/image 1.png": "/Educational-Site/static/media/image 1.c92e29e9067ba2542a07.png",
     "index.html": "/Educational-Site/index.html",
-    "main.6e70f584.css.map": "/Educational-Site/static/css/main.6e70f584.css.map",
-    "main.0f4db1dd.js.map": "/Educational-Site/static/js/main.0f4db1dd.js.map"
+    "main.173f3a6c.css.map": "/Educational-Site/static/css/main.173f3a6c.css.map",
+    "main.f50e6ace.js.map": "/Educational-Site/static/js/main.f50e6ace.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e70f584.css",
-    "static/js/main.0f4db1dd.js"
+    "static/css/main.173f3a6c.css",
+    "static/js/main.f50e6ace.js"
   ]
 }
