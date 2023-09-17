@@ -90,9 +90,7 @@ body{
     align-items: center;
 }
 
-.b{
-    border-bottom: solid rgba(0, 0, 0, 0.5);
-}
+.b{border-bottom: solid rgba(0, 0, 0, 0.5);}
 
 .intro p{
     direction: rtl;
