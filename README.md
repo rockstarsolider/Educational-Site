@@ -9,6 +9,7 @@ Pouria: https://www.figma.com/file/355m0geDAxryi4ZxJeQeig/Untitled?type=design&n
 
 ### Commits:
 
+Alireza: Add About Us Page | date: 6/26 | hour: 19 <br/>
 Pouria: Educational Site initialized | date: 6/15 | hour: 23 <br/>
 Pouria: page was deployed | date: 6/15 | hour: 23 <br/>
 Pouria: 3 components added | date: 6/17 | hour: 14 <br/>
