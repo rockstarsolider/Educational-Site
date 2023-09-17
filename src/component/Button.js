@@ -1,5 +1,3 @@
-import component from '../style/component.css'
-
 function Button({primary, secondary, children}){
     if (primary){
         return <button className='primary'>{children}</button>
