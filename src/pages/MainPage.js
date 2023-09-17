@@ -11,7 +11,7 @@ function MainPage(){
     const Intro = () => {
         return (
             <div className='intro'>
-                <img src={pic1}/>
+                <img src={pic1} alt='intro'/>
                 <div>
                     <h2>بهترین روش یادگیری کدنویسی، 
 خلاقیت و تعامل کاملا رایگان</h2>
@@ -28,7 +28,7 @@ function MainPage(){
     const Section = ({head, p, pic, classn}) => {
         return (
             <div className={classn}>
-                <img src={pic}/>
+                <img src={pic} alt='pic'/>
                 <div className='width'>
                     <h2>{head}</h2>
                     <br/>
