@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Header from '../component/Header';
 import Footer from '../component/Footer';
 import pic1 from '../style/971 1.png';
@@ -6,6 +7,16 @@ import pic3 from '../style/pic5.png';
 import pic4 from '../style/the-reward-4k-9x 2.png';
 import Button from '../component/Button';
 import { TbCalculator, TbSchool, TbEngine, TbBrandGit, TbDatabase } from 'react-icons/tb';
+=======
+import Header from '../component/Header'
+import Footer from '../component/Footer'
+import pic1 from '../style/971 1.png'
+import pic2 from '../style/learning-education-word-letters 1.png'
+import pic3 from '../style/pic5.png'
+import pic4 from '../style/the-reward-4k-9x 2.png'
+import Button from '../component/Button'
+import { TbCalculator, TbSchool, TbEngine, TbBrandGit, TbDatabase} from 'react-icons/tb';
+>>>>>>> e41fe98e67b648155c99f32aedf025e21cebef35
 
 function MainPage() {
     const Intro = () => {
@@ -83,4 +94,8 @@ function MainPage() {
     );
 }
 
+<<<<<<< HEAD
 export default MainPage;
+=======
+export default MainPage
+>>>>>>> e41fe98e67b648155c99f32aedf025e21cebef35
