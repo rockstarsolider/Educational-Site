@@ -14,13 +14,9 @@ function Footer() {
                     <Link to='/Educational-Site/principles' className='link'>اصول</Link>
                 </div>
                 <div className='column2'>
-                    <Link to='/about' className='link'>درباره ما</Link><br />
-                    <Link to='/pricing' className='link'>قیمت گذاری</Link><br />
                     <Link to='/Educational-Site/about' className='link'>درباره ما</Link><br/>
                     <Link to='/Educational-Site/pricing' className='link'>قیمت گذاری</Link><br/>
                     <Link to='/Educational-Site/courses' className='link'>دوره ها</Link>
-                    <Link to='/pricing' className='link'>قیمت گذاری</Link><br/>
-                    <Link to='/courses' className='link'>دوره ها</Link>
                 </div>
             </div>
         </div>
