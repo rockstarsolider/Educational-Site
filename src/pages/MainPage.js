@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+import Header from '../component/Header';
+import Footer from '../component/Footer';
+import pic1 from '../style/971 1.png';
+import pic2 from '../style/learning-education-word-letters 1.png';
+import pic3 from '../style/pic5.png';
+import pic4 from '../style/the-reward-4k-9x 2.png';
+import Button from '../component/Button';
+import { TbCalculator, TbSchool, TbEngine, TbBrandGit, TbDatabase } from 'react-icons/tb';
+=======
 import Header from '../component/Header'
 import Footer from '../component/Footer'
 import pic1 from '../style/971 1.png'
@@ -6,66 +16,67 @@ import pic3 from '../style/pic5.png'
 import pic4 from '../style/the-reward-4k-9x 2.png'
 import Button from '../component/Button'
 import { TbCalculator, TbSchool, TbEngine, TbBrandGit, TbDatabase} from 'react-icons/tb';
+>>>>>>> e41fe98e67b648155c99f32aedf025e21cebef35
 
-function MainPage(){
+function MainPage() {
     const Intro = () => {
         return (
             <div className='intro'>
-                <img src={pic1} alt='intro'/>
+                <img src={pic1} alt='intro' />
                 <div>
-                    <h2>بهترین روش یادگیری کدنویسی، 
-خلاقیت و تعامل کاملا رایگان</h2>
+                    <h2>بهترین روش یادگیری کدنویسی،
+                        خلاقیت و تعامل کاملا رایگان</h2>
                     <p>چگونه یک کدنویس حرفه ای شویم؟</p>
                     <p>چگونه خلاقیت خود را افزایش دهیم؟</p>
                     <p>چگونه تعامل با دیگران را یاد بگیریم؟</p>
-                    <br/>
+                    <br />
                     <Button primary>ثبت نام</Button>
                 </div>
             </div>
-        )
-    }
+        );
+    };
 
-    const Section = ({head, p, pic, classn}) => {
+    const Section = ({ head, p, pic, classn }) => {
         return (
             <div className={classn}>
-                <img src={pic} alt='pic'/>
+                <img src={pic} alt='pic' />
                 <div className='width'>
                     <h2>{head}</h2>
-                    <br/>
+                    <br />
                     <p>{p}</p>
                 </div>
             </div>
-        )
-    }
+        );
+    };
 
-    const Card = ()=>{
-        return(
+    const Card = () => {
+        return (
             <div className='cards'>
                 <div className='card'>
-                    <TbCalculator className='icon'/>
+                    <TbCalculator className='icon' />
                     <p>ریاضی</p>
                 </div>
                 <div className='card'>
-                    <TbSchool className='icon'/>
+                    <TbSchool className='icon' />
                     <p>علوم</p>
                 </div>
                 <div className='card'>
-                    <TbEngine className='icon'/>
+                    <TbEngine className='icon' />
                     <p>مهندسی</p>
                 </div>
                 <div className='card'>
-                    <TbBrandGit className='icon'/>
+                    <TbBrandGit className='icon' />
                     <p>برنامه نویسی</p>
                 </div>
                 <div className='card'>
-                    <TbDatabase className='icon'/>
+                    <TbDatabase className='icon' />
                     <p>علوم داده</p>
                 </div>
             </div>
-        )
-    }
+        );
+    };
 
-    return(
+    return (
         <div>
             <Header></Header>
             <Intro></Intro>
@@ -80,7 +91,11 @@ function MainPage(){
 را هم در نظر گرفته ایم' pic={pic4} classn='intro'></Section>
             <Footer></Footer>
         </div>
-    )
+    );
 }
 
+<<<<<<< HEAD
+export default MainPage;
+=======
 export default MainPage
+>>>>>>> e41fe98e67b648155c99f32aedf025e21cebef35

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> e41fe98e67b648155c99f32aedf025e21cebef35
 function Button({primary, secondary, children}){
     if (primary){
         return <button className='primary'>{children}</button>
