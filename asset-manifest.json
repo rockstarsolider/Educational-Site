@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Educational-Site/static/css/main.173f3a6c.css",
-    "main.js": "/Educational-Site/static/js/main.00fb438e.js",
+    "main.css": "/Educational-Site/static/css/main.427034a5.css",
+    "main.js": "/Educational-Site/static/js/main.dd7d4d37.js",
     "static/media/the-reward-4k-9x 2.png": "/Educational-Site/static/media/the-reward-4k-9x 2.29ad3697924366103aca.png",
     "static/media/pic5.png": "/Educational-Site/static/media/pic5.a2f35af10a925a35c7d0.png",
-    "static/media/Lalezar-Regular.otf": "/Educational-Site/static/media/Lalezar-Regular.0bda14fc42cc290376a2.otf",
     "static/media/learning-education-word-letters 1.png": "/Educational-Site/static/media/learning-education-word-letters 1.e283800e8ba164c1b720.png",
     "static/media/971 1.png": "/Educational-Site/static/media/971 1.d3f35640715c8a3a94a3.png",
+    "static/media/Yekan-Bakh-Bold.ttf": "/Educational-Site/static/media/Yekan-Bakh-Bold.905b303dc438d36bfe14.ttf",
     "static/media/image 2.png": "/Educational-Site/static/media/image 2.a8fd2ba141b636c40451.png",
     "static/media/image 1.png": "/Educational-Site/static/media/image 1.c92e29e9067ba2542a07.png",
     "index.html": "/Educational-Site/index.html",
-    "main.173f3a6c.css.map": "/Educational-Site/static/css/main.173f3a6c.css.map",
-    "main.00fb438e.js.map": "/Educational-Site/static/js/main.00fb438e.js.map"
+    "main.427034a5.css.map": "/Educational-Site/static/css/main.427034a5.css.map",
+    "main.dd7d4d37.js.map": "/Educational-Site/static/js/main.dd7d4d37.js.map"
   },
   "entrypoints": [
-    "static/css/main.173f3a6c.css",
-    "static/js/main.00fb438e.js"
+    "static/css/main.427034a5.css",
+    "static/js/main.dd7d4d37.js"
   ]
 }
