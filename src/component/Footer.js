@@ -16,13 +16,8 @@ function Footer() {
                     <TbBrandTwitter />
                 </div>
                 <div className='column2'>
-<<<<<<< HEAD
                     <Link to='/about' className='link'>درباره ما</Link><br />
                     <Link to='/pricing' className='link'>قیمت گذاری</Link><br />
-=======
-                    <Link to='/Educational-Site/about' className='link'>درباره ما</Link><br/>
-                    <Link to='/pricing' className='link'>قیمت گذاری</Link><br/>
->>>>>>> e41fe98e67b648155c99f32aedf025e21cebef35
                     <Link to='/courses' className='link'>دوره ها</Link>
                 </div>
             </div>
