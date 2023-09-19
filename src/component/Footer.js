@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className='row1'>
-                <Link to='/' className='txt-decor color-white'><h2>LearnPlus</h2></Link>
+                <p className='logo'>LearnPlus</p>
                 <p>ما به شما کمک میکنیم تا هرچیزی را یاد بگیرید</p>
             </div>
             <div className='row2'>

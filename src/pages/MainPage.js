@@ -66,7 +66,7 @@ function MainPage() {
     };
 
     return (
-        <div>
+        <div className='main-page'>
             <Header></Header>
             <Intro></Intro>
             <Card></Card>
