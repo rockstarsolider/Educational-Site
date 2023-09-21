@@ -1,11 +1,10 @@
-import Accordion from "../component/Accordion";
+
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import Button from "../component/Button";
 import star1 from "../style/Starcom.png";
 import star2 from "../style/Star5.png";
 import up2 from "../style/up2.png";
-import up4 from "../style/up9.png";
 
 function componentPage() {
   const Tit1 = () => {
