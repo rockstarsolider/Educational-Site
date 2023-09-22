@@ -781,6 +781,8 @@ span {
         font-size: 1rem;
     }
 
+    .footer-txt{display: none;}
+
     .row1 {
         gap: 1rem;
     }
