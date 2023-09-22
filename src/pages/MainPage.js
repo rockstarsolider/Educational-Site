@@ -6,6 +6,7 @@ import pic3 from '../style/pic5.png';
 import pic4 from '../style/the-reward-4k-9x 2.png';
 import Button from '../component/Button';
 import { TbCalculator, TbSchool, TbEngine, TbBrandGit, TbDatabase } from 'react-icons/tb';
+import {Link} from 'react-router-dom';
 
 function MainPage() {
     const Intro = () => {
@@ -43,23 +44,23 @@ function MainPage() {
             <div className='cards'>
                 <div className='card'>
                     <TbCalculator className='icon' />
-                    <p>ریاضی</p>
+                    <Link to='/Educational-Site/math' className='color-black txt-decor'><p>ریاضی</p></Link>
                 </div>
                 <div className='card'>
                     <TbSchool className='icon' />
-                    <p>علوم</p>
+                    <Link to='/Educational-Site/science' className='color-black txt-decor'><p>علوم</p></Link>
                 </div>
                 <div className='card'>
                     <TbEngine className='icon' />
-                    <p>مهندسی</p>
+                    <Link to='/Educational-Site/engineering' className='color-black txt-decor'><p>مهندسی</p></Link>
                 </div>
                 <div className='card'>
                     <TbBrandGit className='icon' />
-                    <p>برنامه نویسی</p>
+                    <Link to='/Educational-Site/programming' className='color-black txt-decor'><p>برنامه نویسی</p></Link>
                 </div>
                 <div className='card'>
                     <TbDatabase className='icon' />
-                    <p>علوم داده</p>
+                    <Link to='/Educational-Site/datascience' className='color-black txt-decor'><p>علوم داده</p></Link>
                 </div>
             </div>
         );
