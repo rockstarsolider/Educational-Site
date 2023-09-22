@@ -404,6 +404,12 @@ h1 {
     font-weight: 700;
 }
 
+.Up-title{
+    padding-top: 6rem;
+}
+
+.label-2{margin-top: 5rem;}
+
 .Topic {
     margin: 0 20em;
 }
@@ -462,6 +468,8 @@ h1 {
 
 .course h3 {
     margin: 0;
+}
+
 .title-1 {
   text-align: center;
   background-color: #F8F8F8;
