@@ -13,7 +13,7 @@ body {
     font-family: 'Yekan';
     border-radius: 7px;
     background-color: #3646D3;
-    padding: 12px 50px;
+    padding: 10px 45px;
     border: none;
     color: white;
 }
@@ -24,7 +24,7 @@ body {
     border: none;
     border-radius: 7px;
     background-color: #474747;
-    padding: 12px 50px;
+    padding: 10px 45px;
 }
 
 .header {
@@ -189,6 +189,81 @@ body {
     color: #2A61B4;
 }
 
+.header2{
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    padding: .5rem 10%;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.icon2{font-size: 2rem;}
+
+.icon-container{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.icon-container p{margin-top: 1.5rem;}
+
+.search-bar{
+    width: 20%;
+    background-color: #F5F5F5;
+    padding: 0 .3rem;
+    border-radius: .3rem;
+}
+
+.icon3{margin-top: .2rem;}
+
+.welcome{margin: 3rem 10%;}
+
+.first-part{
+    margin: 1rem 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.premium-con{
+    background-color: #FBEDD2;
+    width: 25%;
+    padding: 2rem 2rem;
+    border-radius: .5rem;
+}
+
+.user-props{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.prog-bar{
+    border: .8rem solid #D9D9D9;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+}
+
+.prog-bar h2{margin-right: 2rem;}
+
+.to-con{
+    display: flex;
+    margin: 4rem 10%;
+    justify-content: space-between;
+}
+
+.container1-hp{width: 45%;}
+
+.border-area1{padding: 3rem 10%;}
+.border-area2{padding: 1.8rem 10%;}
+
+.border-area{
+    text-align: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+}
+
 @media (max-width: 820px) {
     .header{width: 100%;}
 
@@ -232,7 +307,13 @@ body {
 
     .card{height: 7rem;}
 
-    .card p{
-        font-size: smaller;
-    }
+    .card p{font-size: smaller;}
+
+    .intro{flex-direction: column;}
+
+    .index img {order: -1;}
+
+    .width {width: 92%;}
+
+    .intro img{width: 90%;}
 }

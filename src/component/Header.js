@@ -6,7 +6,7 @@ function Header(){
         <div className="header">
             <Link to='/' className="txt-decor color-black"><h2>LearnPlus</h2></Link>
             <div className="button-container">
-                <Button secondary>ورود</Button>
+                <Link to='/Educational-Site/userpage'><Button secondary>ورود</Button></Link>
                 <Button primary>ثبت نام</Button>
             </div>
         </div>
