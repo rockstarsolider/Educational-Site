@@ -18,4 +18,5 @@ Alireza: Add About Us Page | date: 6/26 | hour: 19 <br/>
 Alireza: Changing the font of the site and making the page about us responsive for tablets | date: 6/27 | hour: 3 <br/>
 Pouria: Making the main page responsive | date: 6/28 | hour: 11 <br/>
 Alireza: Fix the buttons shadows bug | date: 6/28 | hour: 13 <br/>
-
+Alireza: responsive page about us and Courses for mobile and tablet| date: 6/31 | hour: 16 <br/>
+Pouria: User page added and many bugs fixed | date: 6/31 | hour: 17 <br/>

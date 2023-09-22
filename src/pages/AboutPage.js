@@ -45,15 +45,12 @@ function AboutPage() {
                         <img src={pro2} alt='profile' />
                         <h2>علی اسماعیل زاده</h2>
                         <h3>سرپرست تیم</h3>
-
                     </div>
                     <div className='TeamCard'>
                         <img src={pro1} alt='profile' />
                         <h2>فرهاد رضاقلی</h2>
                         <h3>سرپرست تیم</h3>
                     </div>
-                </div>
-                <div className='TeamCards'>
                     <div className='TeamCard'>
                         <img src={pro8} alt='profile' />
                         <h2>پارسا فرجامی</h2>
@@ -74,9 +71,7 @@ function AboutPage() {
                         <h2>مبین حسینی</h2>
                         <h3>از اعضای گروه فرانت</h3>
                     </div>
-                </div>
-                <div className='TeamCards'>
-                    <div className='TeamCard'>
+                    <div className='TeamCard' id='LastTeam'>
                         <img src={pro9} alt='profile' />
                         <h2>عرفان خواجه زاده</h2>
                         <h3>از اعضای گروه بک اند</h3>
