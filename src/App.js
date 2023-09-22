@@ -1,23 +1,25 @@
-import {Route, Routes} from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom';
 import MainPage from "./pages/MainPage";
 import AboutPage from './pages/AboutPage';
-import PricingPage from './pages/PricingPage'
-import CommentsPage from './pages/CommentsPage'
-import UserPage from './pages/UserPage'
+import PricingPage from './pages/PricingPage';
+import CommentsPage from './pages/CommentsPage';
+import UserPage from './pages/UserPage';
+import CoursesPage from './pages/CoursesPage';
 
 function App() {
-    return(
+    return (
         <>
             <Routes>
-                <Route path='*' element={<MainPage/>}/>
-                <Route path="/" element={<MainPage/>}/>
-                <Route path='/Educational-Site/about' element={<AboutPage/>}/>
-                <Route path='/Educational-Site/pricing' element={<PricingPage/>}/>
-                <Route path='/Educational-Site/comments' element={<CommentsPage/>}/>
-                <Route path='/Educational-Site/userpage' element={<UserPage/>}/>
+                <Route path='*' element={<MainPage />} />
+                <Route path="/" element={<MainPage />} />
+                <Route path='/Educational-Site/about' element={<AboutPage />} />
+                <Route path='/Educational-Site/courses-page' element={<CoursesPage />} />
+                <Route path='/Educational-Site/pricing' element={<PricingPage />} />
+                <Route path='/Educational-Site/comments' element={<CommentsPage />} />
+                <Route path='/Educational-Site/userpage' element={<UserPage />} />
             </Routes>
         </>
-    )
+    );
 }
 
 export default App;

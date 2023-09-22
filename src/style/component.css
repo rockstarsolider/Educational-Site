@@ -1,6 +1,37 @@
 @font-face {
     font-family: 'Yekan';
+    font-weight: 100;
+    src: url(Yekan-Bakh-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Yekan';
+    font-weight: 300;
+    src: url(Yekan-Bakh-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Yekan';
+    font-weight: 400;
+    src: url(Yekan-Bakh-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Yekan';
+    font-weight: 500;
     src: url(Yekan-Bakh-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Yekan';
+    font-weight: 700;
+    src: url(Yekan-Bakh-Heavy.ttf);
+}
+
+@font-face {
+    font-family: 'Yekan';
+    font-weight: 900;
+    src: url(Yekan-Bakh-Fat.ttf);
 }
 
 body {
@@ -10,6 +41,7 @@ body {
 }
 
 .primary {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Yekan';
     border-radius: 7px;
     background-color: #3646D3;
@@ -19,12 +51,60 @@ body {
 }
 
 .secondary {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Yekan';
     color: white;
     border: none;
     border-radius: 7px;
     background-color: #474747;
     padding: 10px 45px;
+}
+
+.solid {
+    margin: 5px 10px;
+    padding: 1px 20px;
+    font-family: yekan;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(128, 128, 128);
+    background-color: white;
+    border: solid 3px rgb(128, 128, 128);
+    border-radius: 40px;
+}
+
+.solid:focus {
+    color: rgb(0, 0, 0);
+    border: solid 3px rgb(0, 0, 0);
+}
+
+.solid:hover {
+    cursor: pointer;
+}
+
+.primary:hover {
+    cursor: pointer;
+}
+
+.secondary:hover {
+    cursor: pointer;
+}
+
+.Logo-title {
+    align-items: center;
+    display: flex;
+}
+
+.Logo-title img {
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+}
+
+.Logo-title h2 {
+    padding-top: 10px;
 }
 
 .header {
@@ -34,14 +114,20 @@ body {
     box-shadow: 0 4px;
     width: 80%;
     position: fixed;
-    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 0 10% ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0 10%;
+    z-index: 1;
 }
 
-.txt-decor{text-decoration: none;}
-.color-black{color: black;}
+.txt-decor {
+    text-decoration: none;
+}
 
-.button-container{
+.color-black {
+    color: black;
+}
+
+.button-container {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -86,7 +172,7 @@ body {
     flex-direction: column;
 }
 
-.intro{
+.intro {
     margin: 0 10%;
     display: flex;
     justify-content: space-between;
@@ -94,7 +180,9 @@ body {
     align-items: center;
 }
 
-.b{border-bottom: solid rgba(0, 0, 0, 0.5);}
+.b {
+    border-bottom: solid rgba(0, 0, 0, 0.5);
+}
 
 .intro p {
     direction: rtl;
@@ -140,7 +228,7 @@ body {
     top: 1rem;
 }
 
-.main-page img{
+.main-page img {
     width: 40%;
 }
 
@@ -156,17 +244,21 @@ body {
     display: flex;
 }
 
-.TeamCard {margin: 0 3rem;}
+.TeamCard {
+    margin: 0 3rem;
+}
 
-.TeamCard h2{margin-bottom: 5px;}
+.TeamCard h2 {
+    margin-bottom: 5px;
+}
 
 .TeamCard h3 {
     margin-top: 0;
-    font-weight: 100;
+    font-weight: 500;
     color: rgb(44, 44, 44);
 }
 
-.press{
+.press {
     margin: 7em 10%;
 }
 
@@ -264,8 +356,369 @@ body {
     border-radius: 10px;
 }
 
+.search-bar {
+    margin: 2em 0.5em;
+}
+
+.search-bar form {
+    border-radius: 40px;
+    border: solid 2px;
+    direction: rtl;
+    align-items: center;
+    display: flex;
+}
+
+.search-icon {
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+
+input {
+    background-color: #3646d300;
+    margin: 5px 0;
+    padding: 5px 0;
+    padding-right: 10px;
+    width: 90%;
+    direction: rtl;
+    border: none;
+    font-size: 20px;
+    font-family: Yekan;
+    font-weight: 500;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.search-section {
+    padding: 10em 20%;
+}
+
+.Topics-btn {
+    direction: rtl;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.Topic {
+    margin: 0 20em;
+}
+
+.courses {
+    direction: rtl;
+    display: flex;
+}
+
+.course img {
+    width: 128px;
+    height: 123px;
+    margin: 20px;
+    padding: 40px 40px;
+    border: solid rgb(146, 146, 146);
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.course {
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.course img:hover {
+    cursor: pointer;
+    border: solid rgba(0, 0, 0, 0.678);
+}
+
+.Topic{
+    scroll-margin-top: 16em;
+}
+
+.Topic h1{
+    margin-bottom: 50px;
+    font-weight: 900;
+}
+
+.Topic h2{
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+.course h2 {
+    font-size: 22px;
+    padding: 4px 15px;
+    border-radius: 40px;
+    color: white;
+    background-color: #179E7E;
+    margin: 0;
+    margin-right: 40px;
+    position: absolute;
+}
+
+.course h3 {
+    margin: 0;
+.title-1 {
+  text-align: center;
+  background-color: #F8F8F8;
+}
+.p-1 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.Allcard {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+
+}
+
+.box {
+  height: 254px;
+  width: 254px;
+}
+
+.box .rectangle {
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 0px 35px 10px #00000040;
+  height: 254px;
+  width: 254px;
+}
+
+.All-mony {
+  display: flex;
+}
+
+.text-wrapper {
+  text-align: center;
+  align-items: center;
+}
+
+.box-up {
+  height: 64px;
+  width: 254px;
+}
+
+.box-up .text-wrapper-up {
+  background-color: #ededed;
+  border-radius: 25px 25px 0px 0px;
+  height: 64px;
+  width: 254px;
+}
+.text-wrapper-up {
+  color: #000000;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  font-size: 36px;
+}
+
+.box-up-blue .text-wrapper-up-blue {
+  background-color: #165aaa;
+  border-radius: 25px 25px 0px 0px;
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  height: 64px;
+  width: 254px;
+}
+
+.mony {
+  color: #1e1e1e;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 50px 0px 0px 0px;
+}
+span {
+  font-size: 20px;
+}
+.btn-1 {
+  background-color: #165aaa;
+  color: white;
+  font-family: Yekan;
+  height: 54px;
+  width: 191px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px 0px 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 32px;
+}
+
+.title-2 {
+  color: #000;
+  font-size: 40px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.All-box-img {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.box-img {
+  height: 349px;
+  width: 261px;
+}
+
+.box-img .rectangle-img {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0px 0px 35px -2px #00000040;
+  height: 349px;
+  width: 261px;
+}
+
+.img-1 {
+  height: 191px;
+  width: 258px;
+}
+
+.img-2 {
+  height: 206px;
+  width: 206px;
+  display: block;
+  margin: auto;
+}
+
+.img-3 {
+  height: 272px;
+  width: 272px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* ارتفاع مورد نظر شما */
+}
+
+.studant {
+  margin: 0px 15px 0px 0px;
+}
+
+.p-img {
+  color: #666666;
+  margin: 0px 15px 20px 0px;
+  font-size: 15px;
+}
+
+.Free {
+  text-align: center;
+  font-size: 40px;
+}
+
+.box-Free-vip {
+  height: 561px;
+  width: 408px;
+}
+
+.Free-vip-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.box-Free-vip .rectangle-Free-vip {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #00000080;
+  height: 561px;
+  width: 408px;
+}
+
+.Free-tit {
+  font-size: 24px;
+  margin: -100px 20px 0px 0px;
+}
+
+.Free-p {
+  font-size: 15px;
+  color: #666666;
+  margin: -5px 20px 0px 0px;
+}
+
+.img-free {
+  height: 141px;
+  width: 141px;
+  display: flex;
+}
+
+.no {
+  height: 56px;
+  width: 40px;
+  display: flex;
+  margin: 30px 30px 0px 10px;
+}
+
+.All-courses {
+  margin: -40px 15px 0px 0px;
+  font-size: 17px;
+}
+
+.Drop-title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.box-8 {
+  height: 561px;
+  width: 408px;
+ padding: 0px 0px 0px 430px;
+}
+
+.box-8 .rectangle-8 {
+  background-color: #f5f5f5;
+  border: 1px solid;
+  border-color: #ffffff80;
+  height: 561px;
+  width: 500px;
+  align-items: center;
+}
+
+.Math-1 {
+    font-size: 36px;
+    margin: 20px 25px 0px 0px;
+}
+
+.Line-1 {
+    color: #18191B;
+     size: 2; 
+     width: 90%;
+     align-items: center;
+}
+
+.Logic {
+    margin: 5px 30px 0px 0px;
+}
+
+.Logic-p {
+    margin: -30px 55px 15px 0px;
+}
+
+.Geometry {
+    display: flex;
+    margin: -465px 0px 0px 200px;
+}
+
+.Geometry-p {
+    display: flex;
+    margin: -18px 0px 0px 160px;
+}
+
+
 @media (max-width: 820px) {
-    .header{width: 100%;}
+    .header {
+        width: 100%;
+    }
 
     .intro {
         gap: 20px;
@@ -273,39 +726,63 @@ body {
         margin: 0 2em;
     }
 
-    .OurTeam {margin: 0 2em;}
+    .OurTeam {
+        margin: 0 2em;
+    }
 
-    .press {margin: 0;}
-    
-    .press p{padding: 4em 3em;}
+    .press {
+        margin: 0;
+    }
+
+    .press p {
+        padding: 4em 3em;
+    }
 
     .footer {
         width: 100%;
         height: 15rem;
     }
 
-    .row1 p {font-size: 1rem;}
+    .row1 p {
+        font-size: 1rem;
+    }
 
-    .row1 {gap: 1rem;}
+    .row1 {
+        gap: 1rem;
+    }
 
     .row2 {
         gap: 3em;
         margin-left: 10%;
     }
 
-    .logo{font-size: 0.1rem;}
+    .logo {
+        font-size: 0.1rem;
+    }
 
-    .primary {padding: 6px 25px;}
+    .primary {
+        padding: 6px 25px;
+    }
 
-    .secondary{padding: 6px 25px;}
+    .secondary {
+        padding: 6px 25px;
+    }
 
-    .header{width: 80%;}
+    .header {
+        width: 80%;
+    }
 
-    .cards{gap: 0.8rem;}
+    .cards {
+        gap: 0.8rem;
+    }
 
-    .icon{width: 2.5rem;}
+    .icon {
+        width: 2.5rem;
+    }
 
-    .card{height: 7rem;}
+    .card {
+        height: 7rem;
+    }
 
     .card p{font-size: smaller;}
 
