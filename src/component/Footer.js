@@ -6,7 +6,7 @@ function Footer() {
         <div className="footer">
             <div className='row1'>
                 <p className='logo'>LearnPlus</p>
-                <p>ما به شما کمک میکنیم تا هرچیزی را یاد بگیرید</p>
+                <p className='footer-txt'>ما به شما کمک میکنیم تا هرچیزی را یاد بگیرید</p>
             </div>
             <div className='row2'>
                 <div className='column1'>

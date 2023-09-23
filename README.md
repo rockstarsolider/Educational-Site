@@ -6,7 +6,7 @@ Danialbarzegar1: https://www.figma.com/file/ZBc6q0QdGFTGJUjMaBeA0p/Untitled?type
 Alireza (About Us): https://www.figma.com/file/zgwkLr44oKcDL2t4VZCdNG/Untitled?type=design&node-id=0%3A1&mode=design&t=AbffRYCEMDIKRlB7-1 <br/>
 Alireza (Courses): https://www.figma.com/file/93hLRhLBJmrbPKlblkdo7p/Courses?type=design&mode=design&t=11WTkJzIBIePeUTy-1 <br/>
 Pouria: https://www.figma.com/file/355m0geDAxryi4ZxJeQeig/Untitled?type=design&node-id=0-1&mode=design&t=gH8TEhiqCbv4mBwN-0 <br/>
-mobin:https://www.figma.com/file/uZWCqJ23G1ipo5lfTI4dQw/Untitled?type=design&node-id=0%3A1&mode=design&t=OjjCMscojNKrcCAC-1
+mobin:https://www.figma.com/file/uZWCqJ23G1ipo5lfTI4dQw/Untitled?type=design&node-id=0%3A1&mode=design&t=OjjCMscojNKrcCAC-1 <br/>
 
 ### Commits:
 
@@ -20,3 +20,5 @@ Pouria: Making the main page responsive | date: 6/28 | hour: 11 <br/>
 Alireza: Fix the buttons shadows bug | date: 6/28 | hour: 13 <br/>
 Alireza: responsive page about us and Courses for mobile and tablet| date: 6/31 | hour: 16 <br/>
 Pouria: User page added and many bugs fixed | date: 6/31 | hour: 17 <br/>
+Pouria: responsive user page | date: 6/31 | hour: 19 <br/>
+Pouria: Course intro page added | date: 6/31 | hour: 23 <br/>
