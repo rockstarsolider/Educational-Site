@@ -605,7 +605,7 @@ span {
 
 .All-1:hover {
   cursor: pointer;
-  background-color: rgb(236, 236, 236);
+  border-color: #165AAA;
 }
 
 .All-2 {
@@ -625,7 +625,7 @@ span {
 
 .All-2:hover {
   cursor: pointer;
-  background-color: rgb(236, 236, 236);
+  border-color: #165AAA;
 }
 
 .All-3 {
@@ -645,7 +645,7 @@ span {
 
 .All-3:hover {
   cursor: pointer;
-  background-color: rgb(236, 236, 236);
+  border-color: #165AAA;
 }
 
 .All-4 {
@@ -666,7 +666,7 @@ span {
 
 .All-4:hover {
   cursor: pointer;
-  background-color: rgb(236, 236, 236);
+  border-color: #165AAA;
 }
 
 .All-5 {
@@ -687,7 +687,8 @@ span {
 
 .All-5:hover {
   cursor: pointer;
-  background-color: rgb(236, 236, 236);
+  border-color: #165AAA;
+  
 }
 
 .img-up {
