@@ -341,7 +341,7 @@ body {
   color: #000000;
   text-align: center;
   margin: 0px 0px 0px 0px;
-  font-size: 36px;
+  font-size: 15px;
 }
 
 .box-up-blue .text-wrapper-up-blue {
@@ -369,15 +369,15 @@ span {
   background-color: #165aaa;
   color: white;
   font-family: Yekan;
-  height: 54px;
-  width: 191px;
+  height: 50px;
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 15px 0px 0px 30px;
   border-radius: 10px;
   border: none;
-  font-size: 32px;
+  font-size: 20px;
 }
 
 .title-2 {
@@ -542,16 +542,27 @@ span {
   font-size: 20px;
 }
 
+.Photo-12 {
+    width: 180px;
+    height: 150px;
+    margin: 0px 980px -45px 0px;
+}
+
+.Photo-13 {
+    width: 180px;
+    height: 120px;
+    margin: -200px 150px -19px 0px;
+}
+
 .Line-com1 {
-  color: #000000;
-  size: 7;
+  border-top: 3px solid #000000; 
   width: 90%;
-  align-items: center;
 }
 
 .tit-star-1 {
   display: flex;
   font-size: 60px;
+  font-weight: 500;
   margin: 20px 0px 0px 75px;
 }
 
@@ -597,8 +608,8 @@ span {
   border-color: #000000;
   border-radius: 10px;
   margin: -55px 0px 0px 770px;
-  padding: 5px 40px 0px 0px;
-  font-size: 30px;
+  padding: 7px 40px 0px 0px;
+  font-size: 28px;
   font-family: Yekan;
   text-align: center;
 }
@@ -606,6 +617,7 @@ span {
 .All-1:hover {
   cursor: pointer;
   border-color: #165AAA;
+  color: #535353;
 }
 
 .All-2 {
@@ -618,14 +630,15 @@ span {
   border-color: #000000;
   border-radius: 10px;
   margin: -55px 0px 0px 930px;
-  font-size: 30px;
+  font-size: 28px;
   font-family: Yekan;
-  padding: 5px 60px 0px 0px;
+  padding: 7px 65px 0px 0px;
 }
 
 .All-2:hover {
   cursor: pointer;
   border-color: #165AAA;
+  color: #535353;
 }
 
 .All-3 {
@@ -638,14 +651,15 @@ span {
   border-color: #000000;
   border-radius: 10px;
   margin: 20px 0px 0px 770px;
-  font-size: 30px;
+  font-size: 28px;
   font-family: Yekan;
-  padding: 5px 60px 0px 0px;
+  padding: 5px 65px 0px 0px;
 }
 
 .All-3:hover {
   cursor: pointer;
   border-color: #165AAA;
+  color: #535353;
 }
 
 .All-4 {
@@ -659,7 +673,7 @@ span {
   border-radius: 10px;
   margin: -55px 0px 0px 1050px;
   padding: 5px 30px 0px 0px;
-  font-size: 30px;
+  font-size: 28px;
   font-family: Yekan;
   text-align: center;
 }
@@ -667,6 +681,7 @@ span {
 .All-4:hover {
   cursor: pointer;
   border-color: #165AAA;
+  color: #535353;
 }
 
 .All-5 {
@@ -679,8 +694,8 @@ span {
   border-color: #000000;
   border-radius: 10px;
   margin: 20px 0px 0px 770px;
-  padding: 5px 60px 0px 0px;
-  font-size: 30px;
+  padding: 5px 70px 0px 0px;
+  font-size: 28px;
   font-family: Yekan;
   text-align: center;
 }
@@ -688,12 +703,13 @@ span {
 .All-5:hover {
   cursor: pointer;
   border-color: #165AAA;
+  color: #535353;
   
 }
 
 .img-up {
   display: flex;
-  margin: -1050px 0px 0px 0px;
+  margin: -1000px 0px -10px 200px;
 }
 
 .Line-img {
@@ -735,7 +751,7 @@ span {
 
 .Line-down {
   display: flex;
-  border-top: 2px solid #535353;
+  border-top: 2px solid #000000;
   width: 90%;
 }
 
@@ -780,7 +796,6 @@ span {
 .icon-container p{margin-top: 1.5rem;}
 
 .search-bar{
-
     padding: 0 .3rem;
     border-radius: .3rem;
 }
@@ -1490,5 +1505,67 @@ span {
 
     .link {
         font-size: 20px;
+    }
+
+    .Allcard {
+        height: 100px;
+        width: 100px;
+        margin: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .All-box-img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        margin: 55px 0px 0px -5px;
+    }
+
+    .label-2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .title-2 {
+        margin: 800px 0px 0px 40px;
+        align-items: center;
+    }
+
+    .box-img {
+        margin: 50px 0px 0px 40px;
+        align-items: center;
+    }
+    .Free {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .Free-vip-card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box-Free-vip {
+        display: flex;
+        flex-wrap: wrap;
+        height: 561px;
+        width: 390px;
+        margin: 50px 0px 0px -32px ;
+        padding: 20;
+    }
+
+    .box-8 {
+        height: 561px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 5px 0px -427px;
     }
 }
