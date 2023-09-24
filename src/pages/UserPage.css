@@ -1,0 +1,57 @@
+.welcome {
+    margin: 3rem 10%;
+}
+
+.first-part {
+    margin: 1rem 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.premium-con {
+    background-color: #FBEDD2;
+    width: 25%;
+    padding: 2rem 2rem;
+    border-radius: .5rem;
+}
+
+.user-props {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.prog-bar {
+    border: .8rem solid #D9D9D9;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+}
+
+.prog-bar h2 {
+    margin-right: 2rem;
+}
+
+.to-con {
+    display: flex;
+    margin: 4rem 10%;
+    justify-content: space-between;
+}
+
+.container1-hp {
+    width: 45%;
+}
+
+.border-area1 {
+    padding: 3rem 10%;
+}
+
+.border-area2 {
+    padding: 1.8rem 10%;
+}
+
+.border-area {
+    text-align: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+}

@@ -1,0 +1,32 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+
+.card {
+    background-color: #D9D9D9;
+    width: 12em;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    font-size: 5rem;
+}
+
+.link {
+    text-decoration: none;
+    color: #DADADA;
+    position: relative;
+    top: 1rem;
+}
+
+.main-page img {
+    width: 40%;
+}

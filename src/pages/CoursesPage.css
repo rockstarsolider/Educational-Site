@@ -1,0 +1,103 @@
+.search-bar {
+    margin: 2em 0.5em;
+}
+
+.search-bar form {
+    border-radius: 40px;
+    border: solid 2px;
+    direction: rtl;
+    align-items: center;
+    display: flex;
+}
+
+.search-icon {
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+input {
+    background-color: #3646d300;
+    margin: 5px 0;
+    padding: 5px 0;
+    padding-right: 10px;
+    width: 90%;
+    direction: rtl;
+    border: none;
+    font-size: 20px;
+    font-family: Yekan;
+    font-weight: 500;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.search-section {
+    padding: 10em 20%;
+}
+
+.Topics-btn {
+    direction: rtl;
+}
+
+.Topic {
+    margin: 0 20em;
+}
+
+.courses {
+    direction: rtl;
+    display: flex;
+}
+
+.course img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 2rem;
+    border: solid rgb(146, 146, 146);
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.course {
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.course img:hover {
+    cursor: pointer;
+    border: solid rgba(0, 0, 0, 0.678);
+}
+
+.Topic {
+    scroll-margin-top: 20em;
+    scroll-behavior: smooth;
+    margin-right: 20%;
+}
+
+.Topic h1 {
+    margin-bottom: 50px;
+    font-weight: 900;
+}
+
+.Topic h2 {
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+.course h2 {
+    font-size: 22px;
+    padding: 4px 15px;
+    border-radius: 40px;
+    color: white;
+    background-color: #179E7E;
+    margin: 0;
+    margin-right: 40px;
+    position: absolute;
+}
+
+.course h3 {
+    margin: 0;
+}

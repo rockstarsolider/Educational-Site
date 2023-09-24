@@ -1,11 +1,12 @@
-import Header2 from "../component/Header2"
-import Button from "../component/Button"
-import Image1 from "../style/image 11 (1).png"
-import Image2 from "../style/image 11 (2).png"
+import "./UserPage.css";
+import Header2 from "../component/Header2";
+import Button from "../component/Button";
+import Image1 from "../style/image 11 (1).png";
+import Image2 from "../style/image 11 (2).png";
 
-function UserPage(){
-    const UserProp = ()=>{
-        return(
+function UserPage() {
+    const UserProp = () => {
+        return (
             <div>
                 <h3 className="welcome">خوش آمدید</h3>
                 <div className="first-part">
@@ -23,8 +24,8 @@ function UserPage(){
                     </div>
                 </div>
             </div>
-        )
-    }
+        );
+    };
 
     const ToContinue = () => {
         return (
@@ -47,16 +48,16 @@ function UserPage(){
                     </div>
                 </div>
             </div>
-        )
-    }
-    
-    return(
+        );
+    };
+
+    return (
         <div className="user-page">
-            <Header2/>
-            <UserProp/>
-            <ToContinue/>
+            <Header2 />
+            <UserProp />
+            <ToContinue />
         </div>
-    )
+    );
 }
 
-export default UserPage
+export default UserPage;

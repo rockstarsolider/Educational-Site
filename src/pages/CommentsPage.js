@@ -1,3 +1,4 @@
+import './CommentsPage.css';
 import Button from "../component/Button";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
@@ -120,7 +121,7 @@ function componentPage() {
       <div className="End">
         <Button primary>شروع کنید</Button>
         <p className="End-p">
-        LearnPlus پیوستن به بیش از 10 میلیون نفر یادگیری در 
+          LearnPlus پیوستن به بیش از 10 میلیون نفر یادگیری در
         </p>
       </div>
     );
