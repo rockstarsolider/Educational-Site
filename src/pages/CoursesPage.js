@@ -32,12 +32,12 @@ function CoursesPage() {
                     <div className="courses">
                         <div className="course">
                             <h2>جدید</h2>
-                            <img src={ThinkingInCodeImage} alt='Course pic' />
+                            <img src={ThinkingInCodeImage} alt='Course pic' className='Course-pic' />
                             <h3>تفکر در کد</h3>
                         </div>
                         <div className="course">
                             <h2>جدید</h2>
-                            <img src={ExploringDataVisuallyImage} alt='Course pic' />
+                            <img src={ExploringDataVisuallyImage} alt='Course pic' className='Course-pic'/>
                             <h3>کاوش بصری داده ها</h3>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ function CoursesPage() {
                     <h2>جبر</h2>
                     <div className="courses">
                         <div className="course">
-                            <img src={SolvingEquationsImage} alt='Course pic' />
+                            <img src={SolvingEquationsImage} alt='Course pic' className='Course-pic'/>
                             <h3>حل معادلات</h3>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ function CoursesPage() {
                     <div className="courses">
                         <div className="course">
                             <h2>جدید</h2>
-                            <img src={ExploringDataVisuallyImage} alt='Course pic' />
+                            <img src={ExploringDataVisuallyImage} alt='Course pic' className='Course-pic'/>
                             <h3>کاوش بصری داده ها</h3>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ function CoursesPage() {
                     <div className="courses">
                         <div className="course">
                             <h2>جدید</h2>
-                            <img src={ThinkingInCodeImage} alt='Course pic' />
+                            <img src={ThinkingInCodeImage} alt='Course pic' className='Course-pic'/>
                             <h3>تفکر در کد</h3>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ function CoursesPage() {
                     <h2>تفکر علمی</h2>
                     <div className="courses">
                     <div className="course">
-                            <img src={ScientificThinkingImage} alt='Course pic' />
+                            <img src={ScientificThinkingImage} alt='Course pic' className='Course-pic'/>
                             <h3>تفکر علمی</h3>
                         </div>
                     </div>
