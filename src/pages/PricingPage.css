@@ -166,7 +166,7 @@ span {
 .Free-vip-card {
     display: flex;
     justify-content: space-between;
-    margin: 0 20%;
+    margin: 0px 200px 0px 200px;
 }
 
 .box-Free-vip .rectangle-Free-vip {
@@ -215,7 +215,7 @@ span {
 .box-8 {
     height: 561px;
     width: 408px;
-    padding: 0px 0px 0px 430px;
+    padding: 0px 0px 0px 185px;
 }
 
 .box-8 .rectangle-8 {
@@ -281,16 +281,16 @@ span {
 
 .tit-star-1 {
     display: flex;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
-    margin: 20px 0px 0px 75px;
+    margin: 0px 0px 0px 75px;
 }
 
 .p-star-1 {
     height: 132px;
     width: 300px;
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
     color: #535353;
     margin: 0px 0px 0px 80px;
 }
@@ -448,7 +448,7 @@ span {
 .Chat {
     display: flex;
     font-size: 28px;
-    margin: 5px 73px 0px 0px;
+    margin: 5px 90px 0px 0px;
     direction: rtl;
 }
 
@@ -464,8 +464,8 @@ span {
 
 .Star3 {
     display: flex;
-    height: 30px;
-    width: 100px;
+    height: 25px;
+    width: 95px;
     margin: 30px 0px 0px 1180px;
 }
 
@@ -473,22 +473,9 @@ span {
     display: flex;
     border-top: 2px solid #000000;
     width: 90%;
-    margin: 5rem 0;
+    margin: -13px 0px 0px 0px;
     margin-left: 5%;
 }
-
-.Button-End {
-    height: 79px;
-    width: 230px;
-    background-color: #165AAA;
-    color: white;
-    font-family: Yekan;
-    font-size: 40px;
-    margin: 50px 100px 0px 0px;
-    border: none;
-    border-radius: 20px;
-}
-
 
 .Up-title {
     padding-top: 6rem;
