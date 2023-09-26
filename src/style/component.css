@@ -184,6 +184,188 @@ body {
     border-bottom: solid rgba(0, 0, 0, 0.5);
 }
 
+.facebook{
+
+    margin-top: 200px;
+    margin-right: 700px;
+    color: #18191B;
+    font-family: Yekan;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    border: none;
+    padding: 15px;
+    width: 500px;
+    height: 100px;
+}
+.google{
+    margin-top: 20px;
+    margin-right: 700px;
+    color: #18191B;
+    font-family: Yekan;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    border: none;
+    width: 500px;
+    height: 100px;
+    padding: 15px;
+}
+.email{
+    margin-top: 20px;
+    margin-right: 700px;
+    width: 500px;
+    height: 100px;
+    color: #18191B;
+    font-family: Yekan;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    border: none;
+}
+.next{
+    margin-right: 850px;
+    width: 206px;
+    height: 55px;
+    margin-top: 70px;
+    font-family: Yekan;
+    font-size: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color:#3646D3;
+    color: #000000;
+    border: none;
+    padding: 12px 50px;
+}
+.Singup{
+    margin-right: 860px;
+    font-family: Yekan;
+    font-size: 1.5rem;
+    color: #18191B;
+    margin-top: 20px;
+}
+
+.login-page{
+    margin-left: 10%;
+    align-items: center;
+}
+
+.login{
+    margin-top: 150px;
+    font-family: Yekan;
+    font-size: 80px;
+    margin-right: 850px;
+    color: #18191B;
+    
+}
+.input{
+    font-family: Yekan;
+    font-size: 40px;
+    margin-top: 200px;
+    margin-right: 800px;
+    height: 90px;
+    width: 390px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    
+}
+.input1{
+    font-family: Yekan;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-right: 800px;
+    height: 90px;
+    width: 390px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.conect{
+    margin-right: 920px;
+    margin-top: 20px;
+    font-family: Yekan;
+    font-size: 30px;
+    position: relative;
+}
+.Google{
+    margin-top: 5px;
+    margin-right: 890px;
+    position: relative;
+}
+
+.next2{
+    margin-right: 900px;
+    width: 236px;
+    height: 55px;
+    margin-top: 100px;
+    font-family: Yekan;
+    font-size: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color:#3646D3;
+    border: none;
+    padding: 12px 50px;
+    color: #18191B;
+
+}
+.m{
+    height: auto;
+    margin-top: 20px;
+    margin-right: 700px;
+    color: #18191B;
+    font-family: Yekan;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    border: none;
+}
+
+
+.Question{
+    margin-top: 200px;
+    margin-right: 600px;
+    font-family: Yekan;
+    font-size: 50px;
+
+}
+.Facebook{
+    margin-top: 40px;
+    margin-right: 700px;
+    color: #18191B;
+    font-family: Yekan;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    border: none;
+    padding: 15px;
+    width: 500px;
+    height: 100px;
+}
+
+.m1{
+    margin-top: 40px;
+    margin-right: 600px;
+    color: #18191B;
+    font-family: Yekan;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    border: none;
+    padding: 15px;
+    width: 700px;
+    height: 100px;
+    background-color: #FFFBFB;
+
+}
+.next1{
+    margin-left: 920px;
+    font-family: Yekan;
+    margin-top: 30px;
+    height: 55px;
+    width: 200px;
+    font-size: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color:#3646D3;
+    border: none;
+    color: #000000;
+
+}
+.about{
+    margin-right:400px;
+    margin-top: 300px;
+}
+
 .intro p {
     direction: rtl;
     margin: 0;

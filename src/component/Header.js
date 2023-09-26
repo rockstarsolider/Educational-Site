@@ -12,8 +12,8 @@ function Header() {
                 </div>
             </Link>
             <div className="button-container">
-                <Link to='/Educational-Site/userpage'><Button secondary>ورود</Button></Link>
-                <Button primary>ثبت نام</Button>
+                <Link to='/Educational-Site/loginpage'><Button secondary>ورود</Button></Link>
+                <Link to='/Educational-Site/SingupPage'><Button primary>ثبت نام</Button></Link>
             </div>
         </div>
     );
