@@ -1,12 +1,13 @@
-
+import './CommentsPage.css';
+import Button from "../component/Button";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import star1 from "../style/Starcom.png";
 import star2 from "../style/Star5.png";
 import up2 from "../style/up2.png";
-import Fireup from "../style/Fireup.png"
+/* import Fireup from "../style/Fireup.png"
 import photo12 from "../style/photo12.png"
-import photo13 from "../style/photo13.png"
+import photo13 from "../style/photo13.png" */
 
 function componentPage() {
   const Tit1 = () => {
@@ -26,8 +27,6 @@ function componentPage() {
   const Commeline = () => {
     return (
       <div>
-        <img src={photo12} className="Photo-12" />
-        <img src={photo13} className="Photo-13" />
         <hr className="Line-com1" />
       </div>
     );
@@ -96,7 +95,7 @@ function componentPage() {
         </p>
         <hr className="Line-img" />
         <img src={star2} className="Star3" />
-        <p className="Chat">پوریا</p>
+        <p className="Chat">مبین</p>
         <p className="p-Chat">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
           استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
@@ -105,7 +104,6 @@ function componentPage() {
           در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
           طلبد،
         </p>
-        <img src={Fireup} className="img-up" />
       </div>
     );
   };
@@ -121,16 +119,16 @@ function componentPage() {
   const Endcomment = () => {
     return (
       <div className="End">
-        <button className="Button-End">شروع کنید</button>
+        <Button primary>شروع کنید</Button>
         <p className="End-p">
-          پیوستن به بیش از 10 میلیون نفر یادگیری در درخشان
+          LearnPlus پیوستن به بیش از 10 میلیون نفر یادگیری در
         </p>
       </div>
     );
   };
 
   return (
-    <div>
+    <div >
       <Header />
       <Tit1 />
       <Commeline />

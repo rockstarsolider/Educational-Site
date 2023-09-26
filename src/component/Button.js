@@ -1,5 +1,6 @@
+import "./Button.css";
 
-function Button({ primary, secondary, solid, children,...rest }) {
+function Button({ primary, secondary, solid, children, ...rest }) {
     if (primary) {
         return <button {...rest} className='primary'>{children}</button>;
     } else if (secondary) {

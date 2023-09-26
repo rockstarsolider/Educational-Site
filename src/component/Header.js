@@ -1,3 +1,4 @@
+import './Header.css';
 import Button from "./Button";
 import { Link } from 'react-router-dom';
 import Logo from "../style/Site Icon.png";

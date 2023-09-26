@@ -1,3 +1,4 @@
+import "./MainPage.css";
 import Header from '../component/Header';
 import Footer from '../component/Footer';
 import pic1 from '../style/971 1.png';
@@ -6,7 +7,7 @@ import pic3 from '../style/pic5.png';
 import pic4 from '../style/the-reward-4k-9x 2.png';
 import Button from '../component/Button';
 import { TbCalculator, TbSchool, TbEngine, TbBrandGit, TbDatabase } from 'react-icons/tb';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function MainPage() {
     const Intro = () => {
