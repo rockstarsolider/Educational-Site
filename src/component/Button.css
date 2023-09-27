@@ -1,5 +1,5 @@
 .primary {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
     font-family: 'Yekan';
     border-radius: 7px;
     background-color: #3646D3;
@@ -9,7 +9,7 @@
 }
 
 .secondary {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
     font-family: 'Yekan';
     color: white;
     border: none;
