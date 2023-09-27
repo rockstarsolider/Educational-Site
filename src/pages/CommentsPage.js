@@ -5,10 +5,7 @@ import Header from "../component/Header";
 import Footer from "../component/Footer";
 import star1 from "../style/Starcom.png";
 import star2 from "../style/Star5.png";
-import up2 from "../style/up2.png";
-import Fireup from "../style/Fireup.png";
-import photo12 from "../style/photo12.png";
-import photo13 from "../style/photo13.png";
+//import Fireup from "../style/Fireup.png";
 
 function componentPage() {
   const Tit1 = () => {
@@ -105,7 +102,7 @@ function componentPage() {
           در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
           طلبد،
         </p>
-        <img src={Fireup} className='img-up-1' />
+        
       </div>
     );
   };

@@ -3,11 +3,13 @@ import Header2 from "../component/Header2";
 import Button from "../component/Button";
 import Image1 from "../style/image 11 (1).png";
 import Image2 from "../style/image 11 (2).png";
+import SearchBar from "../component/SearchBar";
 
 function UserPage() {
     const UserProp = () => {
         return (
             <div>
+                <div className="searching"><SearchBar/></div>
                 <h3 className="welcome">خوش آمدید</h3>
                 <div className="first-part">
                     <div className="premium-con">

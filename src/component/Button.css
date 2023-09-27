@@ -49,3 +49,17 @@
 .secondary:hover {
     cursor: pointer;
 }
+
+@media (max-width: 820px) {
+    .primary {
+        padding: 6px 25px;
+    }
+
+    .secondary {
+        padding: 6px 25px;
+    }
+
+    .solid {
+        padding: 6px 25px;
+    }
+}

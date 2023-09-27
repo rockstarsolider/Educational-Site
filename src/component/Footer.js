@@ -10,13 +10,13 @@ function Footer() {
             </div>
             <div className='row2'>
                 <div className='column1'>
-                    <Link to='/Educational-Site/comments' className='link'>نظرات</Link>
-                    <Link to='/Educational-Site/principles' className='link'>اصول</Link>
+                    <Link to='/Educational-Site/comments' className='link foot-link'>نظرات</Link>
+                    <Link to='/Educational-Site/principles' className='link foot-link'>اصول</Link>
                 </div>
                 <div className='column2'>
-                    <Link to='/Educational-Site/about' className='link'>درباره ما</Link><br />
-                    <Link to='/Educational-Site/pricing' className='link'>قیمت گذاری</Link><br />
-                    <Link to='/Educational-Site/courses-page' className='link'>دوره ها</Link>
+                    <Link to='/Educational-Site/about' className='link foot-link'>درباره ما</Link><br />
+                    <Link to='/Educational-Site/pricing' className='link foot-link'>قیمت گذاری</Link><br />
+                    <Link to='/Educational-Site/courses-page' className='link foot-link'>دوره ها</Link>
                 </div>
             </div>
         </div>

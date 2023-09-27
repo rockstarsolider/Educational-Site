@@ -101,3 +101,17 @@ input:focus {
 .course h3 {
     margin: 0;
 }
+
+
+@media (max-width: 820px) {
+    .search-section {
+        padding: 0 2em;
+        padding-top: 8em;
+    }
+
+    .Topic {
+        margin: 0;
+        padding: 2em;
+        padding-right: 2em;
+    }
+}
