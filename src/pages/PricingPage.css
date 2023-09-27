@@ -304,7 +304,7 @@ span {
 }
 
 .All {
-    height: 55px;
+    height: 48px;
     width: 300px;
     display: flex;
     background-color: white;
@@ -313,7 +313,7 @@ span {
     border-radius: 10px;
     text-align: right;
     color: #000000;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Yekan;
     direction: rtl;
     margin: 0px 0px 0px 100px;
@@ -323,15 +323,15 @@ span {
 .All-1 {
     display: flex;
     direction: rtl;
-    height: 55px;
-    width: 130px;
+    height: 48px;
+    width: 120px;
     background-color: white;
     border: 2px solid;
     border-color: #000000;
     border-radius: 10px;
-    margin: -55px 0px 0px 770px;
-    padding: 7px 40px 0px 0px;
-    font-size: 28px;
+    margin: -55px 0px 6px 770px;
+    padding: 5px 40px 0px 0px;
+    font-size: 25px;
     font-family: Yekan;
     text-align: center;
 }
@@ -344,7 +344,7 @@ span {
 
 .All-2 {
     display: flex;
-    height: 55px;
+    height: 48px;
     width: 250px;
     direction: rtl;
     background-color: white;
@@ -352,9 +352,9 @@ span {
     border-color: #000000;
     border-radius: 10px;
     margin: -55px 0px 0px 930px;
-    font-size: 28px;
+    font-size: 25px;
     font-family: Yekan;
-    padding: 7px 65px 0px 0px;
+    padding: 4px 65px 0px 0px;
 }
 
 .All-2:hover {
@@ -373,9 +373,9 @@ span {
     border-color: #000000;
     border-radius: 10px;
     margin: 20px 0px 0px 770px;
-    font-size: 28px;
+    font-size: 25px;
     font-family: Yekan;
-    padding: 5px 65px 0px 0px;
+    padding: 8px 70px 0px 0px;
 }
 
 .All-3:hover {
@@ -395,7 +395,7 @@ span {
     border-radius: 10px;
     margin: -55px 0px 0px 1050px;
     padding: 5px 30px 0px 0px;
-    font-size: 28px;
+    font-size: 25px;
     font-family: Yekan;
     text-align: center;
 }
@@ -417,7 +417,7 @@ span {
     border-radius: 10px;
     margin: 20px 0px 0px 770px;
     padding: 5px 70px 0px 0px;
-    font-size: 28px;
+    font-size: 25px;
     font-family: Yekan;
     text-align: center;
 }
@@ -448,9 +448,9 @@ span {
 }
 
 .Chat {
-    display: flex;
+    display: block;
     font-size: 28px;
-    margin: 5px 90px 0px 0px;
+    margin: 5px 0px 0px 0px;
     direction: rtl;
 }
 
@@ -473,7 +473,7 @@ span {
 
 .Line-down {
     display: flex;
-    border-top: 2px solid #000000;
+    border-top: 2px solid #535353;
     width: 90%;
     margin: -13px 0px 0px 0px;
     margin-left: 5%;
