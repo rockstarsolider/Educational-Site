@@ -1,3 +1,5 @@
+import "./AboutUs.css";
+import "../style/HTML.css";
 import Header from '../component/Header';
 import Footer from '../component/Footer';
 import Image1 from '../style/image 1.png';

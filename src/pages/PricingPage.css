@@ -1,0 +1,499 @@
+.title-1 {
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.p-1 {
+    margin: 4em 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Allcard {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20%;
+}
+
+.box {
+    height: 254px;
+    width: 254px;
+}
+
+.box .rectangle {
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 0px 35px 10px #00000040;
+    height: 254px;
+    width: 254px;
+}
+
+.All-mony {
+    display: flex;
+}
+
+.box-up {
+    height: 64px;
+    width: 254px;
+}
+
+.box-up .text-wrapper-up {
+    background-color: #ededed;
+    border-radius: 25px 25px 0px 0px;
+    height: 64px;
+    width: 254px;
+    align-items: center;
+}
+
+.text-wrapper-up {
+    color: #000000;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.box-up-blue .text-wrapper-up-blue {
+    background-color: #165aaa;
+    border-radius: 25px 25px 0px 0px;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    height: 64px;
+    width: 254px;
+}
+
+.mony {
+    color: #1e1e1e;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+
+span {
+    font-size: 20px;
+}
+
+.btn-1 {
+    background-color: #165aaa;
+    color: white;
+    font-family: Yekan;
+    height: 50px;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 0px 22%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+.title-2 {
+    color: #000;
+    font-size: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.All-box-img {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+
+.box-img {
+    height: 349px;
+    width: 261px;
+}
+
+.box-img .rectangle-img {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px -2px #00000040;
+    height: 349px;
+    width: 261px;
+}
+
+.img-1 {
+    height: 191px;
+    width: 258px;
+}
+
+.img-2 {
+    height: 206px;
+    width: 206px;
+    display: block;
+    margin: auto;
+}
+
+.img-3 {
+    height: 272px;
+    width: 272px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* ارتفاع مورد نظر شما */
+}
+
+.studant {
+    margin: 0;
+    text-align: center;
+}
+
+.p-img {
+    margin: 0 20px;
+    text-align: center;
+    color: #666666;
+    font-size: 15px;
+}
+
+.Free {
+    text-align: center;
+    font-size: 40px;
+}
+
+.box-Free-vip {
+    height: 561px;
+    width: 408px;
+}
+
+.Free-vip-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 200px 0px 200px;
+}
+
+.box-Free-vip .rectangle-Free-vip {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #0000004f;
+    border-radius: 10px;
+    height: 561px;
+    width: 408px;
+}
+
+.Free-tit {
+    font-size: 24px;
+    margin: -100px 20px 0px 0px;
+}
+
+.Free-p {
+    font-size: 15px;
+    color: #666666;
+    margin: -5px 20px 0px 0px;
+}
+
+.img-free {
+    height: 141px;
+    width: 141px;
+    display: flex;
+}
+
+.no {
+    height: 56px;
+    width: 40px;
+    display: flex;
+    margin: 30px 30px 0px 10px;
+}
+
+.All-courses {
+    margin: -40px 15px 0px 0px;
+    font-size: 17px;
+}
+
+.Drop-title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.box-8 {
+    height: 561px;
+    width: 408px;
+    padding: 0px 0px 0px 185px;
+}
+
+.box-8 .rectangle-8 {
+    background-color: #f5f5f5;
+    border: 1px solid;
+    border-color: #ffffff80;
+    height: 561px;
+    width: 500px;
+    align-items: center;
+    margin: 0 0 0 60%;
+}
+
+.Math-1 {
+    font-size: 36px;
+    margin: 20px 25px 0px 0px;
+}
+
+.Line-1 {
+    color: #18191b;
+    size: 2;
+    width: 90%;
+    align-items: center;
+}
+
+.Logic {
+    margin: 20px 25px 0px 0cqb;
+}
+
+.Logic-p {
+    margin: -30px 50px 0px 0px;
+}
+
+.tit-1-com {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.p-1-com {
+    color: #535353;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Photo-12 {
+    width: 180px;
+    height: 150px;
+    margin: 0px 980px -45px 0px;
+}
+
+.Photo-13 {
+    width: 180px;
+    height: 120px;
+    margin: -200px 150px -19px 0px;
+}
+
+.Line-com1 {
+    border-top: 3px solid #000000;
+    width: 90%;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+}
+
+.tit-star-1 {
+    display: flex;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0px 0px 0px 75px;
+}
+
+.p-star-1 {
+    height: 132px;
+    width: 300px;
+    display: flex;
+    font-size: 25px;
+    color: #535353;
+    margin: 0px 0px 0px 80px;
+}
+
+.Star1 {
+    height: 300px;
+    margin: -300px 80px 0px 0px;
+    width: 600px;
+}
+
+.All {
+    height: 55px;
+    width: 300px;
+    display: flex;
+    background-color: white;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 10px;
+    text-align: right;
+    color: #000000;
+    font-size: 30px;
+    font-family: Yekan;
+    direction: rtl;
+    margin: 0px 0px 0px 100px;
+    padding: 5px;
+}
+
+.All-1 {
+    display: flex;
+    direction: rtl;
+    height: 55px;
+    width: 130px;
+    background-color: white;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 10px;
+    margin: -55px 0px 0px 770px;
+    padding: 7px 40px 0px 0px;
+    font-size: 28px;
+    font-family: Yekan;
+    text-align: center;
+}
+
+.All-1:hover {
+    cursor: pointer;
+    border-color: #165AAA;
+    color: #535353;
+}
+
+.All-2 {
+    display: flex;
+    height: 55px;
+    width: 250px;
+    direction: rtl;
+    background-color: white;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 10px;
+    margin: -55px 0px 0px 930px;
+    font-size: 28px;
+    font-family: Yekan;
+    padding: 7px 65px 0px 0px;
+}
+
+.All-2:hover {
+    cursor: pointer;
+    border-color: #165AAA;
+    color: #535353;
+}
+
+.All-3 {
+    display: flex;
+    height: 55px;
+    width: 250px;
+    direction: rtl;
+    background-color: white;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 10px;
+    margin: 20px 0px 0px 770px;
+    font-size: 28px;
+    font-family: Yekan;
+    padding: 5px 65px 0px 0px;
+}
+
+.All-3:hover {
+    cursor: pointer;
+    border-color: #165AAA;
+    color: #535353;
+}
+
+.All-4 {
+    display: flex;
+    direction: rtl;
+    height: 55px;
+    width: 130px;
+    background-color: white;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 10px;
+    margin: -55px 0px 0px 1050px;
+    padding: 5px 30px 0px 0px;
+    font-size: 28px;
+    font-family: Yekan;
+    text-align: center;
+}
+
+.All-4:hover {
+    cursor: pointer;
+    border-color: #165AAA;
+    color: #535353;
+}
+
+.All-5 {
+    display: flex;
+    direction: rtl;
+    height: 55px;
+    width: 410px;
+    background-color: white;
+    border: 2px solid;
+    border-color: #000000;
+    border-radius: 10px;
+    margin: 20px 0px 0px 770px;
+    padding: 5px 70px 0px 0px;
+    font-size: 28px;
+    font-family: Yekan;
+    text-align: center;
+}
+
+.All-5:hover {
+    cursor: pointer;
+    border-color: #165AAA;
+    color: #535353;
+
+}
+
+.img-up {
+    display: flex;
+    margin: -1000px 0px -10px 200px;
+}
+
+.Line-img {
+    border-top: 1px solid #535353;
+    margin: 60px 0px 0px 670px;
+    width: 45%;
+}
+
+.Star2 {
+    display: flex;
+    height: 30px;
+    width: 100px;
+    margin: 30px 0px 0px 1180px;
+}
+
+.Chat {
+    display: flex;
+    font-size: 28px;
+    margin: 5px 90px 0px 0px;
+    direction: rtl;
+}
+
+.p-Chat {
+    height: 100px;
+    width: 500px;
+    display: flex;
+    margin: 0px 0px 0px 775px;
+    color: #535353;
+}
+
+
+
+.Star3 {
+    display: flex;
+    height: 25px;
+    width: 95px;
+    margin: 30px 0px 0px 1180px;
+}
+
+.Line-down {
+    display: flex;
+    border-top: 2px solid #000000;
+    width: 90%;
+    margin: -13px 0px 0px 0px;
+    margin-left: 5%;
+}
+
+.Up-title {
+    padding-top: 6rem;
+}
+
+.label-2 {
+    margin-top: 5rem;
+}
+
+.Math-1 {
+    font-size: 36px;
+    margin: 20px 25px 0px 0px;
+}
+
+.Logic {
+    margin: 5px 30px 0px 0px;
+}
+
+.Logic-p {
+    margin: -30px 55px 15px 0px;
+}

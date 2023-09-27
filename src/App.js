@@ -17,9 +17,9 @@ function App() {
     return (
         <>
             <Routes>
+                <Route path='/Educational-Site/about' element={<AboutPage />} />
                 <Route path='*' element={<MainPage />} />
                 <Route path="/" element={<MainPage />} />
-                <Route path='/Educational-Site/about' element={<AboutPage />} />
                 <Route path='/Educational-Site/courses-page' element={<CoursesPage />} />
                 <Route path='/Educational-Site/pricing' element={<PricingPage />} />
                 <Route path='/Educational-Site/comments' element={<CommentsPage />} />
