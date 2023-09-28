@@ -6,7 +6,9 @@ import CommentsPage from './pages/CommentsPage';
 import UserPage from './pages/UserPage';
 import CoursesPage from './pages/CoursesPage';
 import CourseIntroPage from './pages/CourseIntroPage';
-
+import Login from './pages/LoginPage';
+import SingUp from './pages/SingUp';
+import Email from './pages/Email';
 function App() {
     return (
         <>
@@ -23,6 +25,11 @@ function App() {
                 <Route path='/Educational-Site/engineering' element={< CourseIntroPage/>} />
                 <Route path='/Educational-Site/programming' element={< CourseIntroPage/>} />
                 <Route path='/Educational-Site/datascience' element={< CourseIntroPage/>} />
+                <Route path='/Educational-Site/UserPage' element={< UserPage/>} />
+                <Route path='/Educational-Site/LoginPage' element={< Login/>} />
+                <Route path='/Educational-Site/SingUp' element={< SingUp/>} />
+                <Route path='/Educational-Site/Email' element={< Email/>} />
+
             </Routes>
         </>
     );

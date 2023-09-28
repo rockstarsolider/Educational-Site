@@ -3,7 +3,7 @@ import Header2 from "../component/Header2";
 import Button from "../component/Button";
 import Image1 from "../style/image 11 (1).png";
 import Image2 from "../style/image 11 (2).png";
-
+ 
 function UserPage() {
     const UserProp = () => {
         return (
