@@ -12,6 +12,7 @@ import Question from "./pages/Question"
 import Question2 from "./pages/Question2"
 import Question3 from './pages/Question3';
 import Question4 from './pages/Question4';
+import CoursePage from './pages/CoursePage';
 
 function App() {
     return (
@@ -35,6 +36,7 @@ function App() {
                 <Route path='/Educational-Site/Question2' element={<Question2/>}/>
                 <Route path='/Educational-Site/Question3' element={<Question3/>}/>
                 <Route path='/Educational-Site/Question4' element={<Question4/>}/>
+                <Route path='/Educational-Site/coursepage' element={<CoursePage/>}/>
             </Routes>
         </>
     );

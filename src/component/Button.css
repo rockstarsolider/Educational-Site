@@ -14,7 +14,7 @@
     color: white;
     border: none;
     border-radius: 7px;
-    background-color: #474747;
+    background-color: #222020;
     padding: 10px 45px;
 }
 
@@ -31,6 +31,10 @@
     background-color: white;
     border: solid 3px rgb(128, 128, 128);
     border-radius: 40px;
+}
+
+.secondary:hover{
+    background-color: #474747;
 }
 
 .solid:focus {
