@@ -228,15 +228,17 @@ function PricingPage() {
   return (
     <div>
       <Header />
-      <Intro />
-      <Box />
-      <Titletwo />
-      <Boximg />
-      <Freevip />
-      <FreeVipcard />
-      <Droptext />
-      <Allcorses1 />
-      <Footer />
+        <div className="pricing-page">
+            <Intro />
+            <Box />
+            <Titletwo />
+            <Boximg />
+            <Freevip />
+            <FreeVipcard />
+            <Droptext />
+            <Allcorses1 />
+        </div>
+        <Footer />
     </div>
   );
 };

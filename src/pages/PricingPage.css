@@ -13,7 +13,8 @@
 .Allcard {
     display: flex;
     justify-content: space-between;
-    margin: 0 20%;
+    align-items: center;
+    
 }
 
 .box {
@@ -103,12 +104,12 @@ span {
 .All-box-img {
     display: flex;
     justify-content: space-between;
-    margin: 0 10%;
 }
 
 .box-img {
     height: 349px;
     width: 261px;
+    
 }
 
 .box-img .rectangle-img {
@@ -166,7 +167,8 @@ span {
 .Free-vip-card {
     display: flex;
     justify-content: space-between;
-    margin: 0px 200px 0px 200px;
+    gap: 2rem;
+    
 }
 
 .box-Free-vip .rectangle-Free-vip {
@@ -302,7 +304,7 @@ span {
 }
 
 .All {
-    height: 55px;
+    height: 48px;
     width: 300px;
     display: flex;
     background-color: white;
@@ -311,7 +313,7 @@ span {
     border-radius: 10px;
     text-align: right;
     color: #000000;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Yekan;
     direction: rtl;
     margin: 0px 0px 0px 100px;
@@ -321,15 +323,15 @@ span {
 .All-1 {
     display: flex;
     direction: rtl;
-    height: 55px;
-    width: 130px;
+    height: 48px;
+    width: 120px;
     background-color: white;
     border: 2px solid;
     border-color: #000000;
     border-radius: 10px;
-    margin: -55px 0px 0px 770px;
-    padding: 7px 40px 0px 0px;
-    font-size: 28px;
+    margin: -55px 0px 6px 770px;
+    padding: 5px 40px 0px 0px;
+    font-size: 25px;
     font-family: Yekan;
     text-align: center;
 }
@@ -342,7 +344,7 @@ span {
 
 .All-2 {
     display: flex;
-    height: 55px;
+    height: 48px;
     width: 250px;
     direction: rtl;
     background-color: white;
@@ -350,9 +352,9 @@ span {
     border-color: #000000;
     border-radius: 10px;
     margin: -55px 0px 0px 930px;
-    font-size: 28px;
+    font-size: 25px;
     font-family: Yekan;
-    padding: 7px 65px 0px 0px;
+    padding: 4px 65px 0px 0px;
 }
 
 .All-2:hover {
@@ -371,9 +373,9 @@ span {
     border-color: #000000;
     border-radius: 10px;
     margin: 20px 0px 0px 770px;
-    font-size: 28px;
+    font-size: 25px;
     font-family: Yekan;
-    padding: 5px 65px 0px 0px;
+    padding: 8px 70px 0px 0px;
 }
 
 .All-3:hover {
@@ -393,7 +395,7 @@ span {
     border-radius: 10px;
     margin: -55px 0px 0px 1050px;
     padding: 5px 30px 0px 0px;
-    font-size: 28px;
+    font-size: 25px;
     font-family: Yekan;
     text-align: center;
 }
@@ -415,7 +417,7 @@ span {
     border-radius: 10px;
     margin: 20px 0px 0px 770px;
     padding: 5px 70px 0px 0px;
-    font-size: 28px;
+    font-size: 25px;
     font-family: Yekan;
     text-align: center;
 }
@@ -446,9 +448,9 @@ span {
 }
 
 .Chat {
-    display: flex;
+    display: block;
     font-size: 28px;
-    margin: 5px 90px 0px 0px;
+    margin: 5px 0px 0px 0px;
     direction: rtl;
 }
 
@@ -471,7 +473,7 @@ span {
 
 .Line-down {
     display: flex;
-    border-top: 2px solid #000000;
+    border-top: 2px solid #535353;
     width: 90%;
     margin: -13px 0px 0px 0px;
     margin-left: 5%;
@@ -496,4 +498,82 @@ span {
 
 .Logic-p {
     margin: -30px 55px 15px 0px;
+}
+
+.pricing-page{
+    padding: 0 10%;
+    align-items: center;
+}
+
+@media (max-width: 820px) {
+    .link {
+        font-size: 20px;
+    }
+
+    .Allcard {
+        height: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .All-box-img {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        margin: 55px 0px 0px -5px;
+    }
+
+    .label-2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .title-2 {
+        margin: 800px 0px 0px 40px;
+        align-items: center;
+    }
+
+    .box-img {
+        margin: 50px 0px 0px 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    .Free {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 40px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .Free-vip-card {
+        padding: 0 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-Free-vip {
+        display: flex;
+        flex-wrap: wrap;
+        height: 561px;
+        width: 390px;
+        margin: 50px 0px 0px -32px ;
+        padding: 20;
+    }
+
+    .box-8 {
+        height: 561px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 5px 0px -427px;
+    }
 }

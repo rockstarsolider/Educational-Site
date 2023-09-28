@@ -6,6 +6,7 @@ import CommentsPage from './pages/CommentsPage';
 import UserPage from './pages/UserPage';
 import CoursesPage from './pages/CoursesPage';
 import CourseIntroPage from './pages/CourseIntroPage';
+
 import Login from './pages/LoginPage';
 import SingUp from './pages/SingUp';
 import Email from './pages/Email';
