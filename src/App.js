@@ -6,16 +6,11 @@ import CommentsPage from './pages/CommentsPage';
 import UserPage from './pages/UserPage';
 import CoursesPage from './pages/CoursesPage';
 import CourseIntroPage from './pages/CourseIntroPage';
-import LoginPage from './pages/LoginPage';
-import SingupPage from './pages/SingupPage'
-import Question from "./pages/Question"
-import Question2 from "./pages/Question2"
-import Question3 from './pages/Question3';
-import Question4 from './pages/Question4';
-
 import Login from './pages/LoginPage';
 import SingUp from './pages/SingUp';
 import Email from './pages/Email';
+import CoursePage from './pages/CoursePage';
+
 function App() {
     return (
         <>
@@ -36,6 +31,7 @@ function App() {
                 <Route path='/Educational-Site/LoginPage' element={< Login/>} />
                 <Route path='/Educational-Site/SingUp' element={< SingUp/>} />
                 <Route path='/Educational-Site/Email' element={< Email/>} />
+                <Route path='/Educational-Site/coursepage' element={< CoursePage/>} />
 
             </Routes>
         </>

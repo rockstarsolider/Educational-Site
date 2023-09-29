@@ -44,23 +44,23 @@ function MainPage() {
         return (
             <div className='cards'>
                 <div className='card'>
-                    <TbCalculator className='icon' />
+                    <TbCalculator className='icon4' />
                     <Link to='/Educational-Site/math' className='color-black txt-decor'><p>ریاضی</p></Link>
                 </div>
                 <div className='card'>
-                    <TbSchool className='icon' />
+                    <TbSchool className='icon4' />
                     <Link to='/Educational-Site/science' className='color-black txt-decor'><p>علوم</p></Link>
                 </div>
                 <div className='card'>
-                    <TbEngine className='icon' />
+                    <TbEngine className='icon4' />
                     <Link to='/Educational-Site/engineering' className='color-black txt-decor'><p>مهندسی</p></Link>
                 </div>
                 <div className='card'>
-                    <TbBrandGit className='icon' />
+                    <TbBrandGit className='icon4' />
                     <Link to='/Educational-Site/programming' className='color-black txt-decor'><p>برنامه نویسی</p></Link>
                 </div>
                 <div className='card'>
-                    <TbDatabase className='icon' />
+                    <TbDatabase className='icon4' />
                     <Link to='/Educational-Site/datascience' className='color-black txt-decor'><p>علوم داده</p></Link>
                 </div>
             </div>

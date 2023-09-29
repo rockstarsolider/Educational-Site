@@ -15,6 +15,21 @@
     width: 40%;
 }
 
+
+.prog{
+    width: 4rem;
+    height: .5rem;
+    background-color: gray;
+    border-radius: .5rem;
+}
+
+.prog-active{
+    width: 4rem;
+    height: .5rem;
+    background-color: #158E71;
+    border-radius: .5rem;
+}
+
 @media (max-width: 820px) {
     .introduction{
         flex-direction: column;
