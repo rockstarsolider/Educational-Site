@@ -72,8 +72,8 @@ input:focus {
 }
 
 .Topic {
-    scroll-margin-top: 20em;
-    scroll-behavior: smooth;
+   /* scroll-margin-top: 20em;
+    scroll-behavio: smooth;*/
     margin-right: 20%;
 }
 

@@ -12,8 +12,10 @@ import Question from "./pages/Question"
 import Question2 from "./pages/Question2"
 import Question3 from './pages/Question3';
 import Question4 from './pages/Question4';
-import CoursePage from './pages/CoursePage';
 
+import Login from './pages/LoginPage';
+import SingUp from './pages/SingUp';
+import Email from './pages/Email';
 function App() {
     return (
         <>
@@ -30,13 +32,11 @@ function App() {
                 <Route path='/Educational-Site/engineering' element={< CourseIntroPage/>} />
                 <Route path='/Educational-Site/programming' element={< CourseIntroPage/>} />
                 <Route path='/Educational-Site/datascience' element={< CourseIntroPage/>} />
-                <Route path='/Educational-Site/loginpage' element={<LoginPage/>}/>
-                <Route path='/Educational-Site/SingupPage' element={<SingupPage/>}/>
-                <Route path='/Educational-Site/Question' element={<Question/>}/>
-                <Route path='/Educational-Site/Question2' element={<Question2/>}/>
-                <Route path='/Educational-Site/Question3' element={<Question3/>}/>
-                <Route path='/Educational-Site/Question4' element={<Question4/>}/>
-                <Route path='/Educational-Site/coursepage' element={<CoursePage/>}/>
+                <Route path='/Educational-Site/UserPage' element={< UserPage/>} />
+                <Route path='/Educational-Site/LoginPage' element={< Login/>} />
+                <Route path='/Educational-Site/SingUp' element={< SingUp/>} />
+                <Route path='/Educational-Site/Email' element={< Email/>} />
+
             </Routes>
         </>
     );
