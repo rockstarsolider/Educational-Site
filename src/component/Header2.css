@@ -1,10 +1,15 @@
 .header2 {
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    width: 80%;
     height:3rem;
     align-items: center;
     padding: .5rem 10%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0rem;
+    z-index: 1;
 }
 
 .icon2 {
@@ -35,6 +40,4 @@
     .txt-hide{display: none;}
 
     .search-hide{display: none;}
-
-    
 }

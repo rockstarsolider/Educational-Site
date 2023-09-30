@@ -3,7 +3,6 @@ import Button from './Button'
 import { useState } from 'react'
 import {TbArrowLeft} from 'react-icons/tb'
 import { Link } from 'react-router-dom'
-import { wait } from '@testing-library/user-event/dist/utils'
 
 function Course({data}){
     const [count, setCount] = useState(0)
@@ -23,7 +22,7 @@ function Course({data}){
         }
         return(
             <div className='heading'>
-                <Link to='/Educational-Site/userpage'><TbArrowLeft className='icon back'/></Link>
+                <Link to='/Educational-Site/learning-road'><TbArrowLeft className='icon back'/></Link>
                 <div className='progress'>
                     <Nav/>
                 </div>

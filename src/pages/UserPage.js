@@ -47,7 +47,7 @@ function UserPage() {
                         <img src={Image2}></img>
                         <h3>منطق ترتیبی</h3>
                         <p>درس 1 از 28</p>
-                        <Link to='/Educational-Site/coursepage'><Button primary>شروع درس</Button></Link>
+                        <Link to='/Educational-Site/learning-road'><Button primary>شروع درس</Button></Link>
                     </div>
                 </div>
             </div>

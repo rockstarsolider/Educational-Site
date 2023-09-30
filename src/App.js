@@ -10,6 +10,7 @@ import Login from './pages/LoginPage';
 import SingUp from './pages/SingUp';
 import Email from './pages/Email';
 import CoursePage from './pages/CoursePage';
+import LearningRoadPage from './pages/LerningRoadPage';
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                 <Route path='/Educational-Site/SingUp' element={< SingUp/>} />
                 <Route path='/Educational-Site/Email' element={< Email/>} />
                 <Route path='/Educational-Site/coursepage' element={< CoursePage/>} />
+                <Route path='/Educational-Site/learning-road' element={< LearningRoadPage/>} />
 
             </Routes>
         </>
