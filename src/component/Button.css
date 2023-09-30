@@ -48,6 +48,7 @@
 
 .primary:hover {
     cursor: pointer;
+    background-color: #3a45a1;
 }
 
 .secondary:hover {
