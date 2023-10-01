@@ -1,6 +1,6 @@
 .email{
-    margin-top: 3em;
-    margin-left: 40em;
+    margin-top: 5%;
+    margin-left: 68%;
     background-color: white;
     font-family: Yekan;
     font-size: 30px;
@@ -14,7 +14,7 @@
 }
 .other{
     margin-top: 1em;
-    margin-left: 40em;
+    margin-left: 68%;
     background-color: white;
     font-family: Yekan;
     font-size: 30px;
@@ -27,8 +27,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .name{
-    margin-top: 1em ;
-    margin-right: 3em ;
+    margin-top: 1em ; 
+    margin-right: 3.5% ;
     background-color :white;
     height: 90px;
     width: 235px;
@@ -50,17 +50,15 @@
 } 
 .login-b{
     font-family: Yekan;
-    display: flex;
     justify-content: space-between;
     height: 70px;
     width: 200px;
     align-items: center;
-    padding: .5rem 10%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #ffffff;
     border: none;
     border-radius: 7px;
-    margin: 2em 52em;
+    margin: 2em 78%;
     background-color: #3646D3;
     font-size: 25px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -77,35 +75,45 @@
     margin-top: 5em;
     font-size: 30px;
 }
+.loginn{
+    margin-right: 13%;
+    margin-top: 10%;
+    font-size: 35px;
+}
 @media (max-width: 820px){
     .email{
         width: 300px;
         font-size: 25px;
-        margin-left: 55em;
+        margin-left: 40%;
     }
     .other{
         width: 300px;
         font-size: 25px;
-        margin-left: 55em;
+        margin-left: 40%;
     }
     .name{
         width: 300px;
         font-size: 25px;
-        margin-left: 55em;
+        margin-right: 22%;
 
     }
     .name1{
         width: 300px;
         font-size: 25px;
-        margin-left: 55em;
+        margin-right: 22%;
 
     }
     .login-b{
-        margin-left: 58em;
+        margin-left: 48%;
     }
     .login{
         margin-left: 52em;
         display: flex;
         font-size: 15px;
+    }
+    .loginn{
+        margin-right: 38%;
+        font-family: Yekan;
+        font-size: 25px;
     }
 }

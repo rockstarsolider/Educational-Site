@@ -1,18 +1,21 @@
 
+
+
+
 .login1 {
     font-family: Yekan;
     font-size: 20px;
     display: flex;
     justify-content: space-evenly;
     height: 50px;
-    width: 150px;
+    width: 500px;
     align-items: center;
     padding: .5rem 10%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #3646D3;
     border: none;
     border-radius: 7px;
-    margin: 1em 70em; 
+    margin: 1em 69%; 
 }
 .login2{
     font-family: Yekan;
@@ -20,18 +23,20 @@
     display: flex;
     justify-content: space-evenly;
     height: 50px;
-    width: 150px;
+    width: 500px;
     align-items: center;
     padding: .5rem 10%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #ffffff;
     border: none;
     border-radius: 7px;
-    margin: 1em 70em;
+    margin: 2em 69%;
 }
 .Login{
-    margin-right:9em;
+    margin-right:  15%;;
     margin-top: 8em;
+    font-family: Yekan;
+    font-size: 35px;
 }
 .loginb{
     font-family: Yekan;
@@ -51,28 +56,32 @@
 }
 .login-c{
     font-family: Yekan;
-    margin: 1em 5em;
+    margin: 1em 1%;
+    margin-right: 12%;
+
 
 }
 .login-link{
     font-family: Yekan;
     color: darkgrey;
-
     margin-top: 1em;
 
 }
+.rocket{
+    display: flex;
+}
 @media (max-width: 820px){
     .Login{
-        margin-right: 15em;
+        margin-right: 44%;
     }
     .login1{
         width: 300px;
-        margin-left: 14em;
+        margin-left: 35%;
 
     }
     .login2{
         width: 300px;
-        margin-left: 14em;
+        margin-left: 35%;
         margin-top: 2em;
     } 
 
