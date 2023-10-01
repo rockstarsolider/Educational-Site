@@ -17,7 +17,7 @@
     position: fixed;
 }
 
-.box{
+.box-item{
     display: flex;
     flex-direction: column;
     align-items: center;
