@@ -1,90 +1,49 @@
-
-
-
-
-.login1 {
-    font-family: Yekan;
-    font-size: 20px;
+.login-page{
     display: flex;
-    justify-content: space-evenly;
-    height: 50px;
-    width: 500px;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: .5rem 10%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #3646D3;
-    border: none;
-    border-radius: 7px;
-    margin: 1em 69%; 
+    margin-top: 4rem;
 }
-.login2{
-    font-family: Yekan;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    height: 50px;
-    width: 500px;
-    align-items: center;
-    padding: .5rem 10%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #ffffff;
-    border: none;
-    border-radius: 7px;
-    margin: 2em 69%;
-}
+
 .Login{
-    margin-right:  15%;;
-    margin-top: 8em;
-    font-family: Yekan;
-    font-size: 35px;
+    font-size: 1.5rem;
 }
-.loginb{
-    font-family: Yekan;
-    display: flex;
-    justify-content: space-evenly;
-    height: 50px;
-    width: 150px;
-    align-items: center;
-    padding: .5rem 10%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #ffffff;
-    border: none;
-    border-radius: 7px;
-    margin: 2em 70em;
-    background-color: #3646D3;
-    font-size: 20px;
-}
-.login-c{
-    font-family: Yekan;
-    margin: 1em 1%;
-    margin-right: 12%;
 
-
-}
 .login-link{
-    font-family: Yekan;
-    color: darkgrey;
+    color: rgb(0, 0, 0);
     margin-top: 1em;
-
 }
+
 .rocket{
     display: flex;
 }
+
+.buttons-login{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link-width{
+    text-align: center;
+    padding: 0 1rem;
+    background-color: #222020;
+    border-radius: 5px;
+}
+
+.link-width:hover{
+    background-color: #474747;
+}
+
+.login-c{
+    color: #928e8e;
+}
+
 @media (max-width: 820px){
     .Login{
         margin-right: 44%;
     }
-    .login1{
-        width: 300px;
-        margin-left: 35%;
-
-    }
-    .login2{
-        width: 300px;
-        margin-left: 35%;
-        margin-top: 2em;
-    } 
-
     .login-c{
         margin-left: 25em;
         margin-top: 0px;

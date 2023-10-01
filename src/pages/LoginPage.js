@@ -1,16 +1,21 @@
 import "./LoginPage.css"
 import { Link } from "react-router-dom";
-import rocket from "../style/rocket.webp"
+import rocket from "../style/Screenshot (23).png"
+import Button from '../component/Button'
+
 function Login(){
 
     return(
-            <div>
-            <h2 className="Login">ورود</h2>
-            <button className="login1">Facebookورودبا </button>
-            <button className="login2">Googleورودبا</button>
-            <Link to='/Educational-Site/Email'><button className="login2">Emailورودبا</button>
-            </Link><h2 className="login-c">New user??<Link to= '/Educational-Site/SingUp' className="login-link">SingUp</Link></h2>
-            </div>        
+            <div className="login-page">
+                <img src={rocket}/>
+                <p className="Login">بهترین روش یادگیری ریاضی و علوم کامپیوتر</p>
+                <div className="buttons-login">
+                    <Button primary>Facebook   ورود با  </Button>
+                    <Button primary>  Google   ورود با  </Button>
+                    <Link to='/Educational-Site/Email' className="link-width"><Button secondary className="login2">Email ورود با</Button></Link>
+                </div>
+                <h4 className="login-c">New user?? <Link to= '/Educational-Site/SingUp' className="login-link"> SingUp</Link></h4>
+            </div>  
     )
 
 

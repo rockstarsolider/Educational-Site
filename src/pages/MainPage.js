@@ -21,7 +21,7 @@ function MainPage() {
                     <p>چگونه خلاقیت خود را افزایش دهیم؟</p>
                     <p>چگونه تعامل با دیگران را یاد بگیریم؟</p>
                     <br />
-                    <Button primary>ثبت نام</Button>
+                    <Link to='/Educational-Site/SingUp' className=""><Button primary>ثبت نام</Button></Link>
                 </div>
             </div>
         );
