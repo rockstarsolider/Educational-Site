@@ -4,6 +4,7 @@ import Button from "../component/Button";
 import Image1 from "../style/image 11 (1).png";
 import Image2 from "../style/image 11 (2).png";
 import SearchBar from "../component/SearchBar";
+import { Link } from "react-router-dom";
 
 function UserPage() {
     const UserProp = () => {
@@ -14,7 +15,7 @@ function UserPage() {
                 <div className="first-part">
                     <div className="premium-con">
                         <p>کاربران اشتراک ویژه نسبت به بقیه افراد 6 برابر موفق تر بوده اند</p>
-                        <Button primary>بیشتر بدانید</Button>
+                        <Link to='/Educational-Site/pricing'><Button primary>بیشتر بدانید</Button></Link>
                     </div>
                     <div className='user-props'>
                         <div>
@@ -46,7 +47,7 @@ function UserPage() {
                         <img src={Image2}></img>
                         <h3>منطق ترتیبی</h3>
                         <p>درس 1 از 28</p>
-                        <Button primary>شروع درس</Button>
+                        <Link to='/Educational-Site/learning-road'><Button primary>شروع درس</Button></Link>
                     </div>
                 </div>
             </div>
