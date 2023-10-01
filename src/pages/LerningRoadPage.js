@@ -59,12 +59,12 @@ function LearningRoadPage(){
         return(
             data.map(function (item, index){
                 if (item.state === 'deactive'){
-                    return <div key={index} className='box'>
+                    return <div key={index} className='box-item'>
                         <Link to='/Educational-Site/coursepage'><img src={platform}/></Link>
                         <p>{item.name}</p>
                     </div>
                 } else {
-                    return <div key={index} className='box'>
+                    return <div key={index} className='box-item'>
                         <Link to='/Educational-Site/coursepage'><img src={platform2}/></Link>
                         <p>{item.name}</p>
                     </div>
