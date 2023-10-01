@@ -1,15 +1,18 @@
-import {Link} from 'react-router-dom'
+import "./Question1.css"
+import { Link } from "react-router-dom";
 
 
-function Question4 (){
+function Question4(){
     return(
         <div>
-                    <div className="Question">کدام موضوع را می خواهید بررسی کنید؟</div>
-                    <button className='m1'>ریاضی</button>
-                    <button className='m1'>علوم و مهندسی</button>
-                    <button className='m1'>علوم کامپیوتر و برنامه نویسی</button>
-                    <button className='m1'>تجزیه و تحلیل داده ها و احتمالات</button>
-                    <Link to='/' className='next' >ادامه</Link>
+            <h2 className="Question"> کدام موضوع را می خواهید بررسی کنید؟</h2>
+            <button className="other-answer">ریاضی</button>
+            <button className="other-answer">علوم و مهندسی</button>
+            <button className="other-answer">علوم کامپیوتر و برنامه نویسی</button>
+            <button className="other-answer">تجزیه و تحلیل داده ها و احتمالات</button>
+            <Link to='/Educational-Site/UserPage'><button className="continue">ورود</button></Link>
+
+
         </div>
     )
 }
