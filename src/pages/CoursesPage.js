@@ -7,6 +7,7 @@ import ThinkingInCodeImage from '../style/ThinkingInCode.png';
 import ExploringDataVisuallyImage from '../style/Exploring Data Visually.png';
 import SolvingEquationsImage from '../style/Solving Equations.png';
 import ScientificThinkingImage from '../style/Scientific Thinking.png';
+import {Link} from 'react-router-dom'
 
 function CoursesPage() {
     const Search = () => {
@@ -31,58 +32,58 @@ function CoursesPage() {
                 <div className="Topic" id='new'>
                     <h1>دروس جدید</h1>
                     <div className="courses">
-                        <div className="course">
+                        <Link to='/Educational-Site/learning-road' className="txt-decor color-black" ><div className="course">
                             <h2>جدید</h2>
                             <img src={ThinkingInCodeImage} alt='Course pic' className='Course-pic' />
                             <h3>تفکر در کد</h3>
-                        </div>
-                        <div className="course">
+                        </div></Link>
+                        <Link to='/Educational-Site/learning-road' className="txt-decor color-black" ><div className="course">
                             <h2>جدید</h2>
                             <img src={ExploringDataVisuallyImage} alt='Course pic' className='Course-pic' />
                             <h3>کاوش بصری داده ها</h3>
-                        </div>
+                        </div></Link>
                     </div>
                 </div>
                 <div className="Topic" id='math'>
                     <h1>ریاضیات</h1>
                     <h2>جبر</h2>
                     <div className="courses">
-                        <div className="course">
+                        <Link to='/Educational-Site/learning-road' className="txt-decor color-black" ><div className="course">
                             <img src={SolvingEquationsImage} alt='Course pic' className='Course-pic' />
                             <h3>حل معادلات</h3>
-                        </div>
+                        </div></Link>
                     </div>
                 </div>
                 <div className="Topic" id='data'>
                     <h1>داده</h1>
                     <h2>تحلیل و بررسی</h2>
                     <div className="courses">
-                        <div className="course">
+                        <Link to='/Educational-Site/learning-road' className="txt-decor color-black" ><div className="course">
                             <h2>جدید</h2>
                             <img src={ExploringDataVisuallyImage} alt='Course pic' className='Course-pic' />
                             <h3>کاوش بصری داده ها</h3>
-                        </div>
+                        </div></Link>
                     </div>
                 </div>
                 <div className="Topic" id='computer'>
                     <h1>علوم کامپیوتر</h1>
                     <h2>علوم کامپیوتر پایه</h2>
                     <div className="courses">
-                        <div className="course">
+                        <Link to='/Educational-Site/learning-road' className="txt-decor color-black" ><div className="course">
                             <h2>جدید</h2>
                             <img src={ThinkingInCodeImage} alt='Course pic' className='Course-pic' />
                             <h3>تفکر در کد</h3>
-                        </div>
+                        </div></Link>
                     </div>
                 </div>
                 <div className="Topic" id='science'>
                     <h1>علوم پایه</h1>
                     <h2>تفکر علمی</h2>
                     <div className="courses">
-                        <div className="course">
+                        <Link to='/Educational-Site/learning-road' className="txt-decor color-black" ><div className="course">
                             <img src={ScientificThinkingImage} alt='Course pic' className='Course-pic' />
                             <h3>تفکر علمی</h3>
-                        </div>
+                        </div></Link>
                     </div>
                 </div>
             </div>

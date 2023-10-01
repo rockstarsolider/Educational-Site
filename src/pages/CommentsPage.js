@@ -6,10 +6,13 @@ import Footer from "../component/Footer";
 import star1 from "../style/Starcom.png";
 import star2 from "../style/Star5.png";
 import up2 from "../style/up2.png";
-
+import starship from '../style/starship.png'
+import {Link} from 'react-router-dom'
+import { useCallback } from 'react';
+import { useState } from 'react';
 
 function componentPage() {
-  const Tit1 = () => {
+    const Tit1 = () => {
     return (
       <div>
         <p className="tit-1-com">ما در حال ساخت</p>
@@ -38,7 +41,7 @@ function componentPage() {
         <p className="p-star-1">
           بیش از 50,000 بررسی 5 ستــاره در فروشگــاه اپ استور و پلی استور
         </p>
-        <img src={star1} className="Star1" />
+        <img src='https://brilliant.org/site_media/version-4bcbc6ac77/images/company/testimonials/testimonials-review-stars-2x.gif' className="Star1" />
       </div>
     );
   };
@@ -46,65 +49,92 @@ function componentPage() {
   const Acco = () => {
     return (
       <div className="All-button-com">
-        <button className="All">برجسته: همه</button>
-        <button className="All-1">همه</button>
-        <button className="All-2">دانشجویان</button>
-        <button className="All-3">حرفه ای ها</button>
-        <button className="All-4">والدین</button>
-        <button className="All-5">زبان اموزان مادام العمر</button>
+        <a href='/Educational-Site/comments#teacher' className='txt-decor'><button className="All-1">معلمان</button></a>
+        <a href='/Educational-Site/comments#students' className='txt-decor'><button className="All-2">دانشجویان</button></a>
+        <a href='/Educational-Site/comments#olds' className='txt-decor'><button className="All-3">حرفه ای ها</button></a>
+        <a href='/Educational-Site/comments#parents' className='txt-decor'><button className="All-4">والدین</button></a>
+        <a href='/Educational-Site/comments#infinit' className='txt-decor'><button className="All-5">زبان اموزان مادام العمر</button></a>
       </div>
     );
   };
 
   const Commen = () => {
     return (
-      <div className="imgup-comment">
-        <hr className="Line-img" />
-        <img src={star2} className="Star3" />
-        <p className="Chat">دانیال برزگر</p>
-        <p className="p-Chat">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-          ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-          کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
-          در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
-          طلبد،
-        </p>
-        <hr className="Line-img" />
-        <img src={star2} className="Star3" />
-        <p className="Chat">علی رضا</p>
-        <p className="p-Chat">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-          ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-          کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
-          در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
-          طلبد،
-        </p>
-        <hr className="Line-img" />
-        <img src={star2} className="Star3" />
-        <p className="Chat">پوریا</p>
-        <p className="p-Chat">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-          ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-          کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
-          در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
-          طلبد،
-        </p>
-        <hr className="Line-img" />
-        <img src={star2} className="Star3" />
-        <p className="Chat">مبین</p>
-        <p className="p-Chat">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-          ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-          کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
-          در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
-          طلبد،
-        </p>
-        
-      </div>
+    <div className='starship'>
+        <img src={starship}/>
+        <div className="imgup-comment">
+            <div id='teacher' className='paragraph'>
+                <hr className="Line-img"/>
+                <img src={star2} className="Star3" />
+                <p className="Chat">آقای رضایی</p>
+                <p>معلم</p>
+                <p className="p-Chat">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+                طلبد،
+                </p>
+            </div>
+            <div id='students' className='paragraph'>
+                <hr className="Line-img"/>
+                <img src={star2} className="Star3" />
+                <p className="Chat">علی احمدی</p>
+                <p> دانشجو</p>
+                <p className="p-Chat">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+                طلبد،
+                </p>
+            </div>
+            <div  id='olds' className='paragraph'>
+                <hr className="Line-img" />
+                <img src={star2} className="Star3" />
+                <p className="Chat">مهندس جعفری</p>
+                <p>مهندس برق</p>
+                <p className="p-Chat">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+                طلبد،
+                </p>
+            </div>
+            <div  id='parents' className='paragraph'>
+                <hr className="Line-img" />
+                <img src={star2} className="Star3" />
+                <p className="Chat">اکبر مرادی</p>
+                <p>دکتر</p>
+                <p className="p-Chat">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+                طلبد،
+                </p>
+            </div>
+            <div id='infinit' className='paragraph'>
+                <hr className="Line-img" />
+                <img src={star2} className="Star3" />
+                <p className="Chat">محمد عباسی</p>
+                <p>دارای اشتراک مادام العمر</p>
+                <p className="p-Chat">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+                طلبد،
+                </p>
+            </div>
+        </div>
+    </div>
     );
   };
 
@@ -119,9 +149,9 @@ function componentPage() {
   const Endcomment = () => {
     return (
       <div className="End">
-        <Button primary>شروع کنید</Button>
+        <Link to='/Educational-Site/SingUp'><Button primary>شروع کنید</Button></Link>
         <p className="End-p">
-          LearnPlus پیوستن به بیش از 10 میلیون نفر یادگیری در
+            LearnPlus پیوستن به بیش از 10 میلیون نفر یادگیری در
         </p>
       </div>
     );
