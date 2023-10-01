@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/Educational-Site/static/css/main.97d89912.css",
-    "main.js": "/Educational-Site/static/js/main.b94ea5a5.js",
+    "main.css": "/Educational-Site/static/css/main.8b81d22b.css",
+    "main.js": "/Educational-Site/static/js/main.a7eb03b7.js",
+    "static/media/robot2.gif": "/Educational-Site/static/media/robot2.6490fd09fd953224236a.gif",
     "static/media/unsplash_YwSf1o8s79c.png": "/Educational-Site/static/media/unsplash_YwSf1o8s79c.8d498225799a3eab8137.png",
     "static/media/up2.png": "/Educational-Site/static/media/up2.9fcb5fd45eba02b60608.png",
     "static/media/the-reward-4k-9x 2.png": "/Educational-Site/static/media/the-reward-4k-9x 2.29ad3697924366103aca.png",
+    "static/media/robot1.svg": "/Educational-Site/static/media/robot1.fc33267306bb7c2df7d8.svg",
     "static/media/pic5.png": "/Educational-Site/static/media/pic5.a2f35af10a925a35c7d0.png",
     "static/media/learning-education-word-letters 1.png": "/Educational-Site/static/media/learning-education-word-letters 1.e283800e8ba164c1b720.png",
     "static/media/Starcom.png": "/Educational-Site/static/media/Starcom.57ba0b831d31a1ad4540.png",
     "static/media/971 1.png": "/Educational-Site/static/media/971 1.d3f35640715c8a3a94a3.png",
+    "static/media/im11.png": "/Educational-Site/static/media/im11.0eb3ed70efb0e3edad39.png",
     "static/media/im12.png": "/Educational-Site/static/media/im12.eb263fa11a3544f201c1.png",
     "static/media/Vip.png": "/Educational-Site/static/media/Vip.68d8c3387cf5d8116f12.png",
     "static/media/im2.png": "/Educational-Site/static/media/im2.3421a8312bcb5ba3d1c7.png",
@@ -20,24 +23,27 @@
     "static/media/Yekan-Bakh-Fat.ttf": "/Educational-Site/static/media/Yekan-Bakh-Fat.e2d31a659760f1b20250.ttf",
     "static/media/Yekan-Bakh-Heavy.ttf": "/Educational-Site/static/media/Yekan-Bakh-Heavy.92853643355fcca2b276.ttf",
     "static/media/Yekan-Bakh-Bold.ttf": "/Educational-Site/static/media/Yekan-Bakh-Bold.905b303dc438d36bfe14.ttf",
+    "static/media/robot3.gif": "/Educational-Site/static/media/robot3.55560f5e80ebcc220a45.gif",
     "static/media/Free.png": "/Educational-Site/static/media/Free.3cfb19f588f972be0626.png",
     "static/media/image 2.png": "/Educational-Site/static/media/image 2.a8fd2ba141b636c40451.png",
     "static/media/image 1.png": "/Educational-Site/static/media/image 1.c92e29e9067ba2542a07.png",
+    "static/media/rocket.webp": "/Educational-Site/static/media/rocket.f20e99677909624e80f7.webp",
+    "static/media/Screenshot (24).png": "/Educational-Site/static/media/Screenshot (24).f5a4d4d097977a5b4693.png",
     "static/media/no.png": "/Educational-Site/static/media/no.6ad230fc18ac32d3eb7e.png",
     "static/media/ok.png": "/Educational-Site/static/media/ok.97791e7dbd56bc8b60fd.png",
     "static/media/Exploring Data Visually.png": "/Educational-Site/static/media/Exploring Data Visually.ad036485097d32a56aaa.png",
     "static/media/Scientific Thinking.png": "/Educational-Site/static/media/Scientific Thinking.ed5980bc2a545c195189.png",
     "static/media/Solving Equations.png": "/Educational-Site/static/media/Solving Equations.11e999f187250c3bdf0e.png",
     "static/media/ThinkingInCode.png": "/Educational-Site/static/media/ThinkingInCode.171050b4831c32e21529.png",
-    "static/media/bi_apple.svg": "/Educational-Site/static/media/bi_apple.338ed8e77dfe8d54957b7c4eab24b1d4.svg",
-    "static/media/flat-color-icons_google.svg": "/Educational-Site/static/media/flat-color-icons_google.713726f194c255716aca34b8c3acb37c.svg",
-    "static/media/logos_facebook.svg": "/Educational-Site/static/media/logos_facebook.23faa723fb43ef2d0b06084dfd4ef920.svg",
+    "static/media/bi_apple.svg": "/Educational-Site/static/media/bi_apple.338ed8e77dfe8d54957b.svg",
+    "static/media/flat-color-icons_google.svg": "/Educational-Site/static/media/flat-color-icons_google.713726f194c255716aca.svg",
+    "static/media/logos_facebook.svg": "/Educational-Site/static/media/logos_facebook.23faa723fb43ef2d0b06.svg",
     "index.html": "/Educational-Site/index.html",
-    "main.97d89912.css.map": "/Educational-Site/static/css/main.97d89912.css.map",
-    "main.b94ea5a5.js.map": "/Educational-Site/static/js/main.b94ea5a5.js.map"
+    "main.8b81d22b.css.map": "/Educational-Site/static/css/main.8b81d22b.css.map",
+    "main.a7eb03b7.js.map": "/Educational-Site/static/js/main.a7eb03b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.97d89912.css",
-    "static/js/main.b94ea5a5.js"
+    "static/css/main.8b81d22b.css",
+    "static/js/main.a7eb03b7.js"
   ]
 }
