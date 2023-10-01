@@ -39,7 +39,7 @@
 .box .rectangle {
     background-color: #ffffff;
     border-radius: 25px;
-    box-shadow: 0px 0px 10px 10px #9c949440;
+    box-shadow: 0px 0px 20px 10px #9c949440;
     height: 254px;
     width: 254px;
 }
@@ -165,7 +165,7 @@ span {
 .box-img .rectangle-img {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px #00000040;
+    box-shadow: 0px 0px 15px 5px #00000040;
     height: 349px;
     width: 261px;
 }
