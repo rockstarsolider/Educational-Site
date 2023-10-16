@@ -3,9 +3,9 @@
 #### how to run this project on your computer: <br/>
 1.pull the project to your computer<br/>
 2.open a terminal an enter the pulled project address:<br/>
-    <code>cd "address" <br/>
+     cd "address" <br/>
 3.then run the project: <br/>
-    <code>npm start <br/>
+     npm start <br/>
 4.now you can see the project on: http://localhost:3000 <br/>
 
 #### Figma links:
