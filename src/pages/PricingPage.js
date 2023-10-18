@@ -13,7 +13,6 @@ import im7 from "../style/no.png";
 
 import im10 from "../style/logic.png";
 
-
 function PricingPage() {
   const Intro = () => {
     return (
@@ -133,7 +132,6 @@ function PricingPage() {
     );
   };
 
-
   const Freevip = () => {
     return (
       <div>
@@ -186,7 +184,6 @@ function PricingPage() {
     );
   };
 
-
   const Droptext = () => {
     return (
       <div>
@@ -196,73 +193,104 @@ function PricingPage() {
   };
 
   const Allcorses1 = () => {
-
     return (
       <div className="box-8">
         <div className="rectangle-8">
-            <p className="Math-1">ریاضی پایه</p>
-            <hr className="Line-1" />
-            <div className="flexing">
+          <p className="Math-1">ریاضی پایه</p>
+          <hr className="Line-1" />
+          <div className="flexing">
             <div>
-                <img src={im10} className="Logic" />
-                <p className="Logic-p">منطق</p>
-                <img src='https://ds055uzetaobb.cloudfront.net/brioche/chapter/logic_II-Pdrn7X.png?width=20' className="Logic" />
-                <p className="Logic-p">2 منطق</p>
-                <img src='https://ds055uzetaobb.cloudfront.net/brioche/chapter/First_Choice_1-Bx5Qz6.png?width=20' className="Logic" />
-                <p className="Logic-p">ریاضی روزانه</p>
-                <img src='https://ds055uzetaobb.cloudfront.net/brioche/chapter/joy_of_problem_solving-e0Vf8J.png?width=20' className="Logic" />
-                <p className="Logic-p">قدرت حل مسئله</p>
-            </div>
-            <div>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/number_theory-ypfqcB.png?width=20" className="Logic" />
-                <p className="Logic-p">تئوری اعداد</p>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/infinity-ZumyiA.png?width=20" className="Logic" />
-                <p className="Logic-p">بینهایت</p>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/math_history-f7pDr1.png?width=20" className="Logic" />
-                <p className="Logic-p">تاریخ ریاضیات</p>
-                <img src='https://ds055uzetaobb.cloudfront.net/brioche/chapter/random_variables_and_distributions-Ny6w3J.png?width=20' className="Logic" />
-                <p className="Logic-p">متغیر ها</p>
-            </div>
-            </div>
-            <p className="Math-1">علوم</p>
-            <hr className="Line-1" />
-            <div className="flexing">
-            <div>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/scientific_thinking_960_by_960-CICqcg.png?width=20" className="Logic" />
-                <p className="Logic-p">تفکر علمی</p>
-                <img src='https://ds055uzetaobb.cloudfront.net/brioche/chapter/science_essentials-GkPf0c.png?width=20' className="Logic" />
-                <p className="Logic-p">پایه های علوم</p>
+              <img src={im10} className="Logic" />
+              <p className="Logic-p">منطق</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/logic_II-Pdrn7X.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">2 منطق</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/First_Choice_1-Bx5Qz6.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">ریاضی روزانه</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/joy_of_problem_solving-e0Vf8J.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">قدرت حل مسئله</p>
             </div>
             <div>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/electricity_and_magnetism-rJijqR.png?width=20" className="Logic" />
-                <p className="Logic-p">الکتریسیته و مغناطیس</p>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/the_chemical_reaction-JsXxfp.png?width=20" className="Logic" />
-                <p className="Logic-p">واکنش های شیمیایی</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/number_theory-ypfqcB.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">تئوری اعداد</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/infinity-ZumyiA.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">بینهایت</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/math_history-f7pDr1.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">تاریخ ریاضیات</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/random_variables_and_distributions-Ny6w3J.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">متغیر ها</p>
             </div>
+          </div>
+          <p className="Math-1">علوم</p>
+          <hr className="Line-1" />
+          <div className="flexing">
+            <div>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/scientific_thinking_960_by_960-CICqcg.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">تفکر علمی</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/science_essentials-GkPf0c.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">پایه های علوم</p>
             </div>
+            <div>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/electricity_and_magnetism-rJijqR.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">الکتریسیته و مغناطیس</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/the_chemical_reaction-JsXxfp.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">واکنش های شیمیایی</p>
+            </div>
+          </div>
         </div>
-        </div>
-        );
-    };
-
-
+      </div>
+    );
+  };
+  
 
   return (
     <div>
       <Header />
-        <div className="pricing-page">
-            <Intro />
-            <Box />
-            <Titletwo />
-            <Boximg />
-            <Freevip />
-            <FreeVipcard />
-            <Droptext />
-            <Allcorses1 />
-        </div>
-        <Footer />
+      <div className="pricing-page">
+        <Intro />
+        <Box />
+        <Titletwo />
+        <Boximg />
+        <Freevip />
+        <FreeVipcard />
+        <Droptext />
+        <Allcorses1 />
+      </div>
+      <Footer />
     </div>
   );
-};
+}
 
 export default PricingPage;
