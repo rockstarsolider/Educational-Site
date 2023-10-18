@@ -15,6 +15,7 @@ import Question3 from "./pages/Question3";
 import Question4 from "./pages/Question4";
 import CoursePage from "./pages/CoursePage";
 import LearningRoadPage from "./pages/LerningRoadPage";
+import PrinciplesPage from "./pages/PrinciplesPage";
 
 function App() {
   return (
@@ -56,6 +57,10 @@ function App() {
         <Route
           path="/Educational-Site/learning-road"
           element={<LearningRoadPage />}
+        />
+        <Route
+          path="/Educational-Site/principles"
+          element={<PrinciplesPage />}
         />
       </Routes>
     </>
