@@ -7,7 +7,7 @@ import rocket from '../style/Screenshot (23).png'
 function Email(){
     return(
         <div className="email-page">
-            <img src={rocket}/>
+            <img className="rocket" src={rocket}/>
             <p className="Login-1">ورود</p>
             <input className="email1" placeholder=" ایمیل"></input>
             <input className="email1" placeholder=" گذرواژه" ></input>

@@ -1,0 +1,10 @@
+.black-box {
+    height: 334px;
+    width: 1440px;
+}
+
+.-black-box .black-rectangle {
+    background-color: #0f0f0f;
+    height: 334px;
+    width: 1440px;
+}

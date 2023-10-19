@@ -356,7 +356,7 @@ span {
     display: flex;
     background-color: white;
     border: 2px solid;
-    border-color: #000000;
+    border-color: #535353;
     border-radius: 10px;
     text-align: right;
     color: #000000;
@@ -374,10 +374,10 @@ span {
     width: 120px;
     background-color: white;
     border: 2px solid;
-    border-color: #000000;
+    border-color: #535353;
     border-radius: 10px;
-    margin: -55px 0px 6px 770px;
-    padding: 5px 40px 0px 0px;
+    margin: -55px 0px 6px 750px;
+    padding: 5px 25px 0px 0px;
     font-size: 25px;
     font-family: Yekan;
     text-align: center;
@@ -396,9 +396,9 @@ span {
     direction: rtl;
     background-color: white;
     border: 2px solid;
-    border-color: #000000;
+    border-color: #535353;
     border-radius: 10px;
-    margin: -55px 0px 0px 930px;
+    margin: -55px 0px 0px 910px;
     font-size: 25px;
     font-family: Yekan;
     padding: 4px 65px 0px 0px;
@@ -417,9 +417,9 @@ span {
     direction: rtl;
     background-color: white;
     border: 2px solid;
-    border-color: #000000;
+    border-color: #535353;
     border-radius: 10px;
-    margin: 20px 0px 0px 770px;
+    margin: 20px 0px 0px 750px;
     font-size: 25px;
     font-family: Yekan;
     padding: 8px 70px 0px 0px;
@@ -438,9 +438,9 @@ span {
     width: 130px;
     background-color: white;
     border: 2px solid;
-    border-color: #000000;
+    border-color: #535353;
     border-radius: 10px;
-    margin: -55px 0px 0px 1050px;
+    margin: -55px 0px 0px 1030px;
     padding: 5px 30px 0px 0px;
     font-size: 25px;
     font-family: Yekan;
@@ -460,10 +460,10 @@ span {
     width: 410px;
     background-color: white;
     border: 2px solid;
-    border-color: #000000;
+    border-color: #535353;
     border-radius: 10px;
-    margin: 20px 0px 0px 770px;
-    padding: 5px 70px 0px 0px;
+    margin: 20px 0px 0px 750px;
+    padding: 5px 90px 0px 0px;
     font-size: 25px;
     font-family: Yekan;
     text-align: center;
@@ -473,7 +473,6 @@ span {
     cursor: pointer;
     border-color: #165AAA;
     color: #535353;
-
 }
 
 .img-up {
@@ -497,7 +496,7 @@ span {
 .Chat {
     display: block;
     font-size: 28px;
-    margin: 5px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     direction: rtl;
 }
 

@@ -2,6 +2,7 @@ import "./LoginPage.css"
 import { Link } from "react-router-dom";
 import rocket from "../style/Screenshot (23).png"
 import Button from '../component/Button'
+import React, { useState } from "react";
 
 function Login(){
 
@@ -14,9 +15,10 @@ function Login(){
                     <Button primary>  Google   ورود با  </Button>
                     <Link to='/Educational-Site/Email' className="link-width"><Button secondary className="login2">Email ورود با</Button></Link>
                 </div>
-                <h4 className="login-c">New user?? <Link to= '/Educational-Site/SingUp' className="login-link"> SingUp</Link></h4>
+            <h4 className="login-c">New user?? <Link to='/Educational-Site/SingUp' className="login-link"> SingUp</Link></h4>
             </div>  
     )
+    
 
 
 

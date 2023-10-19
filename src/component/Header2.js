@@ -48,7 +48,7 @@ function Header2() {
                 </div>
                 <div className='search-hide'><SearchBar/></div>
                 <Link to='/Educational-Site/pricing' className='txt-hide'><Button primary>اشتراک ویژه</Button></Link>
-                <TbMenu2 onClick={HandleClick} id='icon2' className="icon2"/>
+                
             </div>
             <div id='hamburger' style={{display:'none'}}>
                 <Link className='txt-decor color-black mt' to='/'>اصول</Link><br/>

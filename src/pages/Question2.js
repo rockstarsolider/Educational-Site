@@ -3,19 +3,15 @@ import { Link } from "react-router-dom";
 
 
 function Question2 (){
-    return(
-        <div>
-            <h2 className="Question">به کدامیک بیشتر علاقه دارید ؟</h2>
-            <h1 className="about">فقط یکی را انتخاب کنید این به ما کمک می کند <br/> تا  شما را  بیشتر بشناسیم</h1>
-            <button className="other-answer"> یادگیری مهارت های خاص برای پیشرفت شغلی</button>
-            <button className="other-answer">کاوش موضوعات جدیدی که به آنها علاقه دارم</button>
-            <button className="other-answer">تازه کردن پایه های ریاضی من</button>
-            <button className="other-answer">برای تیز ماندن مغزم را تمرین می دهم</button>
-            <button className="other-answer">در مدرسه عالی بودن</button>
-            <button className="other-answer">یک چیز دیگر</button>
-            <Link to='/Educational-Site/Question3'><button className="continue">ادامه</button></Link>
-
-        </div>
-    )
+    return (
+      <div className="All">
+        <h1 className="h-1">به کدامیک بیشتر علاقه دارید؟</h1>
+        <h2 className="h-2">
+          فقط یکی را انتخاب کنید این به ما کمک می کند تا شما را شروع کنیم (اما
+          تجربه شما را محدود نمی کند).
+        </h2>
+        
+      </div>
+    );
 }
 export default Question2;

@@ -13,6 +13,17 @@
     border-radius: 10px;
     border: 1px solid gray;
     margin-bottom: 1rem;
+    box-shadow: 5px 5px black;
+}
+
+.email1:focus{
+    transform: scale(1);
+    border: 2px solid #165AAA;
+}
+
+.rocket{
+    width: 150px;
+    height: 150px;
 }
 
 .other1{
@@ -25,6 +36,8 @@
     border: 1px;
     border-radius: 7px;
 }
+
+
 
 .Login-1{
     font-size: 2rem;
