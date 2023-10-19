@@ -3,13 +3,14 @@ import "./PricingPage.css";
 import React, { useState } from "react";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
-import im1 from "../style/Free.png";
-import im2 from "../style/Vip.png";
+import im1 from "../style/Capture2.PNG";
+import im2 from "../style/Capture.PNG";
 import im3 from "../style/im12.png";
 import im4 from "../style/im2.png";
 import im5 from "../style/im3.png";
-import im6 from "../style/ok.png";
-import im7 from "../style/no.png";
+import im8 from "../style/Capture3.PNG";
+import im7 from "../style/Capture4.PNG";
+import im6 from "../style/Capture5.PNG";
 
 import im10 from "../style/logic.png";
 
@@ -33,10 +34,10 @@ function PricingPage() {
             <div className="box-up">
               <div className="rectangle-up">
                 <div className="text-wrapper-up">ماهانه</div>
-                <div className="mony">
+                <div className="mony-1">
                   19.00<span>/ماه</span>
                 </div>
-                <button className="btn-1">خرید اشتراک</button>
+                <button className="btn-2">خرید اشتراک</button>
               </div>
             </div>
           </div>
@@ -62,10 +63,10 @@ function PricingPage() {
             <div className="box-up">
               <div className="rectangle-up">
                 <div className="text-wrapper-up">مادام العمر</div>
-                <div className="mony">
+                <div className="mony-2">
                   349.00<span></span>
                 </div>
-                <button className="btn-1">خرید اشتراک</button>
+                <button className="btn-3">خرید اشتراک</button>
               </div>
             </div>
           </div>
@@ -147,7 +148,7 @@ function PricingPage() {
             <img src={im1} className="img-free" />
             <div className="Free-tit">!رایگان</div>
             <p className="Free-p">.پیش نمایش رایگان هر دوره را امتحان کنید</p>
-            <img src={im7} className="no" />
+            <img src={im8} className="no-1" />
             <p className="All-courses">دسترسی به تمام دوره ها</p>
             <img src={im7} className="no" />
             <p className="All-courses">دروس پایه ریاضی</p>
@@ -166,17 +167,17 @@ function PricingPage() {
             <img src={im2} className="img-free" />
             <div className="Free-tit">!ویژه</div>
             <p className="Free-p">تمامی دروس و قابلیت ها را باز می کند</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">دسترسی به تمام دوره ها</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">دروس پایه ریاضی</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">دروس ریاضی پیشرفته</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">دوره های علوم</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">دوره های علوم کامپیوتر</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">CSپاداش ریاضی، علوم، و پازل</p>
           </div>
         </div>
