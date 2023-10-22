@@ -12,7 +12,10 @@ function Footer() {
       </div>
       <div className="row2">
         <div className="column1">
-          <Link to="/Educational-Site/comments" className="footer-link">
+          <Link
+            to="/Educational-Site/comments"
+            className="footer-link"
+          >
             نظرات
           </Link>
           <Link to="/Educational-Site/Principles" className="footer-link">
@@ -26,7 +29,10 @@ function Footer() {
           <Link to="/Educational-Site/pricing" className="footer-link">
             قیمت گذاری
           </Link>
-          <Link to="/Educational-Site/courses-page" className="footer-link">
+          <Link
+            to="/Educational-Site/courses-page/Up-title"
+            className="footer-link"
+          >
             دوره ها
           </Link>
         </div>

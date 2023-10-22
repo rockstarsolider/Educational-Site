@@ -44,6 +44,12 @@
     width: 254px;
 }
 
+.box-2{
+    height: 254px;
+    width: 254px;
+    background-color: #000000;
+    border-radius: 15px;
+}
 .box .rectangle {
     background-color: #ffffff;
     border-radius: 15px;
@@ -576,7 +582,7 @@ span {
 .Chat {
     display: block;
     font-size: 28px;
-    margin: 20px 0px 0px 0px;
+    margin: 15px 0px 0px 0px;
     direction: rtl;
 }
 
@@ -679,7 +685,7 @@ span {
 }
 
 .Chat-p-p{
-    margin: -3px 0px 0px 0px;
+    margin: 2px 0px 0px 0px;
 }
 
 @media (max-width: 820px) {

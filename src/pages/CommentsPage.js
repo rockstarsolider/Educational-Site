@@ -61,7 +61,7 @@ function componentPage() {
   const Commen = () => {
     return (
       <div className="starship">
-        <img src={starship} />
+        <img className='starship' src={starship} />
         <div className="imgup-comment">
           <div id="teacher" className="paragraph">
             <hr className="Line-img" />
