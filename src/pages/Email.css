@@ -26,9 +26,18 @@
     border-radius: 7px;
 }
 
+#error{
+    color: red;
+}
+
 .Login-1{
     font-size: 2rem;
 }
+
+.email1:focus{
+    border: 1px solid black;
+}
+
 @media (max-width: 820px){
     .email1{
         margin-left: 35%;

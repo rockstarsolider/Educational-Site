@@ -1,4 +1,5 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import MainPage from "./pages/MainPage";
 import AboutPage from './pages/AboutPage';
 import PricingPage from './pages/PricingPage';
@@ -18,6 +19,13 @@ import LearningRoadPage from './pages/LerningRoadPage';
 import PrinciplesPage from './pages/PrinciplesPage';
 
 function App() {
+    const location = useLocation();
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [location]);
+
     return (
         <>
             <Routes>

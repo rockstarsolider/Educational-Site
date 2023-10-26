@@ -26,6 +26,31 @@
     margin-top: 1.5rem;
 }
 
+.search-hide{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid grey;
+    gap: 1rem;
+    border-radius: 10px;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+}
+
+.search-hide input{
+    height: 2rem;
+    width: 15rem;
+    font-size: .7rem;
+    margin-bottom: 2rem;
+}
+
+.search-icon2{
+    position: relative;
+    top: 2.8rem;
+    right: .8rem;
+}
+
 .search-bar {
     padding: 0 .3rem;
     border-radius: .5rem;

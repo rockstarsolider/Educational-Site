@@ -23,7 +23,7 @@ function UserPage() {
                             <p>اولین درستان را شروع کنید</p>
                             <p>اولین درستان را با موفقیت تمام کنید</p>
                         </div>
-                        <div className="prog-bar"><h2>13</h2></div>
+                        
                     </div>
                 </div>
             </div>
@@ -33,20 +33,21 @@ function UserPage() {
     const ToContinue = () => {
         return (
             <div className="to-con">
-                <div className="container1-hp">
+                <div className="container1-up">
                     <p>مسابقات</p>
-                    <div className="border-area border-area1">
+                    <div className="border-areaa border-area1">
                         <img src={Image1}></img>
                         <h3>قفل مسابقات را باز کنید</h3>
                         <p>برای باز کردن قفل شرکت در مسابقات باید 150 امتیاز به دست بیاورید</p>
                     </div>
                 </div>
-                <div className="container1-hp">
+                <div className="container1-up">
                     <p>درس هایتان را ادامه دهید</p>
-                    <div className="border-area border-area2">
+                    <div className="border-areaa border-area2">
                         <img src={Image2}></img>
                         <h3>منطق ترتیبی</h3>
-                        <p>درس 1 از 28</p>
+                        <p>درس 7 از 28</p>
+                        <div className="new-prog"><div className="in-prog"></div></div>
                         <Link to='/Educational-Site/learning-road'><Button primary>شروع درس</Button></Link>
                     </div>
                 </div>

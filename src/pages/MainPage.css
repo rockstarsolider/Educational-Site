@@ -1,26 +1,29 @@
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 10%;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
 }
 
 .card {
-    background-color: #D9D9D9;
     width: 12em;
     height: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: .5rem;
 }
 
 .icon {
     font-size: 5rem;
 } 
 .icon4 {
-    font-size: 4rem;
+    width: 4.5rem;
 }
 
 .link {
@@ -30,15 +33,97 @@
     top: 1rem;
 }
 
-.main-page img {
-    width: 40%;
+.main-page video {
+    width: 50%;
 }
 
 .index img{
     order: 1;
 }
 
+.color-blue{
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.intro-con{
+    width: 40%;
+}
+
+.mp-table{
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mp-video{
+    width: 70%;
+    margin-top: 2rem;
+}
+
+#mp-title{
+    font-size: 2rem;
+}
+
+.container9{
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    margin: 0 10%;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item{
+    width: 24%;
+    height: 2.5rem;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+}
+
+.item:hover{
+    cursor: pointer;
+    color: grey;
+}
+
+.border-active{
+    border:1px solid orange ;
+}
+
+.border-deactive{
+    border:1px solid grey ;
+}
+
 @media (max-width: 820px) {
+    .icon4 {
+        width: 3rem;
+    }
+
+    .mp-table{
+        flex-direction: column;
+    }
+
+    #mp-video{
+        width: 100%;
+    }
+
+    .main-page video {
+        width: 100%;
+    }
+
+    .intro-con{
+        width: 100%;
+        text-align: right;
+    }
+
     .intro {
         gap: 20px;
         padding: 7em 0;
@@ -55,13 +140,17 @@
 
     .card {
         height: 7rem;
+        width: 7rem;
     }
 
     .card p{font-size: smaller;}
 
     .index img {order: -1;}
 
-    .width {width: 92%;}
+    .width {
+        width: 92%;
+        text-align: right;
+    }
 
     .intro img{width: 90%;}
     

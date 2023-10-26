@@ -50,6 +50,21 @@
     margin-top: 4rem;
 }
 
+#reaction{
+    color: red;
+}
+
+.email:focus{
+    border: 1px solid black;
+}
+
+.name:focus{
+    border: 1px solid black;
+}
+.name1:focus{
+    border: 1px solid black;
+}
+
 @media (max-width: 820px){
     .email{
         width: 300px;
