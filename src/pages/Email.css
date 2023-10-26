@@ -10,9 +10,20 @@
     font-size: 1.2rem;
     height: 50px;
     width: 350px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid gray;
     margin-bottom: 1rem;
+    box-shadow: 5px 5px black;
+}
+
+.email1:focus{
+    transform: scale(1);
+    border: 2px solid #165AAA;
+}
+
+.rocket{
+    width: 150px;
+    height: 150px;
 }
 
 .other1{

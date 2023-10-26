@@ -44,7 +44,7 @@ function Email(){
 
     return(
         <div className="email-page">
-            <img src={rocket}/>
+            <img className="rocket" src={rocket}/>
             <p className="Login-1">ورود</p>
             <input id="email1" onChange={(e) => setEmail(e.target.value)} className="email1" placeholder=" ایمیل"></input>
             <input id="password1" onChange={(e) => setPassword(e.target.value)} className="email1" placeholder=" گذرواژه" ></input>

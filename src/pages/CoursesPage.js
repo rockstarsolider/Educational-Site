@@ -13,7 +13,7 @@ function CoursesPage() {
     const Search = () => {
         return (
             <div className="search-section">
-                <h1>بین بیش از 100 درس موجود جستوجو کنید</h1>
+                <h1 className="tit-1-c">بین بیش از 100 درس موجود جستوجو کنید</h1>
                 <SearchBar />
                 <div className="Topics-btn">
                     <a href='/Educational-Site/courses-page#new'><Button solid autoFocus >دروس جدید</Button></a>
@@ -30,7 +30,7 @@ function CoursesPage() {
         return (
             <div>
                 <div className="Topic" id='new'>
-                    <h1>دروس جدید</h1>
+                    <h1 >دروس جدید</h1>
                     <div className="courses">
                         <Link to='/Educational-Site/learning-road' className="txt-decor color-black" ><div className="course">
                             <h2>جدید</h2>

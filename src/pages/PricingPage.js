@@ -3,16 +3,16 @@ import "./PricingPage.css";
 import React, { useState } from "react";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
-import im1 from "../style/Free.png";
-import im2 from "../style/Vip.png";
+import im1 from "../style/Capture2.PNG";
+import im2 from "../style/Capture.PNG";
 import im3 from "../style/im12.png";
 import im4 from "../style/im2.png";
 import im5 from "../style/im3.png";
-import im6 from "../style/ok.png";
-import im7 from "../style/no.png";
+import im8 from "../style/Capture3.PNG";
+import im7 from "../style/Capture4.PNG";
+import im6 from "../style/Capture5.PNG";
 
 import im10 from "../style/logic.png";
-
 
 function PricingPage() {
   const Intro = () => {
@@ -34,10 +34,10 @@ function PricingPage() {
             <div className="box-up">
               <div className="rectangle-up">
                 <div className="text-wrapper-up">ماهانه</div>
-                <div className="mony">
+                <div className="mony-1">
                   19.00<span>/ماه</span>
                 </div>
-                <button className="btn-1">خرید اشتراک</button>
+                <button className="btn-2">خرید اشتراک</button>
               </div>
             </div>
           </div>
@@ -63,10 +63,10 @@ function PricingPage() {
             <div className="box-up">
               <div className="rectangle-up">
                 <div className="text-wrapper-up">مادام العمر</div>
-                <div className="mony">
+                <div className="mony-2">
                   349.00<span></span>
                 </div>
-                <button className="btn-1">خرید اشتراک</button>
+                <button className="btn-3">خرید اشتراک</button>
               </div>
             </div>
           </div>
@@ -133,7 +133,6 @@ function PricingPage() {
     );
   };
 
-
   const Freevip = () => {
     return (
       <div>
@@ -149,7 +148,7 @@ function PricingPage() {
             <img src={im1} className="img-free" />
             <div className="Free-tit">!رایگان</div>
             <p className="Free-p">.پیش نمایش رایگان هر دوره را امتحان کنید</p>
-            <img src={im7} className="no" />
+            <img src={im8} className="no-1" />
             <p className="All-courses">دسترسی به تمام دوره ها</p>
             <img src={im7} className="no" />
             <p className="All-courses">دروس پایه ریاضی</p>
@@ -168,24 +167,23 @@ function PricingPage() {
             <img src={im2} className="img-free" />
             <div className="Free-tit">!ویژه</div>
             <p className="Free-p">تمامی دروس و قابلیت ها را باز می کند</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">دسترسی به تمام دوره ها</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">دروس پایه ریاضی</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">دروس ریاضی پیشرفته</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">دوره های علوم</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">دوره های علوم کامپیوتر</p>
-            <img src={im6} className="no" />
+            <img src={im6} className="yes" />
             <p className="All-courses">CSپاداش ریاضی، علوم، و پازل</p>
           </div>
         </div>
       </div>
     );
   };
-
 
   const Droptext = () => {
     return (
@@ -196,73 +194,104 @@ function PricingPage() {
   };
 
   const Allcorses1 = () => {
-
     return (
       <div className="box-8">
         <div className="rectangle-8">
-            <p className="Math-1">ریاضی پایه</p>
-            <hr className="Line-1" />
-            <div className="flexing">
+          <p className="Math-1">ریاضی پایه</p>
+          <hr className="Line-1" />
+          <div className="flexing">
             <div>
-                <img src={im10} className="Logic" />
-                <p className="Logic-p">منطق</p>
-                <img src='https://ds055uzetaobb.cloudfront.net/brioche/chapter/logic_II-Pdrn7X.png?width=20' className="Logic" />
-                <p className="Logic-p">2 منطق</p>
-                <img src='https://ds055uzetaobb.cloudfront.net/brioche/chapter/First_Choice_1-Bx5Qz6.png?width=20' className="Logic" />
-                <p className="Logic-p">ریاضی روزانه</p>
-                <img src='https://ds055uzetaobb.cloudfront.net/brioche/chapter/joy_of_problem_solving-e0Vf8J.png?width=20' className="Logic" />
-                <p className="Logic-p">قدرت حل مسئله</p>
-            </div>
-            <div>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/number_theory-ypfqcB.png?width=20" className="Logic" />
-                <p className="Logic-p">تئوری اعداد</p>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/infinity-ZumyiA.png?width=20" className="Logic" />
-                <p className="Logic-p">بینهایت</p>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/math_history-f7pDr1.png?width=20" className="Logic" />
-                <p className="Logic-p">تاریخ ریاضیات</p>
-                <img src='https://ds055uzetaobb.cloudfront.net/brioche/chapter/random_variables_and_distributions-Ny6w3J.png?width=20' className="Logic" />
-                <p className="Logic-p">متغیر ها</p>
-            </div>
-            </div>
-            <p className="Math-1">علوم</p>
-            <hr className="Line-1" />
-            <div className="flexing">
-            <div>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/scientific_thinking_960_by_960-CICqcg.png?width=20" className="Logic" />
-                <p className="Logic-p">تفکر علمی</p>
-                <img src='https://ds055uzetaobb.cloudfront.net/brioche/chapter/science_essentials-GkPf0c.png?width=20' className="Logic" />
-                <p className="Logic-p">پایه های علوم</p>
+              <img src={im10} className="Logic" />
+              <p className="Logic-p">منطق</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/logic_II-Pdrn7X.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">2 منطق</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/First_Choice_1-Bx5Qz6.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">ریاضی روزانه</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/joy_of_problem_solving-e0Vf8J.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">قدرت حل مسئله</p>
             </div>
             <div>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/electricity_and_magnetism-rJijqR.png?width=20" className="Logic" />
-                <p className="Logic-p">الکتریسیته و مغناطیس</p>
-                <img src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/the_chemical_reaction-JsXxfp.png?width=20" className="Logic" />
-                <p className="Logic-p">واکنش های شیمیایی</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/number_theory-ypfqcB.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">تئوری اعداد</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/infinity-ZumyiA.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">بینهایت</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/math_history-f7pDr1.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">تاریخ ریاضیات</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/random_variables_and_distributions-Ny6w3J.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">متغیر ها</p>
             </div>
+          </div>
+          <p className="Math-1">علوم</p>
+          <hr className="Line-1" />
+          <div className="flexing">
+            <div>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/scientific_thinking_960_by_960-CICqcg.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">تفکر علمی</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/science_essentials-GkPf0c.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">پایه های علوم</p>
             </div>
+            <div>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/electricity_and_magnetism-rJijqR.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">الکتریسیته و مغناطیس</p>
+              <img
+                src="https://ds055uzetaobb.cloudfront.net/brioche/chapter/the_chemical_reaction-JsXxfp.png?width=20"
+                className="Logic"
+              />
+              <p className="Logic-p">واکنش های شیمیایی</p>
+            </div>
+          </div>
         </div>
-        </div>
-        );
-    };
-
-
+      </div>
+    );
+  };
+  
 
   return (
     <div>
       <Header />
-        <div className="pricing-page">
-            <Intro />
-            <Box />
-            <Titletwo />
-            <Boximg />
-            <Freevip />
-            <FreeVipcard />
-            <Droptext />
-            <Allcorses1 />
-        </div>
-        <Footer />
+      <div className="pricing-page">
+        <Intro />
+        <Box />
+        <Titletwo />
+        <Boximg />
+        <Freevip />
+        <FreeVipcard />
+        <Droptext />
+        <Allcorses1 />
+      </div>
+      <Footer />
     </div>
   );
-};
+}
 
 export default PricingPage;

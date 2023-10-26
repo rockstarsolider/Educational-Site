@@ -1,5 +1,17 @@
+.tit-1-c{
+    margin: 0px 8px 0px 0px;
+}
+
 .search-bar {
-    margin: 2em 0.5em;
+    margin: 2em 0em;
+}
+.search-bar:hover form {
+    border: 2px solid black;
+    color: black;
+}
+
+h1{
+    margin: 0px 25px 0px 0px;
 }
 
 .search-bar form {
@@ -8,11 +20,13 @@
     direction: rtl;
     align-items: center;
     display: flex;
+    border: 2px solid gray;
 }
 
 .search-icon {
     margin-right: 15px;
     font-size: 30px;
+    color: gray;
 }
 
 input {
@@ -54,9 +68,9 @@ input:focus {
     height: 100px;
     margin: 20px;
     padding: 2rem;
-    border: solid rgb(146, 146, 146);
+    border:  solid rgb(146, 146, 146);
     border-radius: 15px;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.5);
 }
 
 .course {

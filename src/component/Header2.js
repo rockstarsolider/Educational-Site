@@ -5,21 +5,35 @@ import { TbMenu2, TbHome, TbPaperBag, TbSearch } from 'react-icons/tb';
 import SearchBar from './SearchBar'
 import { useState } from 'react';
 import { FiSearch } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 function Header2() {
-    const [state, setState] = useState('closed')
+    const DropdownMenu = () => {
+      const [isOpen, setIsOpen] = useState(false);
 
-    const HandleClick = () => {
-        if(state === 'closed'){
-            setState('open')
-            document.getElementById('hamburger').style.display='block'
-            document.getElementById('icon2').classList.add('effect')
-        } else if (state === 'open'){
-            setState('closed')
-            document.getElementById('hamburger').style.display='none'
-            document.getElementById('icon2').classList.remove('effect')
-        }
-    }
+      const toggleMenu = () => {
+        setIsOpen(!isOpen);
+      };
+
+      return (
+        <div className="dropdown-menu">
+          <motion.button
+            onClick={toggleMenu}
+            animate={{ scale: isOpen ? 0.9 : 1 }}
+            transition={{ duration: 0.2 }}
+          >
+            Menu
+          </motion.button>
+          {isOpen && (
+            <ul>
+              <li>Option 1</li>
+              <li>Option 2</li>
+              <li>Option 3</li>
+            </ul>
+          )}
+        </div>
+      );
+    };
 
     return (
         <div>
@@ -40,7 +54,7 @@ function Header2() {
                     </form>
                 </div>
                 <Link to='/Educational-Site/pricing' className='txt-hide'><Button primary>اشتراک ویژه</Button></Link>
-                <TbMenu2 onClick={HandleClick} id='icon2' className="icon2"/>
+                
             </div>
             <div id='hamburger' style={{display:'none'}}>
                 <Link className='txt-decor color-black mt' to='/Educational-Site/pricing'>قیمت گذاری</Link><br/>

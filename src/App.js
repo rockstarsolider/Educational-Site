@@ -1,22 +1,22 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import MainPage from "./pages/MainPage";
-import AboutPage from './pages/AboutPage';
-import PricingPage from './pages/PricingPage';
-import CommentsPage from './pages/CommentsPage';
-import UserPage from './pages/UserPage';
-import CoursesPage from './pages/CoursesPage';
-import CourseIntroPage from './pages/CourseIntroPage';
-import Login from './pages/LoginPage';
-import SingUp from './pages/SingUp';
-import Email from './pages/Email';
-import Question1 from './pages/Question1';
-import Question2 from './pages/Question2';
-import Question3 from './pages/Question3';
-import Question4 from './pages/Question4';
-import CoursePage from './pages/CoursePage';
-import LearningRoadPage from './pages/LerningRoadPage';
-import PrinciplesPage from './pages/PrinciplesPage';
+import AboutPage from "./pages/AboutPage";
+import PricingPage from "./pages/PricingPage";
+import CommentsPage from "./pages/CommentsPage";
+import UserPage from "./pages/UserPage";
+import CoursesPage from "./pages/CoursesPage";
+import CourseIntroPage from "./pages/CourseIntroPage";
+import Login from "./pages/LoginPage";
+import SingUp from "./pages/SingUp";
+import Email from "./pages/Email";
+import Question1 from "./pages/Question1";
+import Question2 from "./pages/Question2";
+import Question3 from "./pages/Question3";
+import Question4 from "./pages/Question4";
+import CoursePage from "./pages/CoursePage";
+import LearningRoadPage from "./pages/LerningRoadPage";
+import PrinciplesPage from "./pages/PrinciplesPage";
 
 function App() {
     const location = useLocation();

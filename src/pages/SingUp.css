@@ -4,9 +4,16 @@
     font-size: 1rem;
     height: 50px;
     width: 350px;
-    border-radius: 10px;
-    border: 1px solid grey;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px black;
 }
+
+.email:focus {
+    transform: scale(1);
+    border: 2px solid #165AAA;
+}
+
 
 .signup{
     display: flex;
@@ -21,8 +28,13 @@
     height: 50px;
     width: 160px;
     font-size: 1rem;
-    border-radius: 10px;
-    border: 1px solid grey;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px black;
+}
+.name:focus {
+    transform: scale(1);
+    border: 2px solid #165AAA;
 }
 .name1{
     margin-top: 1em ;
@@ -30,9 +42,14 @@
     height: 50px;
     width: 160px;
     font-size: 1rem;
-    border-radius: 10px;
-    border: 1px solid grey;
+    border-radius: 5%;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px black;
 } 
+.name1:focus {
+    transform: scale(1);
+    border: 2px solid #165AAA;
+}
 
 .name-con{
     display: flex;

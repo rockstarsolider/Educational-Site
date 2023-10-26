@@ -1,15 +1,12 @@
 .Question{
-    margin-left: 400px;
-    align-items: center;
-    margin-right: 30%;
-    margin-top: 10%;
+    margin: 70px 440px 0px 0px;
     font-family: Yekan;
     font-size: 45px;
 }
 .other-answer{
     font-family: Yekan;
     font-size: 30px;
-    margin: 1% 40%;
+    margin: 0px 380px 90px 0px;
     height: 70px;
     width: 540px;
     background-color: rgb(255, 255, 255);
@@ -30,7 +27,6 @@
     border-radius: 7px;
 }
 .about{
-    margin-left: 12%;
     font-size: 30px;
     text-align: center;
     color: gray;
@@ -43,4 +39,67 @@
     width: 150px;
     display: flex;
     margin-top: 10%;
+}
+
+.All-box-Question{
+    align-items: center;
+}
+
+.Box-1-q{
+    margin: 30px 0px 0px 470px;
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+}
+
+.P-1-Q{
+    text-align: center;
+}
+
+.p1{
+    font-size: 20px;
+    margin: 18px 7px 0px 0px;
+}
+.gray-p-1{
+    font-size: 15px;
+    margin: 0px 6px 0px 0px;
+    color: gray;
+}
+.gray-p-2{
+    font-size: 15px;
+    margin: 0px 1px 0px 0px;
+    color: gray;
+}
+
+.Button-Q{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    width: 150px;
+    height: 50px;
+    font-family: Yekan;
+    margin: 40px 610px 0px 0px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+    border-radius: 5px;
+}
+
+.Button-Q:hover{
+    cursor: pointer;
+    color: black;
+    border: 2px solid #3646D3;
+}
+
+.h-1{
+    font-size: 30px;
+    text-align: center;
+    color: gray;
+}
+
+.h-2{
+   font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0); 
 }

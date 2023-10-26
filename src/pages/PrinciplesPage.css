@@ -1,0 +1,30 @@
+.black-box {
+    height: 200px;
+    width: 1440px;
+    background-color: rgb(0, 0, 0);
+}
+
+.-black-box .black-rectangle {
+    background-color: #0f0f0f;
+    height: 200px;
+    width: 1440px;
+}
+
+.h2-tit{
+    margin: 0px 0px 0px 0px;
+}
+
+.h3-tit{
+    text-align: center;
+    margin: -250px 0px 0px 0px;
+    color: white;
+}
+.h4-tit{
+    text-align: center;
+    color: white;
+}
+
+.white-box{
+    background-color: white;
+}
+
