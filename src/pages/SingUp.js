@@ -130,14 +130,14 @@ function SingUp (){
 
     return(
         <div className="main">
-        <img src={luanch}/>
+        <img className="lunch" src={luanch}/>
         <div className="signup">
             <h2 className="loginn">ثبت نام</h2>
             <input id="email" className="email" placeholder=" ایمیل" onChange={(e) => setEmail(e.target.value)}></input>
             <input id="password" className="email" placeholder=" گذرواژه"  onChange={(e) => setPassword(e.target.value)}></input>
             <div className="name-con">
                 <input id="lastname" className="name1" placeholder="نام خانوادگی" onChange={(e) => setLastName(e.target.value)}></input>
-                <input type="text" id="firstname" className="name" placeholder="نام" onChange={(e) => setFirstName(e.target.value)}></input>
+                <input type="text" id="firstname" className="name1" placeholder="نام" onChange={(e) => setFirstName(e.target.value)}></input>
             </div>
             <input type="number" id="age" className="email" placeholder="سن" onChange={(e) => setAge(e.target.value)}></input>
             <p id="reaction"></p>

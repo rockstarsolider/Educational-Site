@@ -3,14 +3,14 @@ import "./PricingPage.css";
 import React, { useState } from "react";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
-import im1 from "../style/Capture2.PNG";
-import im2 from "../style/Capture.PNG";
+import im1 from "../style/im2.png"; // Capture2.PNG
+import im2 from "../style/im2.png"; // Capture.PNG
 import im3 from "../style/im12.png";
 import im4 from "../style/im2.png";
 import im5 from "../style/im3.png";
-import im8 from "../style/Capture3.PNG";
-import im7 from "../style/Capture4.PNG";
-import im6 from "../style/Capture5.PNG";
+import im8 from "../style/im2.png"; // Capture3.PNG
+import im7 from "../style/im2.png"; // Capture4.PNG
+import im6 from "../style/im2.png"; // Capture5.PNG
 
 import im10 from "../style/logic.png";
 

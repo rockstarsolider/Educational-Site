@@ -30,7 +30,7 @@ function Footer() {
             قیمت گذاری
           </Link>
           <Link
-            to="/Educational-Site/courses-page/Up-title"
+            to="/Educational-Site/courses-page"
             className="footer-link"
           >
             دوره ها

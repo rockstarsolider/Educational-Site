@@ -1,12 +1,9 @@
 .email{
-    margin-top: 1rem;
-    background-color: white;
-    font-size: 1rem;
+    margin-top: .5rem;
     height: 50px;
     width: 350px;
-    border-radius: 5px;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 5px 5px black;
+    border-radius: 8px;
+    border: 1px solid grey;
 }
 
 .email:focus {
@@ -22,29 +19,12 @@
     align-items: center;
 }
 
-.name{
-    margin-top: 1em ;
-    background-color :white;
-    height: 50px;
-    width: 160px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 5px 5px black;
-}
-.name:focus {
-    transform: scale(1);
-    border: 2px solid #165AAA;
-}
 .name1{
-    margin-top: 1em ;
-    background-color :white;
+    margin-top: .5rem;
     height: 50px;
     width: 160px;
-    font-size: 1rem;
-    border-radius: 5%;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 5px 5px black;
+    border-radius: 8px;
+    border: 1px solid grey;
 } 
 .name1:focus {
     transform: scale(1);
@@ -54,10 +34,6 @@
 .name-con{
     display: flex;
     gap: 1rem;
-}
-
-.button-up{
-    margin-top: 2rem;
 }
 
 .main {
@@ -75,47 +51,16 @@
     border: 1px solid black;
 }
 
-.name:focus{
-    border: 1px solid black;
-}
 .name1:focus{
     border: 1px solid black;
 }
 
 @media (max-width: 820px){
-    .email{
-        width: 300px;
-        font-size: 25px;
-        margin-left: 40%;
+    .lunch{
+        display: none;
     }
-    .other{
-        width: 300px;
-        font-size: 25px;
-        margin-left: 40%;
-    }
-    .name{
-        width: 300px;
-        font-size: 25px;
-        margin-right: 22%;
 
-    }
-    .name1{
-        width: 300px;
-        font-size: 25px;
-        margin-right: 22%;
-
-    }
-    .login-b{
-        margin-left: 48%;
-    }
-    .login{
-        margin-left: 52em;
-        display: flex;
-        font-size: 15px;
-    }
-    .loginn{
-        margin-right: 38%;
-        font-family: Yekan;
-        font-size: 25px;
+    .main{
+        justify-content: center;
     }
 }
