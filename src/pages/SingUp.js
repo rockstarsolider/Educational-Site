@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Button from '../component/Button';
 import luanch from '../style/Screenshot (24).png';
 import { useState } from "react";
+import {TbEye} from 'react-icons/tb'
 
 function SingUp (){
     const [email, setEmail] = useState('')
@@ -52,6 +53,12 @@ function SingUp (){
               '<',
               '>',
             ]
+
+            if (age > 100 || age < 7 ){
+                document.getElementById('reaction').innerHTML='سن را به عدد و بین 7 تا 100 وارد کنید';
+                defaultColor()
+                document.getElementById('age').style.border='1px solid red'
+            }
       
             if (specialChars.includes(password[i])) {
               countSpecialCharacters++
@@ -67,40 +74,40 @@ function SingUp (){
             }
 
             if (countLowerCase == 0) {
-                document.getElementById('reaction').innerHTML='گذرواژه باید شامل حداقل یک حرف کوچک باشد';
+                document.getElementById('reaction').innerHTML='گذرواژه باید شامل حداقل یک حرف کوچک، حرف بزرگ، عدد و علامت ویژه باشد';
                 defaultColor()
                 document.getElementById('password').style.border='1px solid red'
             }
           
             if (countUpperCase == 0) {
-                document.getElementById('reaction').innerHTML='گذرواژه باید شامل حداقل یک حرف بزرگ باشد';
+                document.getElementById('reaction').innerHTML='گذرواژه باید شامل حداقل یک حرف کوچک، حرف بزرگ، عدد و علامت ویژه باشد';
                 defaultColor()
                 document.getElementById('password').style.border='1px solid red'
             }
           
             if (countDigit == 0) {
-                document.getElementById('reaction').innerHTML='گذرواژه باید شامل حداقل 1 عدد باشد';
+                document.getElementById('reaction').innerHTML='گذرواژه باید شامل حداقل یک حرف کوچک، حرف بزرگ، عدد و علامت ویژه باشد';
                 defaultColor()
                 document.getElementById('password').style.border='1px solid red'
             }
           
             if (countSpecialCharacters == 0) {
-                document.getElementById('reaction').innerHTML='حداقل یک حرف ویژه(@,#,!,...) وارد نمایید';
+                document.getElementById('reaction').innerHTML='گذرواژه باید شامل حداقل یک حرف کوچک، حرف بزرگ، عدد و علامت ویژه باشد';
                 defaultColor()
                 document.getElementById('password').style.border='1px solid red'
             }
         }
 
-        if (password.length < 8) {
-            document.getElementById('reaction').innerHTML='گذرواژه نباید کمتر از 8 حرف باشد';
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){} else {
+            document.getElementById('reaction').innerHTML='ایمیل صحیح نیست';
             defaultColor()
-            document.getElementById('password').style.border='1px solid red'
+            document.getElementById('email').style.border='1px solid red'
         }
 
-        if (firstName.length == 0) {
-            document.getElementById('reaction').innerHTML='نام کوچک نباید خالی باشد';
+        if (age.length == 0) {
+            document.getElementById('reaction').innerHTML='سن نباید خالی باشد';
             defaultColor()
-            document.getElementById('firstname').style.border ='1px solid red'
+            document.getElementById('age').style.border='1px solid red'
         }
 
         if (lastName.length == 0) {
@@ -109,16 +116,16 @@ function SingUp (){
             document.getElementById('lastname').style.border='1px solid red'
         }
 
-        if (age > 100 || age < 7 ){
-            document.getElementById('reaction').innerHTML='سن را به عدد و بین 7 تا 100 وارد کنید';
+        if (firstName.length == 0) {
+            document.getElementById('reaction').innerHTML='نام کوچک نباید خالی باشد';
             defaultColor()
-            document.getElementById('age').style.border='1px solid red'
+            document.getElementById('firstname').style.border ='1px solid red'
         }
 
-        if (age.length == 0) {
-            document.getElementById('reaction').innerHTML='سن نباید خالی باشد';
+        if (password.length < 8) {
+            document.getElementById('reaction').innerHTML='گذرواژه نباید کمتر از 8 حرف باشد';
             defaultColor()
-            document.getElementById('age').style.border='1px solid red'
+            document.getElementById('password').style.border='1px solid red'
         }
 
         if (email.length == 0){
@@ -134,7 +141,7 @@ function SingUp (){
         <div className="signup">
             <h2 className="loginn">ثبت نام</h2>
             <input id="email" className="email" placeholder=" ایمیل" onChange={(e) => setEmail(e.target.value)}></input>
-            <input id="password" className="email" placeholder=" گذرواژه"  onChange={(e) => setPassword(e.target.value)}></input>
+            <input id="password" type="password" className="email" placeholder=" گذرواژه"  onChange={(e) => setPassword(e.target.value)}></input>
             <div className="name-con">
                 <input id="lastname" className="name1" placeholder="نام خانوادگی" onChange={(e) => setLastName(e.target.value)}></input>
                 <input type="text" id="firstname" className="name1" placeholder="نام" onChange={(e) => setFirstName(e.target.value)}></input>

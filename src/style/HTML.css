@@ -41,10 +41,9 @@ body {
 }
 
 .intro {
-    margin: 0 10%;
+    padding: 5rem 10%;
     display: flex;
     justify-content: space-between;
-    padding: 10rem 0;
     align-items: center;
 }
 
@@ -300,7 +299,7 @@ body {
         font-size: 20px;
     }
 
-    .Allcard {
+    /* .Allcard {
         height: 100px;
         width: 100px;
         margin: 90px;
@@ -361,5 +360,5 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0px 5px 0px -427px;
-    }
+    } */
 }

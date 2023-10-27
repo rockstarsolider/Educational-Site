@@ -8,43 +8,30 @@ import { FiSearch } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 function Header2() {
-    const DropdownMenu = () => {
-      const [isOpen, setIsOpen] = useState(false);
+    const [state, setState] = useState('closed')
 
-      const toggleMenu = () => {
-        setIsOpen(!isOpen);
-      };
-
-      return (
-        <div className="dropdown-menu">
-          <motion.button
-            onClick={toggleMenu}
-            animate={{ scale: isOpen ? 0.9 : 1 }}
-            transition={{ duration: 0.2 }}
-          >
-            Menu
-          </motion.button>
-          {isOpen && (
-            <ul>
-              <li>Option 1</li>
-              <li>Option 2</li>
-              <li>Option 3</li>
-            </ul>
-          )}
-        </div>
-      );
-    };
+    const HandleClick = () => {
+        if(state === 'closed'){
+            setState('open')
+            document.getElementById('hamburger').style.display='block'
+            document.getElementById('icon2').classList.add('effect')
+        } else if (state === 'open'){
+            setState('closed')
+            document.getElementById('hamburger').style.display='none'
+            document.getElementById('icon2').classList.remove('effect')
+        }
+    }
 
     return (
         <div>
             <div className="header2">
                 <h2>LearnPlus</h2>
                 <div className="icon-container">
-                <Link to='/Educational-Site/userpage' className="color-black txt-decor" ><TbHome className="icon2" /></Link>
+                    <Link to='/Educational-Site/userpage' className="color-black txt-decor" ><TbHome className="icon2" /></Link>
                     <Link to='/Educational-Site/userpage' className="color-black txt-decor txt-hide"><p>خانه</p></Link>
                 </div>
                 <div className="icon-container">
-                <Link to='/Educational-Site/courses-page'  className="color-black txt-decor "><TbPaperBag className="icon2" /></Link>
+                    <Link to='/Educational-Site/courses-page'  className="color-black txt-decor "><TbPaperBag className="icon2" /></Link>
                     <Link to='/Educational-Site/courses-page' className="color-black txt-decor txt-hide"><p>دروس</p></Link>
                 </div>
                 <div className='search-hide'>
@@ -54,7 +41,7 @@ function Header2() {
                     </form>
                 </div>
                 <Link to='/Educational-Site/pricing' className='txt-hide'><Button primary>اشتراک ویژه</Button></Link>
-                
+                <TbMenu2 onClick={HandleClick} id='icon2' className='icon2'/>
             </div>
             <div id='hamburger' style={{display:'none'}}>
                 <Link className='txt-decor color-black mt' to='/Educational-Site/pricing'>قیمت گذاری</Link><br/>

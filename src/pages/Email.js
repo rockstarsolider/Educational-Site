@@ -12,6 +12,10 @@ function Email(){
 
     const navigate = useNavigate()
 
+    const navigation = () => {
+        navigate('/Educational-Site/UserPage')
+    }
+
     const validation = () => {
         const defaultColor = () => {
             document.getElementById('email1').style.border='1px solid grey'
@@ -19,6 +23,15 @@ function Email(){
         }
 
         var state = 0
+
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+            state = state+1
+        } else {
+            document.getElementById('error').innerHTML='ایمیل صحیح نیست';
+            defaultColor()
+            document.getElementById('email1').style.border='1px solid red'
+            state = state-1
+        }
 
         if (password.length == 0){
             document.getElementById('error').innerHTML='گذرواژه خود را وارد کنید'
@@ -34,12 +47,8 @@ function Email(){
             document.getElementById('email1').style.border='1px solid red'
         } else {state = state+1}
 
-        if(state == 2){navigation()}
+        if(state == 3){navigation()}
         
-    }
-
-    const navigation = () => {
-        navigate('/Educational-Site/UserPage')
     }
 
     return(
