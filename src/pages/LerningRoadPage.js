@@ -4,23 +4,36 @@ import Header2 from '../component/Header2'
 import platform from '../style/platform.png'
 import platform2 from '../style/platform2.png'
 import {Link} from 'react-router-dom'
+import Button from "../component/Button";
+import  {gsap}  from "gsap";
+import React, { createRef, useState } from 'react';
+import { useEffect } from "react";
 
 function LearningRoadPage(){
+
+    const data1 = {
+        img: Image2,
+        name: 'منطق ترتیبی',
+        courseLen: 28
+    }
     const data = [
         {
             name: 'منطق استراتژی نوبتی',
             state: 'active',
-            key: 1
+            key: 1,
+            desc: 'در درس استراتژی نوبتی شما مفهوم هایی در این رابطه را درک خواهید کرد و می توانید به سوالات پاسخ دهید'
         },
         {
             name: 'یادگیری منطق استراتژی نوبتی',
             state: 'active',
-            key: 2
+            key: 2,
+            desc: 'در درس یادگیری استراتژی نوبتی شما مفهوم هایی در این رابطه را درک خواهید کرد و می توانید به سوالات پاسخ دهید'
         },
         {
             name: 'حقیقت جویی',
-            state: 'deactive',
-            key: 3
+            state: 'active',
+            key: 3,
+            desc: 'در درس یادگیری استراتژی نوبتی شما مفهوم هایی در این رابطه را درک خواهید کرد و می توانید به سوالات پاسخ دهید'
         },
         {
             name: 'یادگیری حقیقت جویی',
@@ -48,26 +61,54 @@ function LearningRoadPage(){
     const Title = () => {
         return (
             <div className="border-area">
-                <img src={Image2}></img>
-                <h3>منطق ترتیبی</h3>
-                <p>28 درس</p>
+                <img src={data1.img}></img>
+                <h3>{data1.name}</h3>
+                <p>{data1.courseLen} درس</p>
             </div>
         )
     }
 
     const Road = () => {
+        var prev = 'course0'
         return(
             data.map(function (item, index){
+                let num = `course${index}`
+
+                const onEnter = ({ currentTarget }) => {
+                    gsap.to(currentTarget, { cursor: 'pointer' , scale: 1.05 });
+                };
+                  
+                const onLeave = ({ currentTarget }) => {
+                    gsap.to(currentTarget, { cursor: 'none', scale: 1 });
+                };
+
+                const handleClick = () => {
+                    document.getElementById(prev).style.display = 'none'
+                    document.getElementById(num).style.display = 'flex'
+                    prev = num
+                }
+
                 if (item.state === 'deactive'){
-                    return <div key={index} className='box-item'>
-                        <Link to='/Educational-Site/coursepage'><img src={platform}/></Link>
-                        <p>{item.name}</p>
-                    </div>
+                    return(
+                        <div key={index} id="vs" className='box-item'>
+                            <img onMouseEnter={onEnter} onMouseLeave={onLeave} src={platform}/>
+                            <p>{item.name}</p>
+                        </div>
+                    )
                 } else {
-                    return <div key={index} className='box-item'>
-                        <Link to='/Educational-Site/coursepage'><img src={platform2}/></Link>
-                        <p>{item.name}</p>
-                    </div>
+                    return (
+                        <>
+                        <div key={index} className='box-item'>
+                            <div onClick={handleClick}><img  onMouseEnter={onEnter} onMouseLeave={onLeave} src={platform2}/></div>
+                            <p>{item.name}</p>
+                        </div>
+                        <div key={index} id={num} className="desc">
+                            <h3>{item.name}</h3>
+                            <p>{item.desc}</p>
+                            <Link to='/Educational-Site/coursepage'><Button primary>شروع درس</Button></Link>
+                        </div>
+                        </>
+                    )
                 }
             })
         )
