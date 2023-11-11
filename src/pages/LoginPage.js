@@ -13,7 +13,7 @@ function Login(){
                 <div className="buttons-login">
                     <Button primary>Facebook   ورود با  </Button>
                     <Button primary>  Google   ورود با  </Button>
-                    <Link to='/Educational-Site/Email' className="link-width"><Button secondary className="login2">Email ورود با</Button></Link>
+                    <Link to='/Educational-Site/Email' className="link-width"><Button secondary>Email ورود با</Button></Link>
                 </div>
             <h4 className="login-c">New user?? <Link to='/Educational-Site/SingUp' className="login-link"> SingUp</Link></h4>
             </div>  

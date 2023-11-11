@@ -1,13 +1,15 @@
 import './Course.css'
 import Button from './Button'
-import { useState } from 'react'
+import { isValidElement, useState } from 'react'
 import {TbArrowLeft} from 'react-icons/tb'
 import { Link } from 'react-router-dom'
-import { gsap } from 'gsap'
-import { wait } from '@testing-library/user-event/dist/utils'
 
 function Course({data}){
     const [count, setCount] = useState(0)
+    const [newCount, setNewCount] = useState(0)
+    if (newCount<count){
+        setNewCount(count)
+    }
 
     const dataLen = data.length
 
@@ -15,10 +17,11 @@ function Course({data}){
         const Nav = ()=> {
             return(
                 data.map(function (item, index){
-                    if (index-1 < count){
-                        return <div onClick={()=> setCount(index)} key={index} className='prog-active'/>
+                    if (index-1 < newCount){
+                        return <div id={index+10} onClick={() => setCount(newCount-index)} key={index} className='prog-active'/>
                     } else {
-                        return <div key={index} className='prog'/>}
+                        return <div key={index} className='prog'/>
+                    }
                 })
             )
         }
@@ -38,22 +41,52 @@ function Course({data}){
             window.location.replace('/Educational-Site/userpage')
         } else {
             setCount(count+1)
-            
         }
     }
     
     const info = data[count]
 
+    const VideoValid = () => {
+        if ('img' in info){
+            return <img src={require(`../style/${info.img}`)} />
+        }
+    }
+
     const Introduction = () => {
         return(
-            <div className="introduction">
-                <img src={require (`../style/${info.img}`)} />
+            <div id='introduction' className="introduction">
+                <VideoValid/>
                 <div className="explain">
                     <h2>{info.h2}</h2>
                     <p>{info.p}</p>
                     <div onClick={handle}><Button secondary>ادامه</Button></div>
                 </div>
             </div>
+        )
+    }
+
+    const Ending = () => {
+        const showsummary = () => {
+            document.getElementById("summary").style.display="block"
+        }
+        return(
+            <>
+            <div id='introduction' className="introduction">
+                <VideoValid/>
+                <div className="explain">
+                    <h2>{info.h2}</h2>
+                    <p>{info.p}</p>
+                    <div className='buttons'>
+                        <div onClick={handle}><Button secondary>پایان درس</Button></div>
+                        <div onClick={showsummary}><Button primary>خلاصه درس</Button></div>
+                    </div>
+                </div>
+            </div>
+            <div className='summary' id='summary'>
+                <p>{info.p}</p>
+                <div onClick={handle}><Button secondary>پایان درس</Button></div>
+            </div>
+            </>
         )
     }
 
@@ -66,7 +99,6 @@ function Course({data}){
                 document.getElementById('123').style.display='block'
             }
             
-
             return (
                 <div className="radio-buttons">
                     <div id='1' className='aligning'><input type="radio" name="topping" className='input' value={info.wrong1} id={info.wrong1} checked={topping === info.wrong1} onChange={onOptionChange}/>
@@ -126,7 +158,15 @@ function Course({data}){
             <FourAnswer/>
             </div>
         )
+    } else if(info.type === 'ending'){
+        return (
+            <div>
+            <Header/>
+            <Ending/>
+            </div>
+        )
     }
+    
 }
 
 export default Course

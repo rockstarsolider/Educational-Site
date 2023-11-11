@@ -1,11 +1,35 @@
 .introduction{
     display: flex;
     padding: 0 10%;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 5rem;
+    gap: 20%;
+}
+
+.intro-justify{
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    gap: .5rem;
+}
+
+.summary{
+    display: none;
+    margin-left: 28%;
+    text-align: center;
+    width: 40%;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 2%;
 }
 
 .explain{
+    display: flex;
+    flex-direction: column;
     margin-top: 10rem;
     width: 40%;
     text-align: right;
@@ -27,6 +51,7 @@
     height: .5rem;
     background-color: #158E71;
     border-radius: .5rem;
+    order: 1;
 }
 
 .prog-active:hover{filter: contrast(3);}
@@ -118,5 +143,12 @@
     
     .question-box {
         width: 80%;
+    }
+
+    .summary{
+        margin-left: 2%;
+        width: 90%;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
     }
 }

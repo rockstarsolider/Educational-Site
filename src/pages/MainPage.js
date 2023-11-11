@@ -22,6 +22,7 @@ import v5 from '../style/v5.mp4'
 import v6 from '../style/v6.mp4'
 import v7 from '../style/v7.mp4'
 import v8 from '../style/v8.mp4'
+import { gsap } from "gsap";
 
 function MainPage() {
     const info = [
@@ -125,25 +126,27 @@ function MainPage() {
     };
 
     const Card = () => {
+        const onEnter = ({ currentTarget }) => {gsap.to(currentTarget, { scale: 1.05 });};
+        const onLeave = ({ currentTarget }) => {gsap.to(currentTarget, { scale: 1 });};
         return (
             <div className='cards'>
-                <div className='card'>
+                <div className='card' onMouseEnter={onEnter} onMouseLeave={onLeave}>
                     <img src={math} className='icon4' />
                     <Link to='/Educational-Site/math' className='color-black txt-decor'><p>ریاضی</p></Link>
                 </div>
-                <div className='card'>
+                <div className='card' onMouseEnter={onEnter} onMouseLeave={onLeave}>
                     <img src={data} className='icon4' />
                     <Link to='/Educational-Site/science' className='color-black txt-decor'><p>علوم</p></Link>
                 </div>
-                <div className='card'>
+                <div className='card' onMouseEnter={onEnter} onMouseLeave={onLeave}>
                     <img src={computer} className='icon4' />
                     <Link to='/Educational-Site/engineering' className='color-black txt-decor'><p>مهندسی</p></Link>
                 </div>
-                <div className='card'>
+                <div className='card' onMouseEnter={onEnter} onMouseLeave={onLeave}>
                     <img src={programming} className='icon4' />
                     <Link to='/Educational-Site/programming' className='color-black txt-decor'><p>برنامه نویسی</p></Link>
                 </div>
-                <div className='card'>
+                <div className='card' onMouseEnter={onEnter} onMouseLeave={onLeave}>
                     <img src={science} className='icon4' />
                     <Link to='/Educational-Site/datascience' className='color-black txt-decor'><p>علوم داده</p></Link>
                 </div>

@@ -8,8 +8,7 @@ function Header() {
         <div className="header">
             <Link to='/' className="txt-decor color-black">
                 <div className="Logo-title">
-                    <img src={Logo} alt="site logo"></img>
-                    <h2>LearnPlus</h2>
+                    <h2>MindDev</h2>
                 </div>
             </Link>
             <div className="button-container">
