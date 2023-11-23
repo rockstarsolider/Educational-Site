@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 import Button from "../component/Button";
 import  {gsap}  from "gsap";
 import React, { createRef, useState } from 'react';
-import { useEffect } from "react";
+import { IoMdClose } from "react-icons/io";
 
 function LearningRoadPage(){
 
@@ -88,6 +88,10 @@ function LearningRoadPage(){
                     prev = num
                 }
 
+                const closeAll = () => {
+                    document.getElementById(prev).style.display = 'none'
+                }
+
                 if (item.state === 'deactive'){
                     return(
                         <div key={index} id="vs" className='box-item'>
@@ -103,6 +107,7 @@ function LearningRoadPage(){
                             <p>{item.name}</p>
                         </div>
                         <div key={index} id={num} className="desc">
+                            <IoMdClose onClick={closeAll} className="closebtn"/>
                             <h3>{item.name}</h3>
                             <p>{item.desc}</p>
                             <Link to='/Educational-Site/coursepage'><Button primary>شروع درس</Button></Link>

@@ -1,6 +1,6 @@
 import './Course.css'
 import Button from './Button'
-import { isValidElement, useState } from 'react'
+import { useState } from 'react'
 import {TbArrowLeft} from 'react-icons/tb'
 import { Link } from 'react-router-dom'
 
@@ -15,12 +15,26 @@ function Course({data}){
 
     const Header = ()=>{
         const Nav = ()=> {
+            const lengths = []
+            data.map(function (item, index){
+                var length = 0
+                var nextItem = item
+                while (true){
+                    length++
+                    if('next' in nextItem){
+                        nextItem = nextItem.next
+                    }else{
+                        lengths.push(length)
+                        break
+                    }
+                }
+            })
             return(
-                data.map(function (item, index){
+                lengths.map((len,index)=> {
                     if (index-1 < newCount){
-                        return <div id={index+10} onClick={() => setCount(newCount-index)} key={index} className='prog-active'/>
+                        return <div key={index} style={{width : `calc(${len}* 100%)`}} id={index+10} onClick={() => setCount(newCount-index)} className='prog-active'/>
                     } else {
-                        return <div key={index} className='prog'/>
+                        return <div key={index} style={{width : `calc(${len}* 100%)`}} className='prog'/>
                     }
                 })
             )
@@ -38,7 +52,7 @@ function Course({data}){
 
     const handle = ()=>{
         if (count === dataLen-1){
-            window.location.replace('/Educational-Site/userpage')
+            window.location.replace('/Educational-Site/lession-end')
         } else {
             setCount(count+1)
         }
@@ -52,45 +66,33 @@ function Course({data}){
         }
     }
 
-    const Introduction = () => {
+    const Introduction = ({h2,p}) => {
         return(
             <div id='introduction' className="introduction">
                 <VideoValid/>
                 <div className="explain">
-                    <h2>{info.h2}</h2>
-                    <p>{info.p}</p>
+                    <h2>{h2}</h2>
+                    <p>{p}</p>
                     <div onClick={handle}><Button secondary>ادامه</Button></div>
                 </div>
             </div>
         )
     }
 
-    const Ending = () => {
-        const showsummary = () => {
-            document.getElementById("summary").style.display="block"
-        }
+    const Ending = ({h2,p}) => {
         return(
-            <>
             <div id='introduction' className="introduction">
                 <VideoValid/>
                 <div className="explain">
                     <h2>{info.h2}</h2>
                     <p>{info.p}</p>
-                    <div className='buttons'>
-                        <div onClick={handle}><Button secondary>پایان درس</Button></div>
-                        <div onClick={showsummary}><Button primary>خلاصه درس</Button></div>
-                    </div>
+                    <Link to='/Educational-Site/lession-end'><Button secondary>پایان درس</Button></Link>
                 </div>
             </div>
-            <div className='summary' id='summary'>
-                <p>{info.p}</p>
-                <div onClick={handle}><Button secondary>پایان درس</Button></div>
-            </div>
-            </>
         )
     }
 
-    const FourAnswer = ()=> {
+    const FourAnswer = (props)=> {
         const [topping, setTopping] = useState(0)
 
         const RadioButtons = () => {
@@ -101,17 +103,17 @@ function Course({data}){
             
             return (
                 <div className="radio-buttons">
-                    <div id='1' className='aligning'><input type="radio" name="topping" className='input' value={info.wrong1} id={info.wrong1} checked={topping === info.wrong1} onChange={onOptionChange}/>
-                    <label htmlFor={info.wrong1}>{info.wrong1}</label></div>
+                    <div id='1' className='aligning'><input type="radio" name="topping" className='input' value={props.wrong1} id={props.wrong1} checked={topping === props.wrong1} onChange={onOptionChange}/>
+                    <label htmlFor={props.wrong1}>{props.wrong1}</label></div>
 
-                    <div id='2' className='aligning'><input type="radio" name="topping" className='input' value={info.wrong2} id={info.wrong2} checked={topping === info.wrong2} onChange={onOptionChange} />
-                    <label htmlFor={info.wrong2}>{info.wrong2}</label></div>
+                    <div id='2' className='aligning'><input type="radio" name="topping" className='input' value={props.wrong2} id={props.wrong2} checked={topping === props.wrong2} onChange={onOptionChange} />
+                    <label htmlFor={props.wrong2}>{props.wrong2}</label></div>
 
-                    <div id='3' className='aligning'><input type="radio" name="topping" className='input' value={info.ans} id={info.ans} checked={topping === info.ans} onChange={onOptionChange} />
-                    <label htmlFor={info.ans}>{info.ans}</label></div>
+                    <div id='3' className='aligning'><input type="radio" name="topping" className='input' value={props.ans} id={props.ans} checked={topping === props.ans} onChange={onOptionChange} />
+                    <label htmlFor={props.ans}>{props.ans}</label></div>
                 
-                    <div id='4' className='aligning'><input type="radio" name="topping" className='input' value={info.wrong3} id={info.wrong3} checked={topping === info.wrong3} onChange={onOptionChange} />
-                    <label htmlFor={info.wrong3}>{info.wrong3}</label></div>
+                    <div id='4' className='aligning'><input type="radio" name="topping" className='input' value={props.wrong3} id={props.wrong3} checked={topping === props.wrong3} onChange={onOptionChange} />
+                    <label htmlFor={props.wrong3}>{props.wrong3}</label></div>
                 </div>
             )
         }
@@ -131,42 +133,65 @@ function Course({data}){
             }
         }
 
-        return(
-            <div className='four-answer'>
-                <p>{info.p}</p>
-                <img src={require (`../style/${info.img}`)}/>
-                <div className='question-box'>
-                    <p>{info.sub}</p>
-                    <RadioButtons/>
-                    <div id='123' style={{display:'none'}} click onClick={handleClick}><Button primary>ثبت جواب</Button></div>
+        const [showState, setShowState] = useState(false)
+        const setShowStat = () => {setShowState(!showState)}
+
+        if (showState == false){
+            return(
+                <div className='four-answer'>
+                    <p>{props.p}</p>
+                    <img src={require (`../style/${props.img}`)}/>
+                    <div className='question-box' id='question-box'>
+                        <p>{props.sub}</p>
+                        <RadioButtons/>
+                        <div className='btn2'>
+                            <div onClick={setShowStat}><Button secondary>نمایش جواب</Button></div>
+                            <div id='123' style={{display:'none'}} onClick={handleClick}><Button primary>ثبت جواب</Button></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        } else if (showState == true) {
+            return(
+                <div className='four-answer'>
+                    <p>{props.p}</p>
+                    <img src={require (`../style/${props.img}`)}/>
+                    <div className='question-box' id='question-box'>
+                        <p>{props.solution}</p>
+                        <div onClick={setShowStat}><Button secondary>بازگشت به سوال</Button></div>
+                    </div>
+                </div>
+            )
+        }
     }
 
-    if (info.type === 'intro'){
-        return (
-            <div>
-            <Header/>
-            <Introduction/>
-            </div>
-        )
-    } else if(info.type === 'four-answer'){
-        return (
-            <div>
-            <Header/>
-            <FourAnswer/>
-            </div>
-        )
-    } else if(info.type === 'ending'){
-        return (
-            <div>
-            <Header/>
-            <Ending/>
-            </div>
-        )
+    var nex = info
+    var pagesList = []
+
+    while (true){
+        pagesList.push(nex)
+        if('next' in nex){
+            nex = nex.next
+        }else{break}
     }
-    
+    const Objects = () => {
+        return pagesList.map((array,index)=> {
+            if (array.type === 'intro'){
+                return <Introduction key={index} h2={array.h2} p={array.p}/>
+            } else if (array.type === 'ending'){
+                return <Ending key={index} h2={array.h2} p={array.p}/>
+            } else if (array.type === 'four-answer'){
+                return <FourAnswer {...array}/>
+            }
+        })
+    }
+
+    return(
+        <>
+        <Header length={pagesList.length}/>
+        <Objects/>
+        </>
+    )
 }
 
 export default Course

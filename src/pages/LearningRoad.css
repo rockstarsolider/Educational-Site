@@ -45,6 +45,26 @@
     text-align: center;
 }
 
+.closebtn{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.closebtn:hover{
+    background-color: #D9D9D9;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.lession-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
 .overflow-hidden{
     display: none;
 }

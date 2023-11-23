@@ -6,14 +6,13 @@ import data from '../style/data.png'
 import computer from '../style/computer.png'
 import programming from '../style/programming.png'
 import science from '../style/science.png'
-import pic2 from '../style/learning-education-word-letters 1.png';
-import pic3 from '../style/pic5.png';
-import pic4 from '../style/the-reward-4k-9x 2.png';
+import pic2 from '../style/imagenum1.png';
+import pic3 from '../style/learn-at-your-level 1 (1).png';
+import pic4 from '../style/stay-motivated 1.png';
 import video0 from '../style/landingpage_cs.mp4'
 import Button from '../component/Button';
 import { useState } from "react";
 import { Link } from 'react-router-dom';
-import { wait } from "@testing-library/user-event/dist/utils";
 import v1 from '../style/v1.mp4'
 import v2 from '../style/v2.mp4'
 import v3 from '../style/v3.mp4'
