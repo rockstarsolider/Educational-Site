@@ -1,8 +1,10 @@
 import './Course.css'
 import Button from './Button'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {TbArrowLeft} from 'react-icons/tb'
 import { Link } from 'react-router-dom'
+import ReactPlayer from 'react-player'
+import ReactAudioPlayer from 'react-audio-player'
 
 function Course({data}){
     const [count, setCount] = useState(0)
@@ -15,6 +17,7 @@ function Course({data}){
 
     const Header = ()=>{
         const Nav = ()=> {
+            //const [lengths, setLengths] = useState([])
             const lengths = []
             data.map(function (item, index){
                 var length = 0
@@ -23,7 +26,8 @@ function Course({data}){
                     length++
                     if('next' in nextItem){
                         nextItem = nextItem.next
-                    }else{
+                    } else {
+                        //setLengths([...lengths,length])
                         lengths.push(length)
                         break
                     }
@@ -84,9 +88,71 @@ function Course({data}){
             <div id='introduction' className="introduction">
                 <VideoValid/>
                 <div className="explain">
-                    <h2>{info.h2}</h2>
-                    <p>{info.p}</p>
+                    <h2>{h2}</h2>
+                    <p>{p}</p>
                     <Link to='/Educational-Site/lession-end'><Button secondary>پایان درس</Button></Link>
+                </div>
+            </div>
+        )
+    }
+
+    const Video = ({video}) => {
+        return(
+        <div className='video-player'>
+            <ReactPlayer width='80%' url={require(`../style/${video}`)} controls/>
+            <div onClick={handle}><Button secondary>ادامه</Button></div>
+        </div>
+        )
+    }
+
+    const Audio = ({audio}) => {
+        return(
+        <div className='audio-player'>
+            <ReactAudioPlayer src={require(`../style/${audio}`)} controls/>
+            <div onClick={handle}><Button secondary>ادامه</Button></div>
+        </div>
+        )
+    }
+
+    const Start = ({h2,p}) => {
+        return(
+            <div id='introduction' className="start">
+                <VideoValid/>
+                <div className="explain2">
+                    <h2>{h2}</h2>
+                    <p>{p}</p>
+                    <div onClick={handle}><Button secondary>شروع درس</Button></div>
+                </div>
+            </div>
+        )
+    }
+
+    const TwoAnswer = (props) => {
+        const [topping, setTopping] = useState(0)
+
+        const RadioButtons = () => {
+            const onOptionChange = e => {
+                setTopping(e.target.value)
+                document.getElementById('123').style.display='block'
+            }
+            
+            return (
+                <div className="radio-buttons2">
+                    <div id='1' className='aligning'><input type="radio" name="topping" className='input' value={props.wrong} id={props.wrong} checked={topping === props.wrong} onChange={onOptionChange}/>
+                    <label htmlFor={props.wrong}>{props.wrong}</label></div>
+
+                    <div id='2' className='aligning'><input type="radio" name="topping" className='input' value={props.ans} id={props.ans} checked={topping === props.ans} onChange={onOptionChange} />
+                    <label htmlFor={props.ans}>{props.ans}</label></div>
+                </div>
+            )
+        }
+
+        return(
+            <div className='two-answer'>
+                <p>{props.p}</p>
+                <RadioButtons/>
+                <div className='btn2'>
+                    <div id='123' style={{display:'none'}} onClick={handle}><Button secondary>ادامه</Button></div>
                 </div>
             </div>
         )
@@ -182,7 +248,15 @@ function Course({data}){
                 return <Ending key={index} h2={array.h2} p={array.p}/>
             } else if (array.type === 'four-answer'){
                 return <FourAnswer {...array}/>
-            }
+            } else if (array.type === 'start'){
+                return <Start h2={array.h2} p={array.p}/>
+            } else if (array.type === 'video'){
+                return <Video video={array.video}/>
+            } else if (array.type === 'audio'){
+                return <Audio audio={array.audio}/>
+            }  else if (array.type === 'two-answer'){
+                return <TwoAnswer {...array}/>
+            } 
         })
     }
 
