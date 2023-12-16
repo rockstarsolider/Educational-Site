@@ -1,6 +1,5 @@
 import "./Button.css";
 import { gsap } from "gsap";
-const { useEffect, useState } = 'React';
 
 function Button({ primary, secondary, solid, children, ...rest }) {
 

@@ -12,7 +12,7 @@ function Header() {
             </Link>
             <div className="button-container">
                 <Link to='/Educational-Site/LoginPage'><Button secondary>ورود</Button></Link>
-                <Link to= '/Educational-Site/SingUp'><Button primary>ثبت نام</Button></Link>
+                <Link to= '/Educational-Site/pre-signup'><Button primary>شروع کنید</Button></Link>
             </div>
         </div>
     );

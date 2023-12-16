@@ -34,16 +34,6 @@ function AboutPage() {
                 <h1>تیم ما</h1>
                 <div className='TeamCards'>
                     <div className='TeamCard'>
-                        <img src={pro4} alt='profile' />
-                        <h2>دانیال برزگر</h2>
-                        <h3>از اعضای گروه فرانت</h3>
-                    </div>
-                    <div className='TeamCard'>
-                        <img src={pro3} alt='profile' />
-                        <h2>علیرضا عادلی</h2>
-                        <h3>از اعضای گروه فرانت</h3>
-                    </div>
-                    <div className='TeamCard'>
                         <img src={pro2} alt='profile' />
                         <h2>علی اسماعیل زاده</h2>
                         <h3>سرپرست تیم</h3>
@@ -52,6 +42,11 @@ function AboutPage() {
                         <img src={pro1} alt='profile' />
                         <h2>فرهاد رضاقلی</h2>
                         <h3>سرپرست تیم</h3>
+                    </div>
+                    <div className='TeamCard'>
+                        <img src={pro4} alt='profile' />
+                        <h2>دانیال برزگر</h2>
+                        <h3>از اعضای گروه فرانت</h3>
                     </div>
                     <div className='TeamCard'>
                         <img src={pro8} alt='profile' />
@@ -72,11 +67,6 @@ function AboutPage() {
                         <img src={pro5} alt='profile' />
                         <h2>مبین حسینی</h2>
                         <h3>از اعضای گروه فرانت</h3>
-                    </div>
-                    <div className='TeamCard' id='LastTeam'>
-                        <img src={pro9} alt='profile' />
-                        <h2>عرفان خواجه زاده</h2>
-                        <h3>از اعضای گروه بک اند</h3>
                     </div>
                 </div>
             </div>
