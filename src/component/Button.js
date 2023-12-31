@@ -10,11 +10,11 @@ function Button({ primary, secondary, solid, children, ...rest }) {
     const onLeave2 = ({ currentTarget }) => {gsap.to(currentTarget, { backgroundColor: "#222020", scale: 1 });};
 
     if (primary) {
-        return <button {...rest} className='primary' onMouseEnter={onEnter} onMouseLeave={onLeave}>{children}</button>;
+        return <button {...rest} className='primaryButton' onMouseEnter={onEnter} onMouseLeave={onLeave}>{children}</button>;
     } else if (secondary) {
-        return <button {...rest} className="secondary" onMouseEnter={onEnter2} onMouseLeave={onLeave2}>{children}</button>;
+        return <button {...rest} className="secondary-button" onMouseEnter={onEnter2} onMouseLeave={onLeave2}>{children}</button>;
     } else if (solid) {
-        return <button {...rest} className="solid">{children}</button>;
+        return <button {...rest} className="solid-button">{children}</button>;
     }
 }
 

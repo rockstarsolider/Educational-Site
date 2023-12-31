@@ -60,7 +60,7 @@
     width: 80%;
 }
 
-.flex{
+.flex-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +70,6 @@
 .grey-box{
     background-color: #DEE3F4;
     border-radius: 1rem;
-    gap: 1rem;
     padding: 3% 5%;
     margin-bottom: 1rem;
 }
@@ -104,17 +103,23 @@
 }
 
 .time{
-    height: 15rem;
+    height: 20rem;
     width: 25%;
-}
-
-input{
-    height: 40px;
-    border-radius: 8px;
-    border: 1px solid grey;
-    width: 40%;
 }
 
 .exit{
     margin-top: 3rem;
+}
+
+.justify{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.next-task{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

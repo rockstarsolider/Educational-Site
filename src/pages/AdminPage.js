@@ -1,6 +1,11 @@
 import { useState } from 'react'
 import './AdminPage.css'
 import Button from '../component/Button'
+import * as d3 from 'd3'
+import {Select,SelectContent,SelectItem,SelectTrigger,SelectValue,} from "../component/components/ui/select"
+import { Calendar } from '../component/components/ui/calendar'
+import * as React from "react"
+import ReactPlayer from 'react-player'
 
 function AdminPage() {
     const [currentPage, setCurrentPage] = useState('Welcome')
@@ -16,9 +21,9 @@ function AdminPage() {
             id:'PrevTasks',
             name: 'تسک های قبلی',
             tasks:[
-                {number:1, p: 'در این هف با html ید بسیار بزرگ آشنایی اولیه با در قالب 16 پروژه فاهیم اصلی html , css را فراگرفته و به صورت عملی و در قالب پروژه مفاهیم را در ذهن خود تثبیت خواید کرد.',img: require('../style/learn-at-your-level 1 (1).png')},
-                {number:2, p: 'در این هفته آشنایی اولیه با html  , css پیدا خواهید کرد. در دوره ای که به شما معرفی شده است در قالب 16 پروژه مفاهیم اصلی html , css را فراگرفته و به صورت عملی و در قالب پروژه مفاهیم را در ذهن خود تثبیت خواید کرد.',img: require('../style/learn-at-your-level 1 (1).png')},
-                {number:3, p: 'در این هفته اولیه با مورد جدید بسیار بزرگ آشنایی اولیه با در قالب 16 پروژه مفاهیم اصلی html , css را فراگرفته و به صورت عملی و در قالب پروژه مفاهیم را در ذهن خود تثبیت خواید کرد.',img: require('../style/learn-at-your-level 1 (1).png')},
+                {number:1, video: require('../style/landingpage_cs.mp4'), p: 'در این هف با html ید بسیار بزرگ آشنایی اولیه با در قالب 16 پروژه فاهیم اصلی html , css را فراگرفته و به صورت عملی و در قالب پروژه مفاهیم را در ذهن خود تثبیت خواید کرد.',img: require('../style/learn-at-your-level 1 (1).png')},
+                {number:2, video: require('../style/landingpage_cs.mp4'), p: 'در این هفته آشنایی اولیه با html  , css پیدا خواهید کرد. در دوره ای که به شما معرفی شده است در قالب 16 پروژه مفاهیم اصلی html , css را فراگرفته و به صورت عملی و در قالب پروژه مفاهیم را در ذهن خود تثبیت خواید کرد.',img: require('../style/learn-at-your-level 1 (1).png')},
+                {number:3, video: require('../style/landingpage_cs.mp4'), p: 'در این هفته اولیه با مورد جدید بسیار بزرگ آشنایی اولیه با در قالب 16 پروژه مفاهیم اصلی html , css را فراگرفته و به صورت عملی و در قالب پروژه مفاهیم را در ذهن خود تثبیت خواید کرد.',img: require('../style/learn-at-your-level 1 (1).png')},
             ],
         },
         {
@@ -85,7 +90,7 @@ function AdminPage() {
     // Shows the main content(like tasks,payment,...) on the page
     const Content = () => {
         const Welcome = () => {
-            return <div className='welcome flex'>
+            return <div className='welcome flex-box'>
                 <img width={'15%'} src={require('../style/rob1.png')}/>
                 <h2 >خوش آمدی پوریا</h2>
                 <p>در حال حاضر 15 امتیاز داری که میتونی با حل تمرینات و شرکت در جلسات امتیاز خودت رو بالا ببری</p>
@@ -93,14 +98,14 @@ function AdminPage() {
         }
 
         const NextTask = () => {
-            return <div className='next-task grey-box flex'>
+            return <div className='next-task grey-box flex-box'>
                 <p>{pageData[0].p}</p>
                 <img src={pageData[0].img}/>
             </div>
         }
 
         const Teacher = () => {
-            return <div className='teacher grey-box flex'>
+            return <div className='teacher grey-box flex-box'>
                 <img src={pageData[3].img}/>
                 <h2>{pageData[3].teacher}</h2>
                 <p>{pageData[3].job}</p>
@@ -108,15 +113,15 @@ function AdminPage() {
         }
 
         const Group = () => {
-            return <div className='group grey-box flex'>
+            return <div className='group grey-box flex-box'>
                 <h2>اعضای گروه بازی سازی</h2>
-                <div className='person flex'>
+                <div className='person flex-box'>
                         <h2>شماره تماس</h2>
                         <h2>نام</h2>
                         <h2>تصویر</h2>
                 </div>
                 {pageData[5].group.map((person, index) => {
-                    return <div key={index} className='person flex'>
+                    return <div key={index} className='person flex-box'>
                         <h3>{person.number}</h3>
                         <h3>{person.title}</h3>
                         <img src={person.img}/>
@@ -126,12 +131,13 @@ function AdminPage() {
         }
 
         const PrevTasks = () => {
-            return <div className='prev-tasks flex '>
+            return <div className='prev-tasks flex-box '>
                 {pageData[1].tasks.reverse().map((task, index) => {
                     return <div key={index} className='next-task grey-box'>
                         <h2>تسک شماره {task.number}</h2>
                         <p>{task.p}</p>
                         <img src={task.img}/>
+                        <ReactPlayer url={task.video} width={'50%'} controls/>
                     </div>
                 })}
             </div>
@@ -142,7 +148,7 @@ function AdminPage() {
                 <div className='grey-box time'>
                 <h2>حضور در جلسات</h2>
                 {pageData[2].present.map((state, index) => {
-                    return <p>هفته{index+1}  {state}</p>
+                    return <div className='justify'><p>{state}</p><p>هفته{index+1}</p></div>
                 })}
                 </div>
                 <div className='grey-box time'>
@@ -156,13 +162,80 @@ function AdminPage() {
         }
 
         const Setting = () => {
-            return <div className='flex grey-box'>
+            const [date, setDate] = useState(Date | undefined) //React.useState<Date | undefined>(new Date())
+            return <div className='justify-center items-end flex flex-col gap-3'>
                 <h2>تکمیل یا تغییر حساب کاربری</h2>
-                <input placeholder='نام'/>
-                <input placeholder='نام خوانوادگی'/>
-                <input placeholder='ایمیل'/>
-                <Button primary>تغییر نام</Button>
+                <input className="focus:border-slate-900 w-3/4 rounded-md text-base h-8 border-solid border-slate-500 border" placeholder='نام'/>
+                <input className="focus:border-slate-900 w-3/4 rounded-md text-base h-8 border-solid border-slate-500 border" placeholder='نام خوانوادگی'/>
+                <input className="focus:border-slate-900 w-3/4 rounded-md text-base h-8 border-solid border-slate-500 border" placeholder='ایمیل'/>
+                <Select>
+                    <SelectTrigger className="w-1/5 border-slate-500">
+                        <SelectValue placeholder="زبان" />
+                    </SelectTrigger>
+                    <SelectContent className='border-slate-400 bg-white'>
+                        <SelectItem value="light">فارسی</SelectItem>
+                        <SelectItem value="dark">انگلیسی</SelectItem>
+                        <SelectItem value="system">عربی</SelectItem>
+                    </SelectContent>
+                </Select>
+                <Calendar
+                    mode="single"
+                    selected={date}
+                    onSelect={setDate}
+                    className="rounded-md border"
+                />
+                <Button primary>ثبت تغییرات</Button>
                 <div className='exit'><Button secondary>خروج از حساب کاربری</Button></div>
+            </div>
+        }
+
+        const data = require('./chart.json')
+        const height = 400
+        const width = 600
+
+        const lineChartData = () => {
+            //1. map date to x-position
+            //get min and max of date
+            const extent = d3.extent(data, d => d.date)
+            console.log(extent)
+            const xScale = d3.scaleTime()
+                .domain(extent)
+                .range([0, width])
+            //console.log(xScale(new Date('12/31/2017')))
+            // 2. map high temp to y-position
+            const [min, max] = d3.extent(data, d=>d.high)
+            const yScale = d3.scaleLinear()
+                .domain([Math.min(min, 0), max])
+                .range([height, 0])
+            //console.log(yScale(70))
+            //array of objects: x, y, height
+            // 3. map avg temp to color
+            // get min/max of avg
+            const colorExtent = d3.extent(data, d=>d.avg).reverse()
+            const colorScale = d3.scaleSequential()
+                .domain(colorExtent)
+                .interpolator(d3.interpolateRdYlBu)
+            
+            const bars = data.map(d=>{
+                return {
+                    x: xScale(d.date),
+                    y: yScale(d.high),
+                    height:  yScale(d.low)- yScale(d.high),
+                    fill: colorScale(d.avg)
+                }
+            })
+
+            return {bars}
+        }
+        const info = lineChartData()
+
+        const Charts = () => {
+            return <div className='charts'>
+                <div className='grey-box'>
+                    <svg height={height} width={width}>
+                        
+                    </svg>
+                </div>
             </div>
         }
         
@@ -181,6 +254,8 @@ function AdminPage() {
             return <Timing/>
         } else if (currentPage === 'Setting') {
             return <Setting/>
+        } else if (currentPage === 'Charts') {
+            return <Charts/>
         }
     }
     

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <div className="header">
+        <div className="header-main">
             <Link to='/' className="txt-decor color-black">
                 <div className="Logo-title">
                     <h2>MindDev</h2>
