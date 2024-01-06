@@ -48,8 +48,8 @@ function AdminPage() {
             name: 'هم تیمی ها',
             group:[
                 {title:'امیر',number: '09270001234',img:(require('../style/Group 2.png'))},
-                {title:'رضا',number: '09270001234',img:(require('../style/Group 3.png'))},
-                {title:'علی',number: '09270001234',img:(require('../style/Group 3.png'))},
+                {title:'رضا',number: '09270001234',img:(require('../style/Group 4.png'))},
+                {title:'علی',number: '09270001234',img:(require('../style/Group 5.png'))},
             ]
         },
         {

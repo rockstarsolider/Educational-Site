@@ -6,21 +6,19 @@ import Image1 from '../style/image 1.png';
 import Image2 from '../style/image 2.png';
 import pro1 from '../style/Group 1.png';
 import pro2 from '../style/Group 2.png';
-import pro3 from '../style/Group 3.png';
 import pro4 from '../style/Group 4.png';
 import pro5 from '../style/Group 5.png';
 import pro6 from '../style/Group 6.png';
 import pro7 from '../style/Group 7.png';
 import pro8 from '../style/Group 8.png';
-import pro9 from '../style/Group 9.png';
 
 function AboutPage() {
     const Intro = () => {
         return (
-            <div className='intro b'>
+            <div className='hero'>
                 <img src={Image1} alt='intro' />
                 <div>
-                    <h1>درباره ما</h1>
+                    <h2>درباره ما</h2>
                     <p>ماموریت Learn Plus الهام بخشیدن و توسعه افراد برای دستیابی به اهدافشان است - یک نفر، یک سوال و یک تعهد کوچک به یادگیری در یک زمان مشخص.
                         ما معلمان بزرگ را قادر می‌سازیم تا روح ریاضیات، علوم و مهندسی را از طریق تجربیات یادگیری تعاملی و کوچک روشن کنند. دوره های ما قوانینی را که جهان ما را شکل می دهند بررسی می کند و ریاضیات و علوم را از چیزی که باید از آن ترسید به یک تجربه لذت بخش از اکتشاف هدایت شده ارتقاء دهد.</p>
                 </div>
@@ -97,14 +95,16 @@ function AboutPage() {
     };
 
     return (
-        <div>
-            <Header />
+        <>
+        <Header />
+        <div className="about-us">
             <Intro />
             <OurTeam />
             <Jobs />
             <Press />
-            <Footer />
         </div>
+        <Footer />
+        </>
     );
 }
 
