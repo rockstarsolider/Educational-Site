@@ -1,6 +1,6 @@
 import "./Email.css"
 import { Link } from "react-router-dom";
-import Button from '../component/Button';
+import Button from '../components/Button';
 import rocket from '../style/Screenshot (23).png'
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";

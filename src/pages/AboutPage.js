@@ -1,7 +1,7 @@
 import "./AboutUs.css";
 import "../style/HTML.css";
-import Header from '../component/Header';
-import Footer from '../component/Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Image1 from '../style/image 1.png';
 import Image2 from '../style/image 2.png';
 import pro1 from '../style/Group 1.png';

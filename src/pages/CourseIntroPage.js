@@ -1,5 +1,5 @@
-import Header from '../component/Header';
-import Footer from '../component/Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import pic1 from '../style/971 1.png';
 import pic2 from '../style/imagenum1.png';
 import pic3 from '../style/learn-at-your-level 1 (1).png';

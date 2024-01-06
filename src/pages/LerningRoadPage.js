@@ -1,10 +1,10 @@
 import Image2 from "../style/image 11 (2).png";
 import './LearningRoad.css';
-import Header2 from '../component/Header2'
+import Header2 from '../components/Header2'
 import platform from '../style/platform.png'
 import platform2 from '../style/platform2.png'
 import {Link} from 'react-router-dom'
-import Button from "../component/Button";
+import Button from "../components/Button";
 import  {gsap}  from "gsap";
 import React, { createRef, useState } from 'react';
 import { IoMdClose } from "react-icons/io";

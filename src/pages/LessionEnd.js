@@ -1,5 +1,5 @@
 import image from '../style/complete.png'
-import Button from '../component/Button'
+import Button from '../components/Button'
 import { Link } from 'react-router-dom'
 import './LearningRoad.css'
 

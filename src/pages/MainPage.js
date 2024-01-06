@@ -1,6 +1,6 @@
 import "./MainPage.css";
-import Header from '../component/Header';
-import Footer from '../component/Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import math from '../style/math.png'
 import data from '../style/data.png'
 import computer from '../style/computer.png'
@@ -10,7 +10,7 @@ import pic2 from '../style/imagenum1.png';
 import pic3 from '../style/learn-at-your-level 1 (1).png';
 import pic4 from '../style/stay-motivated 1.png';
 import video0 from '../style/landingpage_cs.mp4'
-import Button from '../component/Button';
+import Button from '../components/Button';
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import v1 from '../style/v1.mp4'

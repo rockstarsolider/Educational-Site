@@ -1,9 +1,9 @@
 import "./UserPage.css";
-import Header2 from "../component/Header2";
-import Button from "../component/Button";
+import Header2 from "../components/Header2";
+import Button from "../components/Button";
 import Image1 from "../style/image 11 (1).png";
 import Image2 from "../style/image 11 (2).png";
-import SearchBar from "../component/SearchBar";
+import SearchBar from "../components/SearchBar";
 import { Link } from "react-router-dom";
 
 function UserPage() {

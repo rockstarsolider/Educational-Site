@@ -1,8 +1,8 @@
 import "../style/HTML.css";
 import "./PricingPage.css";
 import React, { useState } from "react";
-import Header from "../component/Header";
-import Footer from "../component/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import im1 from "../style/im2.png"; // Capture2.PNG
 import im2 from "../style/im2.png"; // Capture.PNG
 import im3 from "../style/im12.png";

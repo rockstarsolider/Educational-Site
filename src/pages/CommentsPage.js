@@ -1,8 +1,8 @@
 import './CommentsPage.css';
 import './PricingPage.css';
-import Button from "../component/Button";
-import Header from "../component/Header";
-import Footer from "../component/Footer";
+import Button from "../components/Button";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import star1 from "../style/Starcom.png";
 import star2 from "../style/Star5.png";
 import up2 from "../style/up2.png";

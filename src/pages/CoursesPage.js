@@ -1,8 +1,8 @@
 import "./CoursesPage.css";
-import Header from '../component/Header';
-import Footer from '../component/Footer';
-import SearchBar from "../component/SearchBar";
-import Button from "../component/Button";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import SearchBar from "../components/SearchBar";
+import Button from "../components/Button";
 import ThinkingInCodeImage from '../style/ThinkingInCode.png';
 import ExploringDataVisuallyImage from '../style/Exploring Data Visually.png';
 import SolvingEquationsImage from '../style/Solving Equations.png';

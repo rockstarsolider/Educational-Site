@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import {TbArrowLeft} from 'react-icons/tb'
 import { useState } from 'react'
 import { gsap } from 'gsap'
-import Button from '../component/Button'
+import Button from '../components/Button'
 
 function PreSignup() {
     const pageData = [

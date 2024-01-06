@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import './AdminPage.css'
-import Button from '../component/Button'
+import Button from '../components/Button'
 import * as d3 from 'd3'
-import {Select,SelectContent,SelectItem,SelectTrigger,SelectValue,} from "../component/components/ui/select"
-import { Calendar } from '../component/components/ui/calendar'
 import * as React from "react"
 import ReactPlayer from 'react-player'
+import {Input} from '../components/ui/input'
 
 function AdminPage() {
     const [currentPage, setCurrentPage] = useState('Welcome')
@@ -162,28 +161,11 @@ function AdminPage() {
         }
 
         const Setting = () => {
-            const [date, setDate] = useState(Date | undefined) //React.useState<Date | undefined>(new Date())
             return <div className='justify-center items-end flex flex-col gap-3'>
-                <h2>تکمیل یا تغییر حساب کاربری</h2>
+                <h2 className='underline'>تکمیل یا تغییر حساب کاربری</h2>
                 <input className="focus:border-slate-900 w-3/4 rounded-md text-base h-8 border-solid border-slate-500 border" placeholder='نام'/>
                 <input className="focus:border-slate-900 w-3/4 rounded-md text-base h-8 border-solid border-slate-500 border" placeholder='نام خوانوادگی'/>
-                <input className="focus:border-slate-900 w-3/4 rounded-md text-base h-8 border-solid border-slate-500 border" placeholder='ایمیل'/>
-                <Select>
-                    <SelectTrigger className="w-1/5 border-slate-500">
-                        <SelectValue placeholder="زبان" />
-                    </SelectTrigger>
-                    <SelectContent className='border-slate-400 bg-white'>
-                        <SelectItem value="light">فارسی</SelectItem>
-                        <SelectItem value="dark">انگلیسی</SelectItem>
-                        <SelectItem value="system">عربی</SelectItem>
-                    </SelectContent>
-                </Select>
-                <Calendar
-                    mode="single"
-                    selected={date}
-                    onSelect={setDate}
-                    className="rounded-md border"
-                />
+                <Input placeholder='email'/>
                 <Button primary>ثبت تغییرات</Button>
                 <div className='exit'><Button secondary>خروج از حساب کاربری</Button></div>
             </div>
